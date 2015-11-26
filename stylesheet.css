@@ -1,17 +1,17 @@
 @media only screen and (max-width:600px) {
-	p {
+	h1, p {
 	margin-left:0;
 	}
 }
 
 @media only screen and (min-width: 600px) {
-	p {
+	h1, p {
 	margin-left:20px;
 	}
 }
 
 @media print {
-	p {
+	h1, p {
 		margin: 200px;
 	}
 }
