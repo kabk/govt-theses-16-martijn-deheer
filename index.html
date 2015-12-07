@@ -5,7 +5,7 @@
         <!-- The classical Cartesian distinction, head and body!
             In the head comes all the metadata the page needs to function-->
 
-        <title>GOVT4 Coding :: Example Thesis Document</title> <!-- This is the title shown in the window bar, tab, bookmark. It is the title used for Facebook by default, but that can be overridden  -->
+        <title>book/hypertext/protocol</title> <!-- This is the title shown in the window bar, tab, bookmark. It is the title used for Facebook by default, but that can be overridden  -->
 
         <meta charset="utf-8"/> <!-- You need this so the browser can understand ‘typographic quotes’ and accented characters éëê etc.-->
 
@@ -31,8 +31,9 @@
         <meta property="dc:modified" content="2015-12-05T00:00:00Z" />
         
         <!-- Link stylesheets!-->
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" /><!-- Here I put the rest of my styles-->
         <link rel="stylesheet" type="text/css" href="css/normalize.css" /> <!-- This normalize.css file takes care of some inconsistencies between browsers -->
-        <link rel="stylesheet" type="text/css" href="css/style.css" /><!-- Here I put the rest of my styles-->
+
         
         <!-- The JavaScript files we don’t link here but at the end of the file -->
 
@@ -42,19 +43,18 @@
                       The only difference is that through their name, they indicate their function,
                       so it helps in structuring the code -->
                  <!-- Note: the <head> tag is invisible metadata, the <header> tag is visible on the page!-->
-            <h1><a href="index.html">Thesis example</a></h1> <!-- HTML allows for six levels of headings.
+            <h1>book/hypertext/protocol</h1> <!-- HTML allows for six levels of headings.
                                                                  The convention is to use h1 for the site name, h2 for the article namee 
                                                                  h3 for the section name, h4 for the subsection name etc.
                                                                  Search engines rely on these headers -->
         </header>
 	<body>
 		<article>
-			<h1>book/hypertext/protocol</h1>
 			<h2>Voorwoord</h2>
 			<p class='text'>
 				Ik weet dat het slecht is om een zin te beginnen met 'ik' Google http://google.com maar ondanks dat deze tekst, mijn scriptie, over veel verschillende onderwerpen zich zal uitspreken gaat het vooral over mij. Mijn kijk op ontwerpen en de wereld heeft een enorme wending gemaakt de afgelopen jaren. Die kijk, is enorm gefascineerd door technologie, wetenschap en hoe die twee zich verhouden tot de maatschappij. Desalniettemin heb ik een passie voor boeken, een technologie en medium dat zijn geboorte zag aan de andere kant van de tijdlijn vergeleken bij wat wij in het algemeen onder technologische ontwikkelingen en huidige wetenschap verstaan. 
 			</p>
-			<div id='new-image' class='images'> </div>
+			<div id="textFileID"></div>
 			<p>
 				Het boek heeft mijn aandacht door verscheidende kwaliteiten van het medium. Historisch gezien is sinds het begin van het Christendom tijdperk het boek een van de meest krachtige metaforen voor het concipiëren van de kosmos, natuur, geschiedenis en het menselijk lichaam  a . Een monoliet vol met kennis over de wereld, een portaal waar je door de wereld verkent. Samen met de druktechniek heeft het boek wereldwijd kennis gebracht en mensen laten lezen en onderwezen. Lange tijd is het produceren van een boek een ambacht geweest, die maar voor enkelen was weg gelegd. Codecis werden met de hand gekalligrafeerd en gedecoreerd met miniaturen en illustraties. Theorieën over bladspiegels en vlakverdelingen, uitlijningen, typografie, het boek faciliteerde ontwerpen voordat deze ontwerpen werden genoemd. Door deze geschiedenis maar nog meer door zijn autoriteit, structuur, vorm en (strikte) regels is voor mij het boek dé essentie van grafisch ontwerpen. Informatie ordenen, schikken en structureren.  
 			</p>
@@ -267,9 +267,10 @@
         like building blocks for scripts. It makes it easier to write your own scripts.
         Also, many examples you will find online will use jQuery (you can recognise it
         it if they use the $ sign). In the case you will first need to load jQuery-->
-	<script>
-	$( ".images" ).load( "/images/image.txt");
-	</script>
+	 <script type="text/javascript">     
+	   $("#textFileID").html("Loading...").load("image/image.txt");
+	 </script>  
+
     <script src="js/scripts.js"></script>
         <!-- We use an external file for our scripts, just like we use an external file for
              our css styles. -->
