@@ -32,7 +32,10 @@
         
         <!-- Link stylesheets!-->
         <link rel="stylesheet" type="text/css" href="css/normalize.css" /> <!-- This normalize.css file takes care of some inconsistencies between browsers -->
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" /><!-- Here I put the rest of my styles-->
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+		<link rel="stylesheet" href="/app.min.css" />  <script src="/app.min.js"></script>
+
+        <!-- Here I put the rest of my styles-->
         <!-- The JavaScript files we don’t link here but at the end of the file -->
 
     </head>
@@ -47,7 +50,7 @@
                                                                  Search engines rely on these headers -->
         </header>
 	<body>
-		<div class='container'>
+		 <div class="article-wrapper"> 
 			<div class=''
 			<h2>Voorwoord</h2>
 			<p class='text'>
@@ -233,31 +236,84 @@
 			<p>
 				Het internet als schrijfmiddel is interessant maar een zeer tijdelijk proces dat dit interessant blijft. Inez en van Lamsweerde waren geniaal met hun gephotoshopte beelden en haalde wereld bekendheid met hun werken. Echter is de algemene mening nu dat photoshop ons beeld van de mens verziekt dan dat het kunst is of ons beeld verrijkt. We moeten een gereedschap niet als heilig verklaren en het verhaal of betekenis uit het oog verliezen. We geloven informatie niet meer tenzij we erbij waren. 
 			</p>
-        </article>
+
+			<nav class="nextprev cf" role="navigation">
+				<div class="right-side side-nav" style="background-color: #ffffcc;">
+					<progress value="0"></progress>
+					<a class="arrow" href="http://averyreview.com"><img src="../../assets/images/arrow.svg"></a>
+				</div>
+			</nav>
+
+	        </article>
+			<div class="article-summary">
+				<div class="reading">You are now reading &#8220;Full Disclosure: Speaking Personally at the New York City AIDS Memorial&#8221; by Jacob Moore</div> 
+				<div class="article-share">Share on: <a href="https://twitter.com/intent/tweet?text=&#8220;Full Disclosure: Speaking Personally at the New York City AIDS Memorial&#8221;%20by%20Jacob Moore%20via%20@AveryReview&url=http://averyreview.com/issues/12/full-disclosure" target="_blank">Twitter</a> &nbsp;&nbsp; 
+				<a href="https://www.facebook.com/sharer/sharer.php?u=http://averyreview.com/issues/12/full-disclosure">Facebook</a>
+				</div>
+			</div>
+		</div>
 
 	<script type='text/javascript'>
-	//<![CDATA[
-		$(document).ready(function() {
-			$('p:not([class!=""])').each(function() {
-			var that = $(this);
-			var text = that.html();
+	$(function() {
+			FastClick.attach(document.body);
+	});
 
-			that.html(text.autoLink());
+	$(window).load(function(){
+		$('#load').hide();
+		$('.article-wrapper').addClass('wrapper-loaded');
+		$('.index-wrapper').addClass('index-wrappper-loaded');
+			$('.toggle').click(function(){
+			$('.menu').toggleClass('menu-loaded');
+			$('.toggle').toggleClass('toggle-loaded');
+	});
+
+	$('.footnote-ref').mouseenter(function(){
+		var $footnoteNumber = $(this).html();
+		var $footnote = $('#fn\\:'+ $footnoteNumber).html();
+		
+		if ($footnote.length > 800) {
+			$footnote = $footnote.substring(0,800);
+			$footnote = $footnote.substr(0, Math.min($footnote.length, $footnote.lastIndexOf(" "))) + ' <a href="#fn:' + $footnoteNumber + '">[...]</a>'; 
+		}
+
+		$('.article-footnote-side').html('<div class="footnote-number">'+ $footnoteNumber + '</div>' + $footnote).fadeIn('slow');
+		$('.article-footnote-side').css('opacity', 1);
 		});
-		var callback = $('p.callback');
-		$(callback).html(
-			callback.html().autoLink({ callback: function(url){
-				return /\.(gif|png|jpe?g)$/i.test(url) ? '<img src="' + url + '">' : null;
-			}})
-		);
-        
-		var new_window = $('p.new_window');
-        
-		$(new_window).html(
-			new_window.html().autoLink({ target: "_blank" })
-		);
-		});
-	//]]>
+
+		$(document.links).filter(function() {
+			return this.hostname != window.location.hostname;
+		}).attr('target', '_blank');
+	});
+
+	var didScroll;
+	$(window).scroll(function(){
+		$('.article-footnote-side').css('opacity', 0);
+		didScroll = true;
+		var scroll = $(window).scrollTop();
+
+		if (scroll > 100) {
+			$(".article-summary").addClass("article-loaded");
+		}
+		if (scroll < 100) {
+			$(".article-summary").removeClass("article-loaded");
+		}
+	});
+
+	$(document).on('ready', function() {  
+		var winHeight = $(window).height(), 
+			docHeight = $(document).height(),
+			progressBar = $('progress'),
+			max, value;
+
+	  /* Set the max scrollable area */
+		max = docHeight - winHeight;
+		progressBar.attr('max', max);
+
+	$(document).on('scroll', function(){
+		value = $(window).scrollTop();
+		progressBar.attr('value', value);
+	});
+	});
 	</script>
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script> <!-- 
         With the script tags you put scripts and load in external scripts.
