@@ -8,7 +8,7 @@
 
         var $element = this,
             settings = $.extend({
-                "backgroundColor": "#fff"
+                "backgroundColor": "#000"
             }, options);
         
         $element.css("backgroundColor", settings.backgroundColor);
