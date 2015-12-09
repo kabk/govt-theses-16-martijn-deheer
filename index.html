@@ -2,329 +2,92 @@
 <html lang="en"><!-- Putting the language code here will help for example text to speech (and in the future, hypehenation)-->
 
     <head>
-        <!-- The classical Cartesian distinction, head and body!
-            In the head comes all the metadata the page needs to function-->
+        <title>book/hypertext/protocol</title>
 
-        <title>book/hypertext/protocol</title> <!-- This is the title shown in the window bar, tab, bookmark. It is the title used for Facebook by default, but that can be overridden  -->
-
-        <meta charset="utf-8"/> <!-- You need this so the browser can understand ‘typographic quotes’ and accented characters éëê etc.-->
-
-        <meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- Stops mobile browsers from ‘zooming out’: this allows you to create specific layout for mobile -->
-
-        <!-- A short description of the page: -->
-        <meta name="description" content="This is where you can put a short description of the page. Google will sometimes display this, and Facebook/Twitter use it to display in the link preview.">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Thesis from fourth-year graphic design student at the Royal Academy of Art, The Hague. It's about books, internet, hypertext, protocols, fluid and open design and the relevancy of the network and the tree structures.">
                 
-        <!-- This is the title used by Facebook/Twitter: they recommend to leave out the site name -->
-        <meta property="og:title" content="Example Thesis Document" />
-        <!-- This is the the preview image used by Facebook/Twitter.
-             Facebook currently prefers a 1200x630 image
-             Import: this has to be an absolute url including the domain name -->
+        <meta property="og:title" content="book/hypertext/protocol" />
         <meta property="og:image" content="http://kabk.github.io/govt4-coding/preview_image.png" />
-        
 
-        <!-- This metadata encodes the author of the page. It is currently not used by Facebook, Twitter,
-             but the script generating our index does use it. -->
-        <meta property="dc:creator" content="Schrijver, Eric"/>
-
-        <!-- When you first published the page, and when it was last modified -->
+        <meta property="dc:creator" content="de Heer, Martijn"/>
         <meta property="dc:created" content="2015-12-05T00:00:00Z" />
         <meta property="dc:modified" content="2015-12-05T00:00:00Z" />
         
         <!-- Link stylesheets!-->
-        <link rel="stylesheet" type="text/css" href="css/normalize.css" /> <!-- This normalize.css file takes care of some inconsistencies between browsers -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" /> 
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-		<link rel="stylesheet" href="app.min.css" />  <script src="app.min.js"></script>
-
-        <!-- Here I put the rest of my styles-->
-        <!-- The JavaScript files we don’t link here but at the end of the file -->
-
     </head>
-    <body id="example">
-        <header> <!-- In HTML5 there are the elements header, nav, article and aside that are just like divs (blocks)… 
-                      The only difference is that through their name, they indicate their function,
-                      so it helps in structuring the code -->
-                 <!-- Note: the <head> tag is invisible metadata, the <header> tag is visible on the page!-->
-            <h1>book/hypertext/protocol</h1> <!-- HTML allows for six levels of headings.
-                                                                 The convention is to use h1 for the site name, h2 for the article namee 
-                                                                 h3 for the section name, h4 for the subsection name etc.
-                                                                 Search engines rely on these headers -->
-        </header>
-	<body>
-		 <div class="article-wrapper"> 
-			<div class=''
-			<h2>Voorwoord</h2>
-			<p class='text'>
-				Ik weet dat het slecht is om een zin te beginnen met 'ik' Google http://google.com maar ondanks dat deze tekst, mijn scriptie, over veel verschillende onderwerpen zich zal uitspreken gaat het vooral over mij. Mijn kijk op ontwerpen en de wereld heeft een enorme wending gemaakt de afgelopen jaren. Die kijk, is enorm gefascineerd door technologie, wetenschap en hoe die twee zich verhouden tot de maatschappij. Desalniettemin heb ik een passie voor boeken, een technologie en medium dat zijn geboorte zag aan de andere kant van de tijdlijn vergeleken bij wat wij in het algemeen onder technologische ontwikkelingen en huidige wetenschap verstaan. 
-			</p>
-			<div id="textFileID"></div>
-			<p>
-				Het boek heeft mijn aandacht door verscheidende kwaliteiten van het medium. Historisch gezien is sinds het begin van het Christendom tijdperk het boek een van de meest krachtige metaforen voor het concipiëren van de kosmos, natuur, geschiedenis en het menselijk lichaam  a . Een monoliet vol met kennis over de wereld, een portaal waar je door de wereld verkent. Samen met de druktechniek heeft het boek wereldwijd kennis gebracht en mensen laten lezen en onderwezen. Lange tijd is het produceren van een boek een ambacht geweest, die maar voor enkelen was weg gelegd. Codecis werden met de hand gekalligrafeerd en gedecoreerd met miniaturen en illustraties. Theorieën over bladspiegels en vlakverdelingen, uitlijningen, typografie, het boek faciliteerde ontwerpen voordat deze ontwerpen werden genoemd. Door deze geschiedenis maar nog meer door zijn autoriteit, structuur, vorm en (strikte) regels is voor mij het boek dé essentie van grafisch ontwerpen. Informatie ordenen, schikken en structureren.  
-			</p>
-			<p>
-				Al meer dan 200 jaar  b  lang wordt de discussie gevoerd over de relevantie van het boek en zijn naderende einde. Ondanks de enthousiasten van het boek merken we dat de vraag naar boeken achteruit is gegaan. Ook ik ben zo goed als overgestapt naar digitaal lezen, zonder dat mijn passie voor boeken minder is geworden. En zonder enig gevoel van schuld ben ik zeer pro-digitaal en dus ook pro-digitaal lezen. Digitaal lezen is momenteel, vergeleken met een boek, voornamelijk pragmatisch. De capaciteit van het internet en mijn computer om miljoenen bladwijzers —vergeef mijn skeumorfisme— te onthouden, de bijna gewichteloosheid van mijn digitale boekenkast —nogmaals mijn excuus— en het overzicht van al mijn notities en markeringen. Met overal hyperlinks die me verwijzen naar het volgende. De compact-en-snelheid van de computer maakt het tot mijn nummer één keuze voor bijna mijn hele leeslijst —enkele romans lees ik nog geprint. 
-			</p>
-			<p>
-				Ondanks de verschuiving die plaats vind in hoe, wat en op welk medium we gezamenlijk lezen ontstaan er verschillende hybride modellen die beide werelden, het medium en de technologie boek en het medium en de technologie internet, probeert te verenigen. “Best of both worlds” zouden de verkopers zeggen. En dat is fantastisch. Het is fantastisch omdat die, in mijn ogen, tussenoplossingen veel zeggen over de huidige staat van onze maatschappij en hoe deze leest, of in een ruimer kader, informatie tot zich neemt. Het zijn tussenoplossingen waarvan wij misschien over 5 of 10 jaar, wanneer de verschuiving zich heeft voltooid, niets meer van zien of weten. Print-On-Demand (POD), Print-To-Web (PTW), Self-Publishing, scraping, grabbing, compiling, searching, publishing. Al deze hiervoor genoemde termen wijzen naar de daad van het omzetten van digitale, elektronische data naar tasbaar geprinte materie. 
-			</p>
-			<p>
-				De tussenoplossingen geven signalen af naar ontwerpers. Signalen over welke koers ze kunnen varen en naar lezers en hoe zij zichzelf kunnen sturen om zo, beide en hopelijk samen, tot nieuwe en betere inzichten te komen. Net als in het boek gaat het om theorieën over vlakverdelingen, uitlijningen, typografie, informatie ordenen, schikken en structureren, ofwel de essentie van grafisch ontwerpen. Want waarom zou je, in godsnaam, het internet (terug) in een boek stoppen? 
-			</p>
 
-			<h2>Inleiding</h2>
-			<p>
-				De snelheid, de directheid, de veranderlijkheid, de grootsheid en de “gewichtloosheid” van het internet is ongeëvenaard. Dankzij het internet werkt de wereld voor een deel sneller en in sommige gevallen effectiever. Massaal zijn we de hele dag online, bezig met het bijhouden van de wereld. Zoals het boek een metafoor is voor de geschiedenis of de wereld  a , zo is het internet een metafoor voor de cosmos en ons brein. Niet alleen is het zelf een metafoor maar hebben wij ook metaforen voor het internet om uit te drukken hoe wij het begrijpen. Een zee waar wij op surfen, eindeloze kabels waar wij ons on-line op bevinden, een netwerk van netwerken, ofwel, internet-work. De impact van het internet is groot en in Nederland overal te zien. Nog steeds zijn we bezig met het onderzoeken en ondervinden. Wat is dit medium precies? Wat houdt dit netwerk in? Wat doet het met ons? Maar belangrijker: wat willen wij er mee doen? 
-			</p>
-			<p>
-				Sinds de commerciële lancering van het internet  c  bemoeidt het internet zich met het intelectuele, vermaak en media domein. Het is dan ook niet onlogisch dat de discussie over de relevantie van het boek  b  nog heftiger werd met de vraag ‘of het internet het boek zal laten doen verdwijnen’. Het internet maakt het boek langzaam en lomp. Zoals gezegdt wordt “Print is already outdated when it is printed”. Om nog maar te zwijgen over de deel-en-link-baarheid die het boek niet, of in zeer geringe mate, beschikt. Deze discussie zelf wil ik in deze tekst niet verder bespreken en de uitkomst laat ik ook over aan anderen. Wel wil bespreken dat het boek aanzienlijk minder word gekocht en gelezen. Zo lijken de meeste van ons, waaronder mijzelf, te gaan voor gemak en snelheid. Misschien gebeurdt het minder snel dan bij de Compact-Disc het geval was maar het is hetzelfde proces dat we zien bij het boek. Het proces waarbij uniforme media het verliest van flexibele media. Statisch versus vloeibaar, magnetisch tegenover digitaal. Minder vraag, minder geld, minder boeken. Zelfs —of misschien juist— iemand als mijzelf, een boekliefhebber, lees meer op het internet dan in boeken. Honderden bladwijzers met ooit gevonden schatten om ooit te lezen. Interessante pagina’s die elke dag nieuwe inhoud hebben, de pagina zo als je hem gevonden hebt vind je nooit meer. Opgeslagen afbeeldingen van inspirerende projecten —vaak zonder maker. En de mogelijkheid om terug te halen wat ik ooit ben tegen gekomen.
-			</p>
-			<p>
-				Zo ben ik inmiddels een internet en digitaal-lees enthousiast geworden. Boeken zijn nog steeds wonderbaarlijke objecten maar het gemak en de snelheid van het digitaal-lezen op, of verbonden zijn met, het internet is voor mij ongeëvenaard. Vandaar mijn fascinatie over het boek ‘A Wikipedia Reader’ van David Horvitz  d . De publicatie bevat drieëntwintig hoofdstukken die zijn samengesteld van verschillende wikipedia-artikelen. 
-			</p>
-			<p>
-				Mijn hypothese over de vraag wat het belang is om het internet te gebruiken als primair gereedschap om boeken te produceren is dat het ons een gevoel van grip geeft. Het internet voelt eindeloos en onuitputtelijk, een boek is compact en “af” wanneer deze word gekocht. Het boek fungeert als een archief van archieven, een accumulatie van accumulaties. Daarnaast is een boek gecureerd, ontworpen en meer trajecten door gegaan voordat deze werd uitgeprint. Zo komt, onder andere, het boek aan haar hoge autoritaire kracht. Het internet is een hypermedia netwerk waar (bijna) iedereen het voor het zeggen heeft. Deze twee uitersten werken op elkaar in zodat alles wat van het internet in boekvorm word gepubliceerd een zekere exclusiviteit en status krijgt. Een selfie op Instagram is niet hetzelfde als dezelfde selfie in een boek. Exclusiviteit op het internet is een mythe en dus is het al kunst om internet content exclusief te maken. Alles bij elkaar lijkt te bevestigen dat wij nog steeds denken in Het Boek en dat als archief voor het internet willen gebruiken. De boeken zijn een afdruk van een specifieke tijd en tijdsgeest waarin bepaalde applicaties worden gebruikt die hoogst waarschijnlijk volgend jaar oud zijn.
-			</p>
+    <body>
 
-			<h2>A Wikipedia Reader</h2>
-			<p>
-				‘A Wikipedia Reader’  d  bevat drieëntwintig hoofdstukken. Alle 23 hoofdstukken staan, qua onderwerp, los van elkaar met als verbindend element de oorsprong van de inhoud, de website Wikipedia  e . Deze hoofdstukken zijn samengesteld door drieëntwintig verschillende kunstenaars. Wanneer je de publicatie leest is het is alsof je door het hoofd van de kunstenaar heen wandelt. Je volgt een gedachte die van associatie naar associatie springt waarvan het verband vaak ver te zoeken is. David Horvitz schrijft in de publicatie het volgende over dit werk: 
-			</p>
-			<p>
-				What follows is the documentation of 23 travels within Wikipedia (navigating from article to article via a connecting hyper-link, producing a string of connecting articles). The string of articles produced by each travel can be understood as a kind of mental-map: a wandering in thought, or a deeper continuous investigation. ~ To an extent, digital systems make hierarchical categorizing and analog ordering irrelevant (see introduction to A Wikipedia Reader, 2008). 
-			</p>
-			<p>
-				De publicatie gebruikt de werkende functies van Wikipedia —hetzelfde als bij het World Wide Web— als een pad van denken die de drieëntwintig kunstenaars hebben afgelegdt. Hiermee illustreren ze hun denkwijze en associaties. Een manier om hun persoonlijkheid laten zien. Een schets van hun karakter en brein. Het verhaal van de verbindingen, wat niet beschreven staat of gearticuleerd word, is het verhaal van de persoon en de belangrijkste kwaliteit van deze publicatie. Een impliciet verhaal. Of, zoals Ellen Lupton schreef in haar opstel ‘Birth of the User’  f : “How texts are used becomes more important than what they mean”. 
-			</p>
-			<p>
-				‘A Wikipedia Reader’  d  functioneert als een canvas dat de samengestelde artikelen van de kunstenaars faciliteert maar daarmee een ander verhaal wilt vertellen. Dit doet het door de onlogische kwaliteit van een hoofdstuk bij elkaar. Wanneer je dit leest zoek je naar verbindingen, naar wat deze tekst probeert te vertellen. Maar die kwaliteit werkt samen met de structuur en opmaak van de pagina’s. Zoals de naam van de kunstenaar die op elke pagina is vermeld, de niet leesvriendelijke kolommen waarin de artikelen zijn geplaatst —wat suggereert dat lezen niet het belangrijkste is— en de onderwerpen die prominent bovenaan de pagina’s zijn geplaatst. Zo staat bij Paul Branca: Health Care, Illness, Pain, Nausea, Peppermint, Rhizome, Asparagus  d: pagina 3 . En eigenlijk is die opsomming van onderwerpen genoeg om de werkelijke boodschap te vertellen maar de mogelijkheid om die artikelen direct te lezen geeft je het gevoel van verbondenheid met de kunstenaar.  Die hele structuur werkt in op hoe wij een pagina tot ons nemen en David Horvitz gebruikt die gewoonte van ons om het juiste verhaal te vertellen —niet die van de artikelen zelf. Het lettertype dat is gebruikt voor de tekst is dun en monospaced —een typemachine esthetiek— die de tekst een zekere autoriteit geeft. Daar tegenover word een schreefloos lettertype gebruikt wat een zwaarder gewicht heeft dan het monospaced lettertype. De zwaardere word gebruikt voor koppen, quotes en woordenboek definities die zich bevinden in het artikel. Die laatste maakt verschil aan tussen verschillende soorten informatie maar met zo min mogelijk contrast op de pagina. Naast dat de opmaakt het juiste verhaal verteld is er nog een reden die deze opmaak bestaansrecht geeft. En dat is de hoeveelheid verschillende informatie per hoofdstuk. Er is een simpele structuur opgezet waar elk hoofdstuk in geplakt kan worden. Letterlijk, erin geplakt. Dit kopieëren van brokken informatie heeft invloed op hoe er om gegaan moet worden met ontwerpen. Een minimalistisch lay-out systeem dat automatiseerd.
-			</p>
-			<p>
-				Ik merk dat ik auteur wil schrijven wanneer ik de kunstenaar die het hoofdstuk heeft samengesteldt bedoel. Toch is het wat dubieus om de kunstenaars auteurs te noemen aangezien de artikelen zijn gekopieërd en geplakt. Dit toont een ander eigenschap van het internet, waarin het gemakkelijk is en zelfs soms verwacht word te kopieëren, hergebruiken en heruitgeven van informatie. In deze publicatie is dat niet dramatisch aangezien het duidelijk word vermeld en het om het impliciete gaat en niet die artikelen. In de publicatie word het associatieve karakter van het internet, of in dit geval van Wikipedia, uitgelicht en in een context gezet, die context is de kunstenaar. 
-			</p>
-			<p>
-				‘A Wikipedia Reader’  d  is een archief van een netwerk van netwerken. Hiermee doel op de vastgelegde artikelen in printvorm. Die vastliggende kwaliteit van print is er niet op het internet en daarmee dus een archief. Het internet, soms —in mijn ogen onterecht— beschreven als een archief van archieven, is het netwerk van netwerken. De reden dat het internet in mijn ogen geen archief is om dat het niet  statisch, definitief of historisch is. Een netwerk is continu in verandering en zo ook met het internet. Er bestaan enkel fasen van voorkomen. 
-			</p>
-			<p>
-				‘Library of the Printed Web’  g  brengt de gehele Web-to-Print beweging in kaart die, net als ‘A Wikipedia Reader’  d , het internet als primair (schrijf)gereedschap gebruikt om boeken te produceren. Boek produceren slaat niet enkel op het fysiek maken van het boek maar, juist, het maken van de inhoud met als duidelijke bestemming het uit te brengen in boekvorm. Het is een bewuste bestemming, een van de gevolgen van het internet. Voordat onze schermen daadwerkelijk lijnen goed konden weergeven en miljoenen pixels bevatte was het geen statement om informatie te printen. De futurisme beweging, bijvoorbeeld, waren niet radicaal omdat ze printen maar om wat en hoe ze printen. Bij ‘Library of the Printed Web’  g  is de actie om te printen al een statement. Dit komt doordat printen —en bij uitstek het boek— een andere status heeft verkregen. Het internet word gebruikt voor de interactie. En met interactie bedoel ik het krijgen van een direct respons. Bij een boek moet de inhoud klaar gemaakt worden om te printen, in een vorm gegoten worden en nadat het geprint is staat het vast. Je kunt er niet zonder het opnieuw uit te printen iets in dezelfde vorm iets aan toevoegen. Met het boek ontstond het publiek —de aanschouwer—, met het internet ontstond er het netwerk —de participant  i . Met het internet hebben wij dus meer interactiviteit en mogelijkheid om ons eigen stem te uitten dan met bij een boek, we delen onze meningen en vondsten wetende dat iedereen het kan vinden. Onze fifteen minutes of fame. Wanneer het internet gebruikt wordt om een boek te produceren halen we de participant weg en blijft er enkel een selectief publiek over. Het publiek dat dit boek vind en er daarna enkel naar kan kijken. 
-			</p>
-			<p>
-				Dit wil zeggen dat een boek een compleet andere rol te vervullen heeft dan het internet maar ook dat het internet meer is dan enkel een applicatie die ons met elkaar doet communiceren of informatie opslaan. De veranderlijkheid van het internet dat als maar groter en complexer word maakt ons deels verdoofd voor reflectie. Wij zijn nooit meer alleen als er altijd een verbinding is, dat zou onmogelijk zijn. 
-			</p>
+    	<div id="progress-bar"> </div>
+		<div class="article-wrapper">
+			<header> 
+				<h1>book/hypertext/protocol</h1> 
+			</header>
+			
+			<article>
+				<h2>Voorwoord</h2>
+				<p class='text'>
+					<span>Ik<sup><a href="wwww.google.com">25</a></sup> weet dat het slecht is om een zin te beginnen met 'ik' maar ondanks dat deze tekst, mijn scriptie, over veel verschillende onderwerpen zich zal uitspreken gaat het vooral over mij.</span> Mijn kijk op ontwerpen en de wereld heeft een enorme wending gemaakt de afgelopen jaren. Die kijk, is enorm gefascineerd door technologie, wetenschap en hoe die twee zich verhouden tot de maatschappij. Desalniettemin heb ik een passie voor boeken, een technologie en medium dat zijn geboorte zag aan de andere kant van de tijdlijn vergeleken bij wat wij in het algemeen onder technologische ontwikkelingen en huidige wetenschap verstaan. 
+				<br>
+					<span>Het boek heeft mijn aandacht door verscheidende kwaliteiten van het medium.</span> Historisch gezien is sinds het begin van het Christendom tijdperk het boek een van de meest krachtige metaforen voor het concipiëren van de kosmos, natuur, geschiedenis en het menselijk lichaam <sup>a</sup>. Een monoliet vol met kennis over de wereld, een portaal waar je door de wereld verkent. Samen met de druktechniek heeft het boek wereldwijd kennis gebracht en mensen laten lezen en onderwezen. Lange tijd is het produceren van een boek een ambacht geweest, die maar voor enkelen was weg gelegd. Codecis werden met de hand gekalligrafeerd en gedecoreerd met miniaturen en illustraties. Theorieën over bladspiegels en vlakverdelingen, uitlijningen, typografie, het boek faciliteerde ontwerpen voordat deze ontwerpen werden genoemd. Door deze geschiedenis maar nog meer door zijn autoriteit, structuur, vorm en (strikte) regels is voor mij het boek dé essentie van grafisch ontwerpen. Informatie ordenen, schikken en structureren.  
+				<br>
+					<span>Al meer dan 200 jaar  b  lang wordt de discussie gevoerd over de relevantie van het boek en zijn naderende einde.</span> Ondanks de enthousiasten van het boek merken we dat de vraag naar boeken achteruit is gegaan. Ook ik ben zo goed als overgestapt naar digitaal lezen, zonder dat mijn passie voor boeken minder is geworden. En zonder enig gevoel van schuld ben ik zeer pro-digitaal en dus ook pro-digitaal lezen. Digitaal lezen is momenteel, vergeleken met een boek, voornamelijk pragmatisch. De capaciteit van het internet en mijn computer om miljoenen bladwijzers —vergeef mijn skeumorfisme— te onthouden, de bijna gewichteloosheid van mijn digitale boekenkast —nogmaals mijn excuus— en het overzicht van al mijn notities en markeringen. Met overal hyperlinks die me verwijzen naar het volgende. De compact-en-snelheid van de computer maakt het tot mijn nummer één keuze voor bijna mijn hele leeslijst —enkele romans lees ik nog geprint. 
+				<br>
+					<span>Ondanks de verschuiving die plaats vind in hoe, wat en op welk medium we gezamenlijk lezen ontstaan er verschillende hybride modellen die beide werelden, het medium en de technologie boek en het medium en de technologie internet, probeert te verenigen.</span> “Best of both worlds” zouden de verkopers zeggen. En dat is fantastisch. Het is fantastisch omdat die, in mijn ogen, tussenoplossingen veel zeggen over de huidige staat van onze maatschappij en hoe deze leest, of in een ruimer kader, informatie tot zich neemt. Het zijn tussenoplossingen waarvan wij misschien over 5 of 10 jaar, wanneer de verschuiving zich heeft voltooid, niets meer van zien of weten. Print-On-Demand (POD), Print-To-Web (PTW), Self-Publishing, scraping, grabbing, compiling, searching, publishing. Al deze hiervoor genoemde termen wijzen naar de daad van het omzetten van digitale, elektronische data naar tasbaar geprinte materie. 
+				<br>
+					<span>De tussenoplossingen geven signalen af naar ontwerpers.</span> Signalen over welke koers ze kunnen varen en naar lezers en hoe zij zichzelf kunnen sturen om zo, beide en hopelijk samen, tot nieuwe en betere inzichten te komen. Net als in het boek gaat het om theorieën over vlakverdelingen, uitlijningen, typografie, informatie ordenen, schikken en structureren, ofwel de essentie van grafisch ontwerpen. Want waarom zou je, in godsnaam, het internet (terug) in een boek stoppen? 
+				<br>
 
-			<h2>Library of the Printed Web</h2>
-			<p>
-				Paul Soulellis beschrijft op zijn website in het artikel ‘Search, Compile, Publish’  j  waar zijn project ‘Library of the Printed Web’  g  over gaat en wat deze beweging Web-to-Print precies inhoudt. Deze beweging, die wordt gearchiveerd en gecategoriseerd door ‘Library of the Printed Web’  g , bestaat uit kunstenaars die gevonden data en/of informatie op het web gebruiken voor wat resulteert in een tactiel, analoog product in geprinte vorm. Binnen die werken zijn er vele vertalingen gaande: vertaling van digitaal naar analoog, van massa naar individu en van pixel naar millimeter. Nu zien we vertalingen bij elk gereedschap wat we proberen te gebruiken. Bij een balpen is het van gedachte naar inkt of van vloeibaar naar gedroogd. Bij het opschrijven van een speech is het van oraal naar tekst. Zo bestaat er altijd een vertaling, die vertalingen zelf zijn niet specifiek voor deze werken. Wel is het specifiek voor deze producten dat de vertaling rhizome naar boom word gemaakt  k . Het internet is een netwerk, in dit geval de rhizome. Er is geen begin en geen eind, de onderdelen kun je los van elkaar bestuderen maar staan in geen enkel geval opzichzelf. De boom heeft een begin en een eind, hij kan velemalen vertakken maar heeft altijd een einde. Het boek is dus de boom, met fysieke grenzen. Het effect dat het oplevert om een deel van een netwerk in een begrenst millieu te plaatsen is de toegespitste aandacht op het onderwerp zelf binnen het millieu aangezien het gehele millieu is opgezet voor dat ene specifieke onderwerp. Het internet gebruiken als primair gereedschap om boeken te produceren is dus een manier om delen van ons netwerk onder de loep te nemen. Want ondanks dat wij nog lang niet ons eigen fysieke wereld begrijpen, of ons eigen lichamen, het internet brengt steeds complexere lagen met zich mee die steeds verder in ons leven effect hebben. Een manier om die processen te laten zien, te bestuderen en te bekritiseren is via het afschermen van de rhizome en een deel zijn eigen millieu te laten zien.
-			</p>
-			<p>
-				Met het internet als gereedschap staan mens en machine op gelijke schaal als auteurs. Dit proces begon al bij de industriële revolutie eind 19e eeuw. Echter was het zichtbaar waar de mens ophield en de machine begon en vica versa. Het internet is ten eerste dus een netwerk en daarbij komen nog tientallen lagen van verschillende processen die elk eigen protocollen hebben. Dit zien we duidelijk terug in de structuur van de inhoud bij ‘A Wikipedia Reader’  d  en de andere werken van ‘Library of the Printed Web’  g . De deterritorialisatie van ontwerp en schrijven.
-			</p>
-			<p> 
-				De lagen van het internet is niet afwezig bij LotPW, integendeel, het zit alleen dit keer niet in de inhoud maar in het gehele object en hoe deze geproduceerd word. Een veelheid van verschillende lagen komen bij elkaar die überhaupt de werken zoals ’A Wikipedia Reader’  d  mogelijk maken. De werkwijze van ‘Library of the Printed Web’  g  vind zijn wortels in de punk scene van eind jaren zestig waarin continu gebruik gemaakt werd van bestaand materiaal en het zelf publiceren van werken —zowel print als muziek. Deze Do It Yourself mentaliteit is niet vreemd voor het internet en voornamelijk voor Y2K en Web 2.0 was het internet bij uitstek een plek waar mensen van alles zelf publiceren. Ik wil niet zeggen dat het niet meer gebeurd, maar, wel is het internet voornamelijk nu een plek met gepolijste diensten die alleen plek hebben voor gebruikers, passief dus. Directe verbindingen met de punk scene, fluxus en de (fan)zines zien we sterk terug komen in applicaties zoals:
-				<ul>
-					<li>‘html2print’  l  van de studio Open Source Publishing, deze applicatie is speciaal gemaakt om html —(hyper)tekstdocument— om te zetten in een direct printbaar document;</li><li>
-					‘Printing on Demand’  m  een geheel systeem dat gebruik maakt van het internet —en digitale opslag— om micro publicatie mogelijk te maken en dus alleen een boek print zodra iemand er voor betaalt;</li><li>
-					Web-to-Print enzovoorts.</li>
-				</ul>
-			</p>
-			<p>
-				Als we naar deze applicaties kijken en hoe deze het internet gebruiken samen met ‘A Wikipedia Reader’  d  lijkt het me duidelijk dat het belang hier de kwantiteit aan informatie en snelheid van verwerken heeft. In alle gevallen blijft het selectie proces en het concept een stap voor de mens. Het netwerk wordt gebruikt voor zijn omvang, gelaagdheid en bijproducten. Die bijproducten schijnen licht op de onderliggende systemen van onze huidige maatschappij.
-			</p>
-			<p>
-				De verschillende manieren dat internet word gebruikt in deze boeken is verschillend met welk doel of resultaat de kunstenaar wilt bereiken. Zo zijn er globaal de volgende categorieën te zien in ‘Library of the Printed Web’  g : Grabbing, scraping, hunting en performing. Om dit kort toe te lichten: Grabbing is het uitvoeren van een zoekopdracht en de resultaten in een georganiseerde manier presenteren. Grabbing word gedaan volgens een concept maar het meest van belang is het gebruiken van tekst of beelden die van iemand anders zijn. Vaak is de inhoud gehaald uit een enorme database die enkel genavigeerd kan worden via een zoekmachine (Sad, Depressed, People - David Horvitz, 2012, Vancouver: New Documents). Scraping is bijna hetzelfde als grabbing alleen is scraping vaak geautomatiseerd en gaat het om enorme grote hoeveelheden data die word verwerkt, zoals bijvoorbeeld alle tweets van een jaar met het woord McNugget erin (McNugget - Chris Alexander, 2013, PoD, Troll Thread). Hunting word gekenmerkt door de zoektocht zelf. Het vinden van de uitzondering op het internet. Die uitzondering functioneert vervolgens als bewijs om een idee te ondersteunen (The Nine Eyes, of Google Street View - Jon Rafman, 2011, Jean Boîte Éditions). Bij performing gaat het, zoals de naam al doet vermoeden, om de actie van het doen. Het laatst genoemde project van Rafman zou in sommige opzichten daarom wel onder performing kunnen vallen maar het project draait om meer dan enkel de actie van het ploegen door Google Street View. Niet alleen gaat het om de actie van het omgaan met data maar ook om de relatie tussen het web en het uiteindelijk geprinte werk. Het boek wat centraal staat in mijn scriptie, A Wikipedia Reader behoort hier. Het gaat om de actie, de performance, van het navigeren op internet en die navigatie uiteindelijk als verhaal vorm gebruiken. Een ander voorbeeld hiervan is American Psycho van Jason Huff en Mimi Cabell, 2010, PoD. In het laatst genoemde boek gebruiken de kunstenaars Gmail om de gehele roman heen en weer te e-mailen, zin voor zin, en daarna de contextgebonden advertenties die verschijnen in de e-mails gebruiken om de roman te reconstrueren. Niet alleen qua inhoud is deze gereconstrueerd maar ook qua boekvorm wat een essentiële laag toevoegt aan de ervaring die hierdoor voelt als die van een klassieke roman. 
-			</p>
-			<p>
-				Deze vervreemding zorgt voor grotere aandacht voor de inhoud, grotere bewustzijn van de grootsheid van de inhoud — ofwel in omvang of unieke eigenschappen. 
-			</p>
-			<p>
-				Het boek is een 500 jaar oud vertrouwd medium waarin mensen hun toevlucht vonden wanneer ze wijsheid{4} zochten of juist omgeven wilde worden met onzinnigheid{5} — even daar gelaten wat wijsheid{5} of onzinnigheid{4} is. Het is de vertrouwdheid met de solide vormen die de monoliet heeft, de simpele en zo krachtige navigatie van het omslaan van de bladzijde. Zonder na te denken bladeren wij door de pagina’s. Zoeken naar paginanummers is een oefening die —nog— niet als kunst of sport zal worden beoefend. Net als de andere systemen in het boek, is paginanummering een traditie, een strict systeem en navigatie. Dit soort systemen zijn niet allemaal bedacht bij het maken van het eerste boek maar zijn de uitkomst van het eeuwen lange gebruik en uitgeven. Hierdoor snappen wij binnen een seconde — je zou kunnen zeggen a priori — dat de begrippen die boven de kolommen van A Wikipedia Reader uitsteken de thema’s zijn die in de kolom waar het boven staat voor het eerst benoemd zal worden. Niks in ons westerse brein denkt eraan een bladzijde van rechts naar links te slaan of de tekst van rechts onder naar links boven te lezen. In omgekeerde volgorde kan dat gezegd worden over mensen die op het oostelijke halfrond wonen van deze planeet — over de leesgewoonte van andere planeten kan ik niks zinnigs zeggen. 
-			</p>
-			<p>
-				‘Library of the Printed Web’  g  gebruikt de culturele status van het boek — een van autoriteit, rijke geschiedenis, ambachtelijk object van kennis — en de relatie tussen ons en het boek — een eeuwen oude relatie die ons het boek niet meer tot technologie doet rekenen — om inhoud te presenteren dat uit een medium komt die aan de andere kant staat van de schaal. Dat medium is het internet, het wereld wijde web, een netwerk van aan een geschakelde computers die gezamenlijk nog meer hypersnelle berekeningen doen om nog grotere meerderheid aan informatie te produceren of te verwerken. Dit medium heeft nog maar een korte relatie met ons, eentje waarvan velen nog niet helemaal blij mee zijn. Naast de nieuwheid van het medium en de relatie met ons is het een medium die vooral gebouwd is op zijn snelheid en verbondenheid als netwerk. Dit resulteert is veel verschillende toepassingen met veel verschillende inhoud. Binnen dit netwerk ontstaan structuren, fenomenen en culturen gecentreerd om jargon en dialect l . Een essentieel onderdeel om binnen een netwerk ergens te komen is de navigatie en toegankelijkheid. En daarmee speelt ‘Library of the Printed Web’  g  juist. Zoals eerder vermeld, het impliciete verhaal voert de boventoon, wat al paradoxaal klinkt maar wat ik wel meen. Tussen de regels doorlezen, dat is wat deze boeken zo poëtisch maakt. En als het internet iets niet is, dan is het impliciet. Althans zo lezen wij het niet. De snelheid, hyper-dimentiale eindeloosheid en de verbondenheid van het web zijn eigenschappen die allemaal een prachtig verhaal tussen de posts en updates door vertellen maar, laat ik voor mijzelf spreken, ik ben te geconcentreerd op dat wat ik denk dat het is wat ik moet lezen. Maar misschien juist die onoplettendheid van mij maakt de makers van de boeken die worden opgenomen in ‘Library of the Printed Web’  g  kunstenaars. De kunstenaar als de persoon die ons een waarheid laat zien. Die een vorm heeft gevonden om ons een verhaal te laten zien dat het internet ook verteld. Het was ook niet per direct dat een boek na de uitvinding van de drukpers gebruikt werd voor cartoons. Bij het internet is het andersom, hoe krijgen we literatuur terug? De uitvinding die ontworpen is voor massa reproductie en verspreiding word paradoxaal gebruikt als monument. Het boek als definitief eind stadium. Een testament aan de snelle fenomenen van het internet. 
-			</p>
+				<h2>Inleiding</h2>
+					<span>De snelheid, de directheid, de veranderlijkheid, de grootsheid en de “gewichtloosheid” van het internet is ongeëvenaard.</span> Dankzij het internet werkt de wereld voor een deel sneller en in sommige gevallen effectiever. Massaal zijn we de hele dag online, bezig met het bijhouden van de wereld. Zoals het boek een metafoor is voor de geschiedenis of de wereld  a , zo is het internet een metafoor voor de cosmos en ons brein. Niet alleen is het zelf een metafoor maar hebben wij ook metaforen voor het internet om uit te drukken hoe wij het begrijpen. Een zee waar wij op surfen, eindeloze kabels waar wij ons on-line op bevinden, een netwerk van netwerken, ofwel, internet-work. De impact van het internet is groot en in Nederland overal te zien. Nog steeds zijn we bezig met het onderzoeken en ondervinden. Wat is dit medium precies? Wat houdt dit netwerk in? Wat doet het met ons? Maar belangrijker: wat willen wij er mee doen? 
+				<br>
+					<span>Sinds de commerciële lancering van het internet  c  bemoeidt het internet zich met het intelectuele, vermaak en media domein.</span> Het is dan ook niet onlogisch dat de discussie over de relevantie van het boek  b  nog heftiger werd met de vraag ‘of het internet het boek zal laten doen verdwijnen’. Het internet maakt het boek langzaam en lomp. Zoals gezegdt wordt “Print is already outdated when it is printed”. Om nog maar te zwijgen over de deel-en-link-baarheid die het boek niet, of in zeer geringe mate, beschikt. Deze discussie zelf wil ik in deze tekst niet verder bespreken en de uitkomst laat ik ook over aan anderen. Wel wil bespreken dat het boek aanzienlijk minder word gekocht en gelezen. Zo lijken de meeste van ons, waaronder mijzelf, te gaan voor gemak en snelheid. Misschien gebeurdt het minder snel dan bij de Compact-Disc het geval was maar het is hetzelfde proces dat we zien bij het boek. Het proces waarbij uniforme media het verliest van flexibele media. Statisch versus vloeibaar, magnetisch tegenover digitaal. Minder vraag, minder geld, minder boeken. Zelfs —of misschien juist— iemand als mijzelf, een boekliefhebber, lees meer op het internet dan in boeken. Honderden bladwijzers met ooit gevonden schatten om ooit te lezen. Interessante pagina’s die elke dag nieuwe inhoud hebben, de pagina zo als je hem gevonden hebt vind je nooit meer. Opgeslagen afbeeldingen van inspirerende projecten —vaak zonder maker. En de mogelijkheid om terug te halen wat ik ooit ben tegen gekomen.
+				<br>
+					<span>Zo ben ik inmiddels een internet en digitaal-lees enthousiast geworden.</span> Boeken zijn nog steeds wonderbaarlijke objecten maar het gemak en de snelheid van het digitaal-lezen op, of verbonden zijn met, het internet is voor mij ongeëvenaard. Vandaar mijn fascinatie over het boek ‘A Wikipedia Reader’ van David Horvitz  d . De publicatie bevat drieëntwintig hoofdstukken die zijn samengesteld van verschillende wikipedia-artikelen. 
+				<br>
+					<span>Mijn hypothese over de vraag wat het belang is om het internet te gebruiken als primair gereedschap om boeken te produceren is dat het ons een gevoel van grip geeft.</span> Het internet voelt eindeloos en onuitputtelijk, een boek is compact en “af” wanneer deze word gekocht. Het boek fungeert als een archief van archieven, een accumulatie van accumulaties. Daarnaast is een boek gecureerd, ontworpen en meer trajecten door gegaan voordat deze werd uitgeprint. Zo komt, onder andere, het boek aan haar hoge autoritaire kracht. Het internet is een hypermedia netwerk waar (bijna) iedereen het voor het zeggen heeft. Deze twee uitersten werken op elkaar in zodat alles wat van het internet in boekvorm word gepubliceerd een zekere exclusiviteit en status krijgt. Een selfie op Instagram is niet hetzelfde als dezelfde selfie in een boek. Exclusiviteit op het internet is een mythe en dus is het al kunst om internet content exclusief te maken. Alles bij elkaar lijkt te bevestigen dat wij nog steeds denken in Het Boek en dat als archief voor het internet willen gebruiken. De boeken zijn een afdruk van een specifieke tijd en tijdsgeest waarin bepaalde applicaties worden gebruikt die hoogst waarschijnlijk volgend jaar oud zijn.
+				</p>
+			</article>
+		</div>
+			<nav id="chapterNav-wrapper">
+				<div id='rowNav'>
+					<div id="chapterNav">
+					<div id="scroll-progress"><p class='pagetitle'>1<br><br>I<br>N<br>T<br>R<br>O<br>D<br>U<br>C<br>T<br>I<br>O<br>N</p>
+								</div>
 
-			<h2>Network of networks</h2>
-			<p>
-				‘Library of the Printed Web’  g  verzameld boeken die het internet gebruiken als primair gereedschap om de content en de vorm te genereren. Wat dat betekend, primair gereedschap, is dat de functionele structuur van het internet gebruikt wordt om mee te produceren. En, datgene wat er geproduceerd word, een boek, valt buiten het systeem waarmee het gemaakt is. 
-			</p>
-			<p>
-				Simpel gezegd, is het internet een de communicatie technologie die verschillende computer netwerken met elkaar verbind en gebruik maakt van verscheidene applicaties, diensten en protocollen. 
-			</p>
-			<p>
-				Dat systeem —ofwel de functionele structuur— van het internet zijn onderling verbonden hypertekst documenten.  Het World Wide Web verbind die hypertekst documenten via hyperlinks. Hyperlinks zijn referenties naar data en wanneer de lezer (of beter gezegd de gebruiker) klikt op de desbetreffende hyperlink word de lezer/gebruiker doorverwezen naar het “anker” oftewel het document of element waarnaar de hyperlink verwijst. Dit mechanisme is het fundament van het World Wide Web.  
-			</p>
-			<p>
-				Hypertekst is in de informatica een mechanisme waar het internet op is gebouwd. Door dit mechanisme, de snelheid en de veelheid maakt het internet associatief en non-lineair. Als gebruiker van het internet aanschouwen we het als één geheel. Mede daarom heeft het internet vele metaforen zoals surfen op het internet alsof het een oceaan — aan informatie — is. Hypertekst is echter niet een concept wat ontstaan is door of met het internet. Hypertekst betekend in de semiotiek een tekst dat zinspeelt, is afgeleid van, of betrekking heeft op een vroegere tekst of hypotekst. Hypertekst heeft in de semiotiek dan ook vele vormen waaronder imitatie, parodie en pastiche (een amalgaam van fragmenten uit andere werken). Een voorbeeld van “analoge” hypertekst is bijvoorbeeld het boek Ulysses van James Joyce die gebaseerd is op Homer’s Odyssey. Dit is vooral een pragmatisch voorbeeld van het concept hypertekst waarin de verbinding duidelijk gemaakt kan worden. De minder pragmatische voorbeelden is bijvoorbeeld Harry Mulisch’ boek Ontdekking van de Hemel. Hierin zijn honderden verwijzingen naar literatuur, historische gebeurtenissen en mythen die het verhaal een enorme gelaagdheid geven die typerend is voor hypertekst. Een tekst in een tekst. Het grootste verschil tussen deze vormen van hypertekst en het de hypertekst die we tegen komen op het internet in semiotiek is de fundamentele hypertekstuele waarde. Zeker bij Harry Mulisch is de hypertekstualiteit van het boek een eigenschap waar het niet zonder kan, het is gebruikt als fundament voor het verhaal. Internet, of specifieker het World Wide Web, kan niet zonder hypertekst als fundamentele navigatie maar de (meeste) teksten op het internet zijn echter alsnog meerendeel lineair in hun binnenste structuur. Een goed voorbeeld wat schetst hoe oud het concept hypertekstualiteit is, is het boek I Ching of “Yi Jing”. I Ching is een Chinees boek uit de antieke oudheid die behoort tot een van de oudste geschreven documenten. Het boek is een veelheid van teksten die de lezer door verschillende handelingen tot zich kan nemen en de lezer wijsheid en hulp kan bieden. Hier zien we dus een groter concept tot stand komen dan vaak gedacht word. Hypertekstualiteit is zowel pragmatisch het onderling verbonden zijn van teksten als een denkmodel voor teksten. In het laatste geval zou je kunnen stellen dat elke tekst een hypertekst is aangezien de lezer bij elke tekst voorkennis nodig heeft en een tekst nooit op zichzelf staat.  
-			</p>
-			<p>
-				Hypertekst in informatica is enkel de onderling verbondenheid van teksten. Naast het feit dat hypertekst in de informatica geen fundamentele hypertekstuele waarde hoeft te hebben zoals in de semiotiek geacht word is een ander zeer groot verschil, een verschil wat voor de lezer het voornaamste voordeel is van digitale hypertekst, namelijk de snelheid en veelheid dat internet biedt. Hiermee onderscheid het internet en het World Wide Web zich van de analoge hyperteksten. Ondanks dat encyclopedieën, bibliotheken en andere archieven een poging hebben gedaan (en dat waarschijnlijk nog steeds doen) is het internet — en het World Wide Web — onoverwinnelijk (tot nu toe) in het daadwerkelijk direct toegankelijk maken van onderling verbonden — maar niet opgenomen of direct weergegeven — documenten. Alle documenten op het World Wide Web kunnen worden verwezen in één document zonder maar één keer iets anders vast te pakken dan je muis. Het is draagbaar en (theoretisch) direct toegankelijk. Met boeken of andere media zou dit fysiek niet mee te nemen zijn en daarnaast ook niet betaalbaar. Het internet bedraagt (grof geschat door Google) 5 exabytes (5 miljoen terabytes) wat zou betekenen dat dit gelijk is aan (uitgaand van een gemiddelde grootte van 1mb per boek) 5.000.000.000.000 boeken. Die je (theoretisch) allemaal kan bezoeken via alles wat een internet verbinding, toetsenbord en internet browser heeft. Om niet te vergeten dat het internet elk jaar exponentieel groeit in zijn omvang. 
-			</p>
-			<p>
-				‘Library of the Printed Web’  g  gebruikt dus de omvang, populariteit en mechaniek van het internet om boeken te produceren. Zowel voor de inhoud — verzamelen, schrijven, coderen, schrapen, genereren — als voor de fysieke productie — ontwerpen, sjablonen, coderen, stylesheets, genereren, Print on Demand — word het internet gebruikt. ‘Library of the Printed Web’  g  gebruikt expliciet enkel de boeken die zijn gegenereerd met bestaande informatie. Het probeert het internet bloot te leggen.  
-			</p>
-			<p>
-				De kracht zit onder andere in de mogelijkheid om, buiten de traditionele lagen, lagen toe te voegen die de traditionele lagen manipuleren. Met traditionele lagen bedoel ik de inhoudelijke laag van het boek en de productionele (fysieke) laag van het boek. Als we naar de geschiedenis kijken van die traditionele lagen zien we een doorgaans proces van manipulatie van de lagen dus in dat opzicht gebeurt er niks nieuws. De inhoudelijke laag kent veel verschillende aanpakken en processen die gepaard zijn gegaan met net zoveel verschillende kunst- filosofie- literatuur- wetenschap- en schrijf-stromingen. En, zeer waarschijnlijk, zijn die stromingen op hun beurt weer gepaard gegaan met nog veel meer verschillende technologische ontwikkelingen. Je schrijft anders wanneer je dit doet met een balpen dan wanneer je schrijft met een typemachine. Ons gedrag past zich aan het medium dat wij willen toepassen aan. Zo is schrijven — net als lezen — een relatie zoals tegen een persoon een relatie vormt. Communicatie — en dus informatie — vormt relaties. En de relatie verandert wanneer de partner verandert, in dit geval het gereedschap. Het gereedschap voor ‘Library of the Printed Web’  g  is het internet, een netwerk van netwerken met onnoemelijk veel documenten — en dus informatie. Dat die documenten erop zijn geplaatst door mensen benoem ik niet omdat het niet meer belangrijk is dan de feit te weten dat jouw balpen gemaakt is door een machine of handwerker in China. Er bestaat mogelijk iets als een te verre afstand voor een relatie. Het grootste verschil echter met het internet is dat het de mogelijkheid heeft om nieuwe informatie te creëren en vol staat met informatie. Te veel informatie bevat om voor één persoon daadwerkelijk allemaal te lezen. Dat maakt het internet een gereedschap dat vooral word gebruikt om uit te pluizen, uit te kleden of te pellen — ja, dat zijn dus drie metaforen om duidelijk te maken dat het internet met het ‘Library of the Printed Web’  g  deels bloot word gelegd. Misschien lijkt het in bulk verwerken van informatie niet op voorzichtig blootleggen maar aangezien de grootte van het internet is een jaar aan tweets met het woord “McNugget” het gelijke aan een spermacel vergeleken met de Marina 101 toren in Dubai.  
-			</p>
-			<p>
-				Het publiek verscheen met het eerst geprinte boek{1}, met het internet werd het publiek samengebracht en met elkaar verbonden. Het publiek is niet enkel met elkaar verbonden maar is zelf nu de lezer, de auteur en de gebruiker. Iedereen op het internet kan informatie toevoegen, schrijven en iedereen kan elkanders informatie bewerken. Het artikel dat gisteren nog maar twee zinnen lang telde is nu een long-read —bij wijze van spreken. 
-			</p>
-			<p>
-				Wij denken er niet meer aan om een geprint boek met de hand over te gaan schrijven, dit zou een stap achteruit zijn. Tenzij het een dieper gelegen doel heeft. Dat het geschreven moet zijn. Maar dan is het kunst — denk ik. 
-			</p>
-			<p>
-				Het internet is snel en door zijn populariteit en aanwezigheid in de samenleving worden wij ook snel. De boeken van ‘Library of the Printed Web’  g  zetten dus ook de tijd stil, pakken een klein onderdeel eruit, cureren het als het ware, en presenteren het als een sequentie. Onze tijd onder de loep genomen maar gelijktijdig een solide archivering van een tijd die voor ons voelt als water wat door onze vingers heen gaat. Ik zeg voelt want ik verwacht dat wij de snelle ontwikkelingen zullen bijbenen en zullen leren met dit om te gaan. Net zoals wij hebben geleerd met schrijven, het alfabet, gedrukte boeken en massaproductie hebben leren om te gaan. Het is niet een kwestie óf maar een kwestie wanneer. 
-			</p>
-			<p>
-				Een nog niet genoemde eigenschap van het internet is de afwezigheid van de vierde dimensie, tijd. Door de aanwezigheid van verscheidene lagen die tegelijkertijd verscheidene processen uitvoeren is er in de rhizome geen tijd als een meetbare en zichtbare dimensie.
-			</p>
-			<p>
-				Deze dimensie word toegevoegd wanneer er een deel van het netwerk —de rhizome— word afgeschermd van de rest. Het toevoegen van tijd geeft voor ons mensen niet alleen een gevoel van werkelijkheid maar ook een gevoel van grootte, aangezien het net als ruimte een meetbare eenheid is. Dit is een eigenschap van een fysiek boek, wat een verhaal opzichzelf kan zijn en is.
-			</p>
-			<p>
-				Hier valt direct op dat Lupton praat over het gebruik van teksten en zoals haar titel al doet vermoeden stelt zij dat wij geen lezers meer zijn maar gebruikers van teksten.  
-			</p>
-
-			<h2>Phenomena</h2>
-			<p>
-				Heidegger en tijd?
-				Op het internet zijn we gewent dat, na het door blijven klikken op bronmateriaal linkjes en de oorsprong van artikelen, we terug komen bij de fysieke wereld. Een boek, een film, een gebeurtenis. Het is logisch en begrijpelijk dat alles wat op het internet staat zijn oorsprong heeft in ónze wereld. De wereld van het tastbare, autoritaire en wijsheid. 
-			</p>
-			<p>
-				De kentering die we nu zien – niet enkel en alleen — bij boeken ontstaan vanuit het internet. Dit is (nog) niet logisch voor ons. Deze boeken komen voort uit een netwerk dat ons brein te boven gaat. De boeken komen voort uit een virtuele wereld waar wij de kaders niet kennen. Een nieuwe dimensie. Het netwerk is een complex structureel fenomeen. Alles is een netwerk, zo bekijken we de wereld tegenwoordig ook. Echter blijft het lastig om een netwerk te beoordelen of zelfs te veroordelen. Het is een eenheid waar we onze handen niet omheen kunnen krijgen. Het internet lijkt een perfecte illustratie van hoe wij, mensen, ons organiseren en communiceren. Marshall McLuhan had het over het Mondiale Dorp 30 jaar voordat het internet commercieel toegankelijk werd. Maar daarvoor was een netwerk al aanwezig als strategie en/of denkmodel. Zo zei André Breton, een van de vaders van het surrealisme: “One publishes to find comrades!”. Het publiceren om eensgezinden te vinden en met elkaar te verbinden. Zo ontstond in de zestigere jaren van de 20ste eeuw de kunststroming Fluxus, eerder door de oprichter George Maciunas ‘Neo-Dada’ genoemd. Fluxus betekend “vloeiend” of “stromend” — als water dus — en dit doelt op het feit dat alles continu in verandering was. Fluxus was geen beweging:  
-			</p>
-			<p>
-			    	Fluxus is an attitude. It is not a movement or a style. 
-			    	Fluxus is intermedia.[92] Fluxus creators like to see what happens when different media intersect. They use found and everyday objects, sounds, images, and texts to create     
-			    	          new combinations of objects, sounds, images, and texts. 
-			    	Fluxus    works are simple. The art is small, the texts are short, and the performances are brief. 
-			    	Fluxus is fun. Humor has always been an important element in Fluxus. 
-			</p>
-			<p>
-				Het is een houding, een manier hoe je naar de wereld kijkt en de wereld beleefd. En nu 55 jaar na de oprichting van Fluxus zien we dat die houding de standaard geworden is. Alles probeert een netwerk te zijn. Te laten zien dat het niet een lomp statische eenheid is maar onderdeel van iets groters dat grotere is het goede. Dit zien we bij bedrijven die honderd notities om hun namen hebben staan om partners, slogans, prijzen en awards te laten zien. Om hun plaats duidelijk te maken binnen het netwerk. 
-			</p>
-			<p>
-				Ondanks dat Fluxus voornamelijk een houding is heeft het toch zeker enig kenmerkende stijlen. Een hiervan het DIY. 
-			</p>
-			<p>
-				Fluxus is een netwerk van internationale kunstenaars die op geheel verschillende manieren te werk gingen en werken maakten. De beweging is beïnvloed door John Cage die het proces van het maken belangrijker vond dan het eindproduct. Dit proces is misschien ook wat het internet als concentratiepunt heeft. Er is geen eindproduct enkel verschillende fasen. Het is dan ook geen vreemde keus als Fluxus zich voor een groot deel zich voortzet op het internet wanneer dit toegankelijk word. Het netwerk staat centraal en een netwerk is geen statisch geheel maar een levende structuur. Internet biedt die levende structuur en een uitkomst van Fluxus en internet is Liquid Design. Het is niet hetzelfde als Fluxus aangezien het niet het proces centraal heeft staan. Liquid Design is het ontwerpen voor verandering. Wetten en regels vastleggen waarbinnen alles kan gebeuren. Zo is het ontwerp relatief en verandert het aan de hand van de context of het medium bijvoorbeeld. 
-			</p>
-			<p>
-				Zoals eerder gezegd fungeert het boek dat geschreven is door middel van het internet dan als archief. Als het vastleggen van een korte periode van het netwerk dat continu in verandering is. En het boek is wel een medium dat voor iedereen toegankelijk is zodat iedereen die korte periode die is uitgekozen om vast te leggen kan zien, bekijken en beoordelen. Het boek als archief van het internet is één manier hoe we er naar kunnen kijken. De boeken die door middel van het internet worden geproduceerd leggen ook geheel nieuwe processen en fenomenen bloot. In de American Psycho adaptatie van Mimi Cabell en Jason Huff: American Psycho. Hun versie van de klassieker bestaat enkel uit advertenties die ze verkregen hebben door het gehele boek per zin tussen twee Gmail accounts te sturen. Het combineren van een literatuur klassieker met de commerciële processen die inherent  verbonden zijn met onze huidige “nieuwe technologieën” is poëtisch. Door het aan wijzen wat voor producten wij produceren in onze tijd ten opzichte van eerdere tijden. 
-			</p>
-			<p>
-				Het gebruikt het boek ook als fysiek object. Het fysiek — tot leven — worden van een virtuele wereld. Het is vast te pakken, neemt ruimte in van onze kamer. We zijn nog niet los geraakt van onze materialistische lust. 
-			</p>
-			<p>
-				Kan het zijn dat zoals Marshall McLuhan uitlegt in zijn boek aan de hand van het onderzoek van John Wilson dat op onze digitale schermen door de hoeveelheid informatie we het beeld behandelen als een foto of film, de focus van onze ogen net iets voor het scherm plaatsen zodat we een overzicht krijgen maar niet aandachtig details lezen? Want een boek beloofd door zijn eigenschappen een geconcentreerde omgeving, geen tot weinig ruis. Een tijdschrift is dus ook geen boek, een tijdschrift is als een tv-scherm met reclame en snelle berichten. Boeken lezen we segment per segment{3}
-			</p>
-			<p>
-				Damiaan Denys vertelde in de laatste aflevering van ‘Zomergasten’ 2015{1} hoe hij deze tijd, en in het bijzonder in Nederland ten opzichte van België(“Nederland is porno en België is erotiek”), uiterst expliciet vond. Alles word uitgespeld, niks overlatend voor de imaginatie, een neurocratie{2} die enkel pragmatisch en rationeel is. Zijn uitlating gaat over een algemeenheid van onze zeitgeist die hij dagelijks tegenkomt en er bestaat dus geen directe verbinding met het onderwerp dat ik hier behandel. Toch vind ik het opmerkelijk dat wanneer wij kijken naar onze online omgeving en ruimte dan zie ik het tegenovergestelde van wat Damiaan Denys zegt. Online ís impliciet. Er word zo goed als niks uitgespeld, alles word overgelaten aan de imaginatie en vergeleken bij onze semi-digitaal maar pre-internet-2.0 wereld is het één groot abstracte omgeving. Echter denk ik dat het online te veel is, waar Damiaan vind dat impliciet te weinig  aanwezig is in onze fysieke lebensraum zo vind ik dat impliciet te veel aanwezig is in onze digitale lebensraum. Het effect hiervan is dat 9 van de 10 mensen analfabeten zijn in de online lebensraum. Het systeem waarin ze zich bevinden begrijpen ze maar enkel op dat puntje van de ijsberg — en dan nog steeds kunnen ze enkel er naar kijken. Maar zelfs voor de beste online lebensraum-taalkundigen (internet nitwits) is het internet groots en impliciet. 
-			</p>
-			<p>
-				Continue werken wij in en met een netwerk en archief. Het gevolg is dat wij niet direct werken in boeken, of perse kennis opbouwen welke boeken geweldig zijn. Wij werken in een zoekmachine, en die geeft ons een lijst met resultaten met vaak direct een enkele pagina met de informatie die we zoeken. Of het geeft ons een lijst met afbeeldingen, zonder context, zelfs zonder een enkele pagina. Het is puur de afbeelding die overeenkomt met onze zoekterm. Zoeken is een actief werkwoord, het is een daad en vraagt energie, denkkracht en creativiteit. Lezen is een passief werkwoord, het is wel een daad, strikt genomen, maar het vraagt vooral concentratie en verdieping. Althans dat is wat lezen voor ons tot nu toe is geweest. Het lijkt erop dat het steeds meer een daad van het opnemen van informatie word. Als sponzen. Zoeken en daarna lezen. 
-			</p>
-			<p>
-				Het printen van het internet is enerzijds een statement. Een statement over privacy, copyright, ownership en de vluchtigheid van deze tijd, de grootsheid van deze tijd, de abstract-heid van deze tijd. Anderzijds is het printen van het internet het archiveren van verschillende fenomenen die snel opkomen en net zo snel of nog sneller weer vergaan. 
-			</p>
-			<p>
-				We leven in een tijd waarin vele grote abstracte vragen die omgaan met voorheen impliciete onderwerpen van het verleden beantwoord worden en expliciet worden uitgespeld. Het internet is technisch gezien expliciet, blok per blok dat het uitleest, maar in zijn omgang en presentatie uiterst impliciet. WAT IS JE CONCLUSIE?! 
-			</p>
-			<p>
-				Het internet maar vooral onze digitale documenten zorgen voor een Rosetta steen fenomeen. Alles is vertaalbaar, verplaatsbaar en her-bruikbaar.
-			</p>
-			<p>
-				Met het internet is alles wat groter word dan een basisschool aan data gevaarlijk voor hacking. Waar het boek juist zorgt voor bundeling en context/verhaal zou het internet versplinterd moeten zijn en afhankelijk van welke bril je op het verschillende informatie bij elkaar moeten krijgen. 
-			</p>
-			<p>
-				Het internet als schrijfmiddel is interessant maar een zeer tijdelijk proces dat dit interessant blijft. Inez en van Lamsweerde waren geniaal met hun gephotoshopte beelden en haalde wereld bekendheid met hun werken. Echter is de algemene mening nu dat photoshop ons beeld van de mens verziekt dan dat het kunst is of ons beeld verrijkt. We moeten een gereedschap niet als heilig verklaren en het verhaal of betekenis uit het oog verliezen. We geloven informatie niet meer tenzij we erbij waren. 
-			</p>
-
-			<nav class="nextprev cf" role="navigation">
-				<div class="right-side side-nav" style="background-color: #ffffcc;">
-					<progress value="0"></progress>
-					<a class="arrow" href="http://averyreview.com"><img src="../../assets/images/arrow.svg"></a>
+					</div>
+					<div id="chapterNav"> <p class='pagetitle'>2<br><br>A<br><br>W<br>I<br>K<br>I<br>P<br>E<br>D<br>I<br>A<br><br>R<br>E<br>A<br>D<br>E<br>R</p>
+					</div>
+					<div id="chapterNav"> <p class='pagetitle'>3<br><br>L<br>I<br>B<br>R<br>A<br>R<br>Y<br><br>O<br>F<br><br>T<br>H<br>E<br><br>P<br>R<br>I<br>N<br>T<br>E<br>D<br><br>W<br>E<br>B</p>
+					</div>
+					<div id="chapterNav"> <p class='pagetitle'>4<br><br>N<br>E<br>T<br>W<br>O<br>R<br>K<br><br>O<br>F<br><br>N<br>E<br>T<br>W<br>O<br>R<br>K<br>S</p>
+					</div>
 				</div>
 			</nav>
 
-	        </article>
-			<div class="article-summary">
-				<div class="reading">You are now reading &#8220;Full Disclosure: Speaking Personally at the New York City AIDS Memorial&#8221; by Jacob Moore</div> 
-				<div class="article-share">Share on: <a href="https://twitter.com/intent/tweet?text=&#8220;Full Disclosure: Speaking Personally at the New York City AIDS Memorial&#8221;%20by%20Jacob Moore%20via%20@AveryReview&url=http://averyreview.com/issues/12/full-disclosure" target="_blank">Twitter</a> &nbsp;&nbsp; 
-				<a href="https://www.facebook.com/sharer/sharer.php?u=http://averyreview.com/issues/12/full-disclosure">Facebook</a>
-				</div>
-			</div>
-		</div>
+			<div class="article-footnote">
+				<p>Hello</p>
+  			</div>
 
-	<script type='text/javascript'>
-	$(function() {
-			FastClick.attach(document.body);
-	});
-
-	$(window).load(function(){
-		$('#load').hide();
-		$('.article-wrapper').addClass('wrapper-loaded');
-		$('.index-wrapper').addClass('index-wrappper-loaded');
-			$('.toggle').click(function(){
-			$('.menu').toggleClass('menu-loaded');
-			$('.toggle').toggleClass('toggle-loaded');
-	});
-
-	$('.footnote-ref').mouseenter(function(){
-		var $footnoteNumber = $(this).html();
-		var $footnote = $('#fn\\:'+ $footnoteNumber).html();
-		
-		if ($footnote.length > 800) {
-			$footnote = $footnote.substring(0,800);
-			$footnote = $footnote.substr(0, Math.min($footnote.length, $footnote.lastIndexOf(" "))) + ' <a href="#fn:' + $footnoteNumber + '">[...]</a>'; 
-		}
-
-		$('.article-footnote-side').html('<div class="footnote-number">'+ $footnoteNumber + '</div>' + $footnote).fadeIn('slow');
-		$('.article-footnote-side').css('opacity', 1);
+	<script src="/js/jquery-2.1.4.min.js"></script>
+    <script src="/js/jquery.scrollProgress.js"></script>
+	<script>
+		$(document).ready(function() {
+		    $("#scroll-progress").scrollProgressIndicator();
 		});
 
-		$(document.links).filter(function() {
-			return this.hostname != window.location.hostname;
-		}).attr('target', '_blank');
-	});
-
-	var didScroll;
-	$(window).scroll(function(){
-		$('.article-footnote-side').css('opacity', 0);
-		didScroll = true;
-		var scroll = $(window).scrollTop();
-
-		if (scroll > 100) {
-			$(".article-summary").addClass("article-loaded");
-		}
-		if (scroll < 100) {
-			$(".article-summary").removeClass("article-loaded");
-		}
-	});
-
-	$(document).on('ready', function() {  
-		var winHeight = $(window).height(), 
-			docHeight = $(document).height(),
-			progressBar = $('progress'),
-			max, value;
-
-	  /* Set the max scrollable area */
-		max = docHeight - winHeight;
-		progressBar.attr('max', max);
-
-	$(document).on('scroll', function(){
-		value = $(window).scrollTop();
-		progressBar.attr('value', value);
-	});
-	});
+		var main = function (){};
+		$('a').hover(function() {
+			$('.article-footnote').fadeIn();
+			}, function(){
+			$('.article-footnote').fadeOut();
+		});
 	</script>
-    <script src="https://code.jquery.com/jquery-1.11.3.js"></script> <!-- 
-        With the script tags you put scripts and load in external scripts.
-        you always need to explicitly <open> and </close> the script tag
-        Here we are loading in jQuery. jQuery is a library that contains a lot functions that are
-        like building blocks for scripts. It makes it easier to write your own scripts.
-        Also, many examples you will find online will use jQuery (you can recognise it
-        it if they use the $ sign). In the case you will first need to load jQuery-->
-    <script src="js/scripts.js"></script>
-        <!-- We use an external file for our scripts, just like we use an external file for
-             our css styles. -->
+
+
     </body>
-   
 </html>
