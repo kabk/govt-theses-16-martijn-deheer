@@ -82,6 +82,7 @@ article {
 .article-footnote {
 	position: fixed;
 	width:100%;
+	right:25%;
 	bottom:0;
 	color:#fff;
 	background-color: #000;
