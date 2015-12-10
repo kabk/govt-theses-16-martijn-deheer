@@ -145,6 +145,7 @@ article {
 	width:24.5%;
 	float:left;
 	border-right:1px solid white;
+	border-left:1px solid black;
 }
 
 #container {
