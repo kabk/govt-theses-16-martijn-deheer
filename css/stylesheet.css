@@ -6,6 +6,31 @@
 	}
 }*/
 
+/* LAYOUT / COLUMNS */
+#container {
+	width:100%;
+	padding-left:2%;
+}
+
+#container div {
+	float:left;
+	position:absolute;
+}
+
+.clear {
+	clear:both;
+}
+
+.article-wrapper {
+	width:40%;
+}
+
+.clear-right {
+	width:30%;
+}
+
+
+/* DIFFERENT MEDIA */
 @media only screen and (min-width: 600px) {
 
 }
@@ -155,27 +180,4 @@ article {
 	border-right:1px solid white;
 	border-left:1px solid black;
 }
-
-#container {
-	width:100%;
-	padding-left:2%;
-}
-
-#container div {
-	float:left;
-	position:absolute;
-}
-
-.clear {
-	clear:both;
-}
-
-.article-wrapper {
-	width:40%;
-}
-
-.clear-right {
-	width:30%;
-}
-
 
