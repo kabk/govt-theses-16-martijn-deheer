@@ -122,8 +122,8 @@ article {
 	padding-top:1em;
 	text-align: center;
 	z-index: 1;
-	mix-blend-mode:difference;
-}
+/*	mix-blend-mode:difference;
+*/}
 
 #chapterNav-wrapper {
 
