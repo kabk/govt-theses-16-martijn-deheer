@@ -132,7 +132,7 @@ article {
 #rowNav {
 	position:fixed;
 	height:100%;
-	width:20.5%;
+	width:20%;
 	margin:0;
 	padding:0;
 	right:0;
@@ -142,7 +142,7 @@ article {
 
 #chapterNav {
 	height:100%;
-	width:24.5%;
+	width:24%;
 	float:left;
 	border-right:1px solid white;
 	border-left:1px solid black;
