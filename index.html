@@ -94,6 +94,19 @@
 	<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/animation.gsap.js"></script>
 	<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/debug.addIndicators.js"></script>
 	<script>
+
+		$(document).ready(function(){
+			var text, charsLength=0,wordsCount=0, newWidth=0;
+			$('#hfdstktwee').each(function() {
+				text = $.trim($(this).text());
+				charsLength += text.length;
+				wordsCount += text.split(/\s+/).length;
+				newWidth += charsLength;
+			});
+			// $("#output").append("words"+wordsCount+"<br/>chars: "+charsLength);
+			$("#chapterNav").width(newWidth);
+		});
+
 		var main = function (){};
 		$('a').hover(function() {
 			$('.text-footnote').fadeIn();
