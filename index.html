@@ -20,7 +20,21 @@
     	<div id="container">
     		<div id="heading">
 				<header> 
-					<h1 id="fittext">book/<br>hypertext/<br>protocol/</h1> 
+					<h1 id="fittext">
+						<script type="text/javascript">
+							var arr = ['book/','hypertext/','protocol/']; 
+							var n = arr.length; 
+							var tempArr = [];
+							for ( var i = 0; i < n-1; i++ ) { 
+							tempArr.push(arr.splice(Math.floor(Math.random()*arr.length),1)[0]); 
+							} 
+
+							tempArr.push(arr[0]); 
+							arr=tempArr;
+
+							document.write(arr.join(" <br> "));
+						</script>
+					</h1> 
 					<p>ip address:<strong> <? echo $ip = $_SERVER["REMOTE_ADDR"]; ?></strong>, host address:<strong> <? echo gethostbyaddr($ip); ?></strong></p>
 				</header>
 			</div>
