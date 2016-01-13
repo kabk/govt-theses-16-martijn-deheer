@@ -12,23 +12,60 @@
 	padding-left:2%;
 }
 
+#heading {
+	width:70.33%;
+	margin-top:10%;
+	margin-bottom:15%;
+}
+
 #container div {
 	float:left;
-	position:absolute;
-}
-
-.clear {
-	clear:both;
-}
+/*	position:absolute;
+*/}
 
 .article-wrapper {
-	width:40%;
+	width:36.93%;
+	margin-bottom:1.5%;
 }
 
-.clear-right {
-	width:30%;
+.article-wrapper p {
+	margin-top:1em;
+	margin-bottom:1.5em;
+	letter-spacing:0.5px;
 }
 
+header {
+	width:100%;
+}
+
+#heading header p {
+	margin-left:0.5em;
+}
+
+.sideContent {
+	float:left;
+	margin-left:2%;
+	width:31.4%;
+}
+
+a {
+	text-decoration: none;
+	background:transparent;
+	margin:0;
+	padding:0;
+	color:transparent;
+}
+
+p a {
+	color: #000;
+	border-bottom:1px solid black;
+	text-decoration: none;
+}
+
+p a:hover{
+	color:grey;
+	border-bottom:1px solid grey;
+}
 
 /* DIFFERENT MEDIA */
 @media only screen and (min-width: 600px) {
@@ -49,28 +86,28 @@ body {
 	font-size: 18px;
 	margin:0;
 	padding:0;
-	text-align: justify;
+	text-align: left;
 	font-weight:normal;
 }
 
 h1, h2{
-	font-size: 1.4em;
+	font-size: 18px;
 	margin:0;
-	margin-left:1.428em;
 	font-weight:normal;
 	text-transform: uppercase;
 }
 
 h1 {
 	font-size:6em;
-	line-height:150%;
-	margin-top:1em;
-	margin-bottom:2em;
+	line-height:120%;
+	/*margin-left:0.28em;*/
 }
 
 h2 {
+	font-size:1.2em;
 	margin-top:2em;
-	margin-bottom:1em;
+	margin-bottom:0;
+	margin-left:2em;
 }
 
 p {
@@ -78,12 +115,18 @@ p {
 }
 
 span {
+	margin-top: 3em;
 	margin-left:2em;
 }
 
 article {
 	margin-top:80px;
-	margin-bottom:80px;
+	margin-bottom:8em;
+}
+
+img {
+	width:100%;	
+	border:1px solid black;
 }
 
 #hfdstktwee {
@@ -107,21 +150,25 @@ article {
 	line-height: 100%;
 }
 
+.article-topnote {
+	position: fixed;
+	clear:both;
+	width:100%;
+	top:0;
+	color:#fff;
+	background-color: #000;
+	height:4em;
+	z-index:99999;
+}
+
 .article-footnote {
 	position: fixed;
 	width:100%;
 	bottom:0;
-	color:#000;
-	background-color: #fff;
-/*	height:8%;
-*/	z-index:99999;
-	border-top:1px solid black;
-}
-
-.text-footnote {
-	margin-top:1.5em;
-	margin-left:2em;
-	margin-bottom:1.5em;
+	color:#fff;
+	background-color: #000;
+	height:6em;
+	z-index:99999;
 }
 
 .progressWrapper {
@@ -165,7 +212,7 @@ article {
 #rowNav {
 	position:fixed;
 	height:100%;
-	width:20%;
+	width:21.9%;
 	margin:0;
 	padding:0;
 	right:0;
@@ -177,7 +224,7 @@ article {
 	height:100%;
 	width:24%;
 	float:left;
-	border-right:1px solid white;
-	border-left:1px solid black;
+/*	border-right:1px solid white;
+*/	border-left:1px solid black;
 }
 
