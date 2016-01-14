@@ -29,8 +29,8 @@
 }
 
 .article-wrapper p {
-	margin-top:1em;
-	margin-bottom:1.5em;
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
 	letter-spacing:0.5px;
 }
 
@@ -45,7 +45,14 @@ header {
 .sideContent {
 	float:left;
 	margin-left:2%;
-	width:31.4%;
+	width:20%;
+}
+
+.sideContent p {
+	font-size: 0.75em;
+	line-height: 1.5em;
+	margin-top:1em;
+	letter-spacing: 0.5px
 }
 
 a {
@@ -125,8 +132,10 @@ article {
 }
 
 img {
-	width:100%;	
-	border:1px solid black;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 450px;
 }
 
 #hfdstktwee {
@@ -135,19 +144,6 @@ img {
 
 #hdstkdrie {
 	min-height:100px;
-}
-
-.image {
-	margin:0;
-	position: absolute;
-	z-index: -1;
-	font-family: menlo;
-	font-weight: normal;
-	background: pink;
-	color: black;
-	width:60%;
-	font-size: 2px;
-	line-height: 100%;
 }
 
 .article-topnote {
@@ -195,15 +191,26 @@ img {
 }
 
 .pagetitle {
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.2em;
 	color:#fff;
 	width:100%;
-	padding-top:1em;
+	padding-top:4em;
 	text-align: center;
 	z-index: 1;
-/*	mix-blend-mode:difference;
-*/}
+/*	
+	mix-blend-mode:difference;
+	position: absolute;
+	transform: rotateZ(90deg);
+	color: #fff;
+	width: 150%;
+	transform-origin: left bottom 0;
+	padding-left: 2.1em;
+	font-size: 1.2em;
+	letter-spacing: 1.5px;
+*/
+
+}
 
 #chapterNav-wrapper {
 
