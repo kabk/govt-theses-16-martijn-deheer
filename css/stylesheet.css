@@ -37,6 +37,10 @@
 header {
 	width:100%;
 }
+sup {
+	background-color:#000;
+	color:#fff;
+}
 
 #heading header p {
 	margin-left:0.5em;
