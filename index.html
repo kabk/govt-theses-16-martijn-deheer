@@ -81,7 +81,7 @@
 				</article>	
 			</div>
 			<div class="sideContent">
-				<div class="imageOne" data-content="1">
+				<div data-content="1">
 					<img src="images/Duchamp_Fountaine.jpg" alt="boek">
 					<p>
 						Post-Digital Print: The Mutation of Publishing since 1894, Alessandro Ludovico, onomatopee 77, 2012. Ik ben bekend geworden met dit stuk door Adriaan Mellegers. Gedownload via: http://postdigitalprint.org.
@@ -143,8 +143,8 @@
 			$( '[data-content="1"]' ).offset({ top: offsetA.top });
 
 			$( '[data-content="1"]', {
-			    "class" : 'data-content1',
-			})
+			    "id" : 'data-content1',
+			}).appendTo(id.div)
 		});
 
 		var footer = $('.article-footnote'),
