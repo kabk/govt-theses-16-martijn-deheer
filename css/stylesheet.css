@@ -6,6 +6,17 @@
 	}
 }*/
 
+/* DIFFERENT MEDIA */
+@media only screen and (min-width: 600px) {
+
+}
+
+@media print {
+	h1, p {
+		margin: 200px;
+	}
+}
+
 /* LAYOUT / COLUMNS */
 #container {
 	width:100%;
@@ -37,6 +48,7 @@
 header {
 	width:100%;
 }
+
 sup {
 	background-color:#000;
 	color:#fff;
@@ -81,17 +93,6 @@ p a {
 p a:hover{
 	color:grey;
 	border-bottom:1px solid grey;
-}
-
-/* DIFFERENT MEDIA */
-@media only screen and (min-width: 600px) {
-
-}
-
-@media print {
-	h1, p {
-		margin: 200px;
-	}
 }
 
 body {
