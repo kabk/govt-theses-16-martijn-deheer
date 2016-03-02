@@ -64,13 +64,17 @@ header {
 }
 
 sup {
-	background-color:#000;
+	background-color:#00ff00;
 	color:#fff;
 	font-size: 0.55em;
-	padding-bottom: 0.8em;
+	padding-bottom: 0.9em;
 	margin-left: 0.2em;
 	padding-left: 0.2em;
 	padding-right: 0.2em;
+}
+
+sup:hover {
+	background-color:#000;
 }
 
 #heading header p {
@@ -100,13 +104,12 @@ a {
 
 p a {
 	color: #000;
-	border-bottom:1px solid black;
+	border-bottom:1px dotted #00ff00;
 	text-decoration: none;
 }
 
 p a:hover{
-	color:grey;
-	border-bottom:1px solid grey;
+	border-bottom:1px dotted #000;
 }
 
 body {
@@ -114,7 +117,7 @@ body {
 	color:black;
 	font-family: 'ocr-pbi-canoniquepbicanonique', helvetica, sans-serif;
 	line-height: 150%;
-	font-size: 18px;
+	font-size: 14px;
 	margin:0;
 	padding:0;
 	text-align: left;
