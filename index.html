@@ -142,9 +142,7 @@
 			var offsetA =  p.offset();
 			$( '[data-content="1"]' ).offset({ top: offsetA.top });
 
-			$( '[data-content="1"]', {
-			    "id" : 'data-content1',
-			}).appendTo(id.div)
+			$( '[data-content="1"]' ).attr('id', '[data-content="1"]')
 		});
 
 		var footer = $('.article-footnote'),
