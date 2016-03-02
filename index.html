@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><!-- Putting the language code here will help for example text to speech (and in the future, hypehenation)-->
+<html lang="nl"><!-- Putting the language code here will help for example text to speech (and in the future, hypehenation)-->
     <head>
         <title>book/hypertext/protocol</title>
         <meta charset="utf-8"/>
@@ -17,7 +17,9 @@
 
     <body>
     	<div id="progress-bar"> </div>
+
     	<div id="container">
+
     		<div id="heading">
 				<header> 
 					<h1 id="fittext">
@@ -40,8 +42,7 @@
 				</header>
 			</div>
 
-			<div class="article-wrapper">
-				<div class="clear-right"></div>
+			<div id="article-wrapper">
 				
 				<article>
 					<section id="hfdstktwee">
@@ -80,6 +81,7 @@
 					</section>				
 				</article>	
 			</div>
+
 			<div class="sideContent">
 				<div data-content="1">
 					<img src="images/Duchamp_Fountaine.jpg" alt="boek">
@@ -92,6 +94,7 @@
 
 		<div class="article-topnote"></div>
 		<div class="article-footnote"></div>
+
 		<nav id="chapterNav-wrapper">
 			<div id='rowNav'>
 				<a href="#hfdstktwee">
@@ -117,90 +120,90 @@
 			</div>
 		</nav>
 
-	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/jquery.fittext.js"></script>
-	<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/ScrollMagic.js"></script>
-	<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/TweenMax.min.js"></script>
-	<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/animation.gsap.js"></script>
-	<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/debug.addIndicators.js"></script>
-	<script>
-		$(document).ready(function(){
-			var text, charsLength=0, wordsCountTotal=0, wordsCount=0, newWidth=0;
-			$('article').each(function() {
-				text = $.trim($(this).text());
-				wordsCountTotal += text.split(/\s+/).length;
+		<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/jquery.fittext.js"></script>
+		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/ScrollMagic.js"></script>
+		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/TweenMax.min.js"></script>
+		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/animation.gsap.js"></script>
+		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/debug.addIndicators.js"></script>
+		<script>
+			$(document).ready(function(){
+				var text, charsLength=0, wordsCountTotal=0, wordsCount=0, newWidth=0;
+				$('article').each(function() {
+					text = $.trim($(this).text());
+					wordsCountTotal += text.split(/\s+/).length;
+				});
+				$('#hfdstktwee').each(function() {
+					text = $.trim($(this).text());
+					wordsCount += text.split(/\s+/).length;
+				});
+
+				newWidth += (wordsCount/wordsCountTotal) * 100;
+				$(".chapterOne").width(newWidth);
+
+				var p = $( '[data-section="1"]' );
+				var offsetA =  p.offset();
+				$( '[data-content="1"]' ).offset({ top: offsetA.top });
+
+				$( '[data-content="1"]' ).attr('id', 'data-content-1')
 			});
-			$('#hfdstktwee').each(function() {
-				text = $.trim($(this).text());
-				wordsCount += text.split(/\s+/).length;
+
+			var footer = $('.article-footnote'),
+				upper = $('.article-topnote'),
+			    extra = 125; // In case you want to trigger it a bit sooner than exactly at the bottom.
+
+			footer.css({ opacity: '0', display: 'block' });
+			upper.css({ opacity: '1', display: 'block' });
+
+			$(window).scroll(function() {
+			   var scrolledLength = ( $(window).height() + extra ) + $(window).scrollTop(),
+			       documentHeight = $(document).height(),
+			       scroLLTop = $(window).scrollTop();
+			       
+			   if(scroLLTop >= extra && upper.hasClass('top')) {
+			   	upper
+			       		.removeClass('top')
+			       		.stop().animate({ top: '-100', opacity:'0'},100)
+			   }
+			   else if ( scroLLTop <= extra ) {           
+			        upper
+			           .addClass('top')
+			           .stop().animate({ top: '0', opacity: '1' }, 100);
+			   }
+
+			   if( scrolledLength >= documentHeight ) {
+			       footer
+			          .addClass('bottom')
+			          .stop().animate({ bottom: '0', opacity: '1' }, 100);
+			   }
+			   else if ( scrolledLength <= documentHeight && footer.hasClass('bottom') ) {           
+			        footer
+			           .removeClass('bottom')
+			           .stop().animate({ bottom: '-100', opacity: '0' }, 100);
+			   } 
 			});
+			
+			// fit header
+			$("#fittext").fitText(0.7033);
 
-			newWidth += (wordsCount/wordsCountTotal) * 100;
-			$(".chapterOne").width(newWidth);
-
-			var p = $( '[data-section="1"]' );
-			var offsetA =  p.offset();
-			$( '[data-content="1"]' ).offset({ top: offsetA.top });
-
-			$( '[data-content="1"]' ).attr('id', 'data-content-1')
-		});
-
-		var footer = $('.article-footnote'),
-			upper = $('.article-topnote'),
-		    extra = 125; // In case you want to trigger it a bit sooner than exactly at the bottom.
-
-		footer.css({ opacity: '0', display: 'block' });
-		upper.css({ opacity: '1', display: 'block' });
-
-		$(window).scroll(function() {
-		   var scrolledLength = ( $(window).height() + extra ) + $(window).scrollTop(),
-		       documentHeight = $(document).height(),
-		       scroLLTop = $(window).scrollTop();
-		       
-		   if(scroLLTop >= extra && upper.hasClass('top')) {
-		   	upper
-		       		.removeClass('top')
-		       		.stop().animate({ top: '-100', opacity:'0'},100)
-		   }
-		   else if ( scroLLTop <= extra ) {           
-		        upper
-		           .addClass('top')
-		           .stop().animate({ top: '0', opacity: '1' }, 100);
-		   }
-
-		   if( scrolledLength >= documentHeight ) {
-		       footer
-		          .addClass('bottom')
-		          .stop().animate({ bottom: '0', opacity: '1' }, 100);
-		   }
-		   else if ( scrolledLength <= documentHeight && footer.hasClass('bottom') ) {           
-		        footer
-		           .removeClass('bottom')
-		           .stop().animate({ bottom: '-100', opacity: '0' }, 100);
-		   } 
-		});
-		
-		// fit header
-		$("#fittext").fitText(0.7033);
-
-		$(document).ready(function(){
-        		// init controller
-		var controller = new ScrollMagic.Controller();
-		// build tween
-		var tween1 = TweenMax.to("#scroll", 1, {className: "+=scroll-progress"});
-		// build scene
-		// get the current triggerHook value
-		var scene1 = new ScrollMagic.Scene({triggerElement: "#hfdstktwee", duration: "175%"})
-						.triggerHook(0.35)
-						.setTween(tween1)
-						.addTo(controller);
-		var tween2 = TweenMax.to("#scrolltwo", 1, {className: "+=scroll-progress"});
-		// build scene
-		var scene2 = new ScrollMagic.Scene({triggerElement: "#hdstkdrie", duration: "175%"})
-						.triggerHook(0.35)
-						.setTween(tween2)
-						.addTo(controller);
-		});
-	</script>
+			$(document).ready(function(){
+	        		// init controller
+			var controller = new ScrollMagic.Controller();
+			// build tween
+			var tween1 = TweenMax.to("#scroll", 1, {className: "+=scroll-progress"});
+			// build scene
+			// get the current triggerHook value
+			var scene1 = new ScrollMagic.Scene({triggerElement: "#hfdstktwee", duration: "175%"})
+							.triggerHook(0.35)
+							.setTween(tween1)
+							.addTo(controller);
+			var tween2 = TweenMax.to("#scrolltwo", 1, {className: "+=scroll-progress"});
+			// build scene
+			var scene2 = new ScrollMagic.Scene({triggerElement: "#hdstkdrie", duration: "175%"})
+							.triggerHook(0.35)
+							.setTween(tween2)
+							.addTo(controller);
+			});
+		</script>
     </body>
 </html>
