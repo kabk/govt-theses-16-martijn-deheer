@@ -185,6 +185,22 @@ sup:hover {
 	border-top: 0.2em solid #000;
 }
 
+a sup {
+	background-color:#00ff00;
+	color:#fff;
+	font-size: 0.55em;
+	padding-bottom: 0.9em;
+	margin-left: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	border-top: 0.2em solid #00ff00;
+}
+
+a sup:hover {
+	background-color:#000;
+	border-top: 0.2em solid #000;
+}
+
 
 a {
 	text-decoration: none;
@@ -261,8 +277,12 @@ img {
 	z-index: 1;
 }
 
-.appendix {
+#appendixA.appendix {
 	margin-top: 12em;
+}
+
+.appendix {
+	margin-top: 3em;
 	float: left;
 	width: 100%;
 }
