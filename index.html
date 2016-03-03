@@ -20,17 +20,9 @@
 		<div id="heading">
 			<header> 
 				<h1 id="fittext">
-					<ul style="list-style-type:none;">
-						<li>
 							BOEK/
-						</li>
-						<li>
 							HYPERTEKST/
-						</li>
-						<li>
 							PROTOCOL/
-						</li>
-					</ul>
 				</h1>
 				<p>
 					Bachelor scriptie door Martijn de Heer, 2015/16, Koninklijke Academie van Beeldende Kunsten, Den Haag
@@ -1107,6 +1099,13 @@
 
 			// adjust width of navigation-bar according to length of text + show sidenotes on height of reference
 			$(document).ready(function(){
+				// put notes on the right height
+				var p = $( '[data-note="1"]' );
+				var offsetA =  p.offset();
+				$( '[data-content="1"]' ).offset({ top: offsetA.top });
+
+				$( '[data-content="1"]' ).attr('id', 'data-content-1')
+
 				// var text, charsLength=0, wordsCountTotal=0, wordsCount=0, newWidth=0;
 				// $('article').each(function() {
 				// 	text = $.trim($(this).text());
@@ -1178,20 +1177,11 @@
 
 
 			// fit header
-			$("#fittext").fitText(1.2);
+			$("#fittext").fitText();
 
 
 			// progress bar script
 			$(document).ready(function(){
-
-				// put notes on the right height
-				var p = $( '[data-note="1"]' );
-				var offsetA =  p.offset();
-				$( '[data-content="1"]' ).offset({ top: offsetA.top });
-
-				$( '[data-content="1"]' ).attr('id', 'data-content-1')
-
-
 
         		// init controller
 				var controller = new ScrollMagic.Controller();
