@@ -46,6 +46,10 @@ body {
 	bottom: 0;
 }
 
+#heading header p {
+	font-size: 0.75em;
+}
+
 .abstract {
     background-color:#000;
     color:#fff;
@@ -103,7 +107,7 @@ section#abstract.abstract .content {
 }
 
 article {
-	margin-top:16em;
+	margin-top:22em;
 	margin-bottom:8em;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -289,7 +293,7 @@ img {
 	right: 0;
 	position: fixed;
 	background-color: #000;
-	border-left: 1px solid #fff;
+	border-left: 1px solid transparent;
 }
 
 #rowNav { }
