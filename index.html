@@ -17,106 +17,1083 @@
 
     <body>
     	<div id="progress-bar"> </div>
-
     	<div id="container">
 
     		<div id="heading">
 				<header> 
 					<h1 id="fittext">
-						<script type="text/javascript">
-							var arr = ['boek/','hypertekst/','protocol/']; 
-							var n = arr.length; 
-							var tempArr = [];
-							for ( var i = 0; i < n-1; i++ ) { 
-							tempArr.push(arr.splice(Math.floor(Math.random()*arr.length),1)[0]); 
-							} 
-
-							tempArr.push(arr[0]); 
-							arr=tempArr;
-
-							document.write(arr.join(" <br> "));
-						</script>
-					</h1> 
-					<p>Bachelor thesis by Martijn de Heer, 2016, Royal Academy of Art, The Hague</p>
-					<!-- <p>ip address:<strong> <? echo $ip = $_SERVER["REMOTE_ADDR"]; ?></strong>, host address:<strong> <? echo gethostbyaddr($ip); ?></strong></p> -->
+						<ul style="list-style-type:none;">
+							<li>
+								BOEK /
+							</li>
+							<li>
+								HYPERTEKST /
+							</li>
+							<li>
+								PROTOCOL /
+							</li>
+						</ul>
+					</h1>
+					<p>
+						Bachelor scriptie door Martijn de Heer, 2015/16,
+						<br>
+						Koninklijke Academie van Beeldende Kunsten, Den Haag
+			 		</p>
 				</header>
 			</div>
 
-			<div id="article-wrapper">
-				
-				<article>
-					<section id="hfdstktwee">
-						<h2>Voorwoord</h2>
-						<p>
-							Ik weet dat het slecht is om een zin te beginnen met 'ik' maar ondanks dat deze tekst, mijn scriptie, over veel verschillende onderwerpen zich zal uitspreken gaat het vooral over mij. Mijn kijk op ontwerpen en de wereld heeft een enorme wending gemaakt de afgelopen jaren. Die kijk, is enorm gefascineerd door technologie, wetenschap en hoe die twee zich verhouden tot de maatschappij. Desalniettemin heb ik een passie voor boeken, een technologie en medium dat zijn geboorte zag aan de andere kant van de tijdlijn vergeleken bij wat wij in het algemeen onder technologische ontwikkelingen en huidige wetenschap verstaan. 
-						</p>
-						<p>
-							Het <a class="linkOne" data-section="1">boek</a><sup>01</sup> heeft mijn aandacht door verscheidende kwaliteiten van het medium. Historisch gezien is sinds het begin van het Christendom tijdperk het boek een van de meest krachtige metaforen voor het concipiëren van de kosmos, natuur, geschiedenis en het <a>menselijk lichaam</a><sup>02</sup>. Een monoliet vol met kennis over de wereld, een portaal waar je door de wereld verkent. Samen met de druktechniek heeft het boek wereldwijd kennis gebracht en mensen laten lezen en onderwezen. Lange tijd is het produceren van een boek een ambacht geweest, die maar voor enkelen was weg gelegd. Codecis werden met de hand gekalligrafeerd en gedecoreerd met miniaturen en illustraties. Theorieën over bladspiegels en vlakverdelingen, uitlijningen, typografie, het boek faciliteerde ontwerpen voordat deze ontwerpen werden genoemd. Door deze geschiedenis maar nog meer door zijn autoriteit, structuur, vorm en (strikte) regels is voor mij het boek dé essentie van grafisch ontwerpen. Informatie ordenen, schikken en structureren.  
-						</p>
-						<p>
-							Al meer dan <a href="#data-content-1">200 jaar</a>  b  lang wordt de discussie gevoerd over de relevantie van het boek en zijn naderende einde. Ondanks de enthousiasten van het boek merken we dat de vraag naar boeken achteruit is gegaan. Ook ik ben zo goed als overgestapt naar digitaal lezen, zonder dat mijn passie voor boeken minder is geworden. En zonder enig gevoel van schuld ben ik zeer pro-digitaal en dus ook pro-digitaal lezen. Digitaal lezen is momenteel, vergeleken met een boek, voornamelijk pragmatisch. De capaciteit van het internet en mijn computer om miljoenen bladwijzers —vergeef mijn skeumorfisme— te onthouden, de bijna gewichteloosheid van mijn digitale boekenkast —nogmaals mijn excuus— en het overzicht van al mijn notities en markeringen. Met overal hyperlinks die me verwijzen naar het volgende. De compact-en-snelheid van de computer maakt het tot mijn nummer één keuze voor bijna mijn hele leeslijst —enkele romans lees ik nog geprint.
-						</p>
-						<p>
-							Ondanks de verschuiving die plaats vind in hoe, wat en op welk medium we gezamenlijk lezen ontstaan er verschillende hybride modellen die beide werelden, het medium en de technologie boek en het medium en de technologie internet, probeert te verenigen. “Best of both worlds” zouden de verkopers zeggen. En dat is fantastisch. Het is fantastisch omdat die, in mijn ogen, tussenoplossingen veel zeggen over de huidige staat van onze maatschappij en hoe deze leest, of in een ruimer kader, informatie tot zich neemt. Het zijn tussenoplossingen waarvan wij misschien over 5 of 10 jaar, wanneer de verschuiving zich heeft voltooid, niets meer van zien of weten. Print-On-Demand (POD), Print-To-Web (PTW), Self-Publishing, scraping, grabbing, compiling, searching, publishing. Al deze hiervoor genoemde termen wijzen naar de daad van het omzetten van digitale, elektronische data naar tasbaar geprinte materie. 
-						</p>
-						<p>
-							De tussenoplossingen geven signalen af naar ontwerpers. Signalen over welke koers ze kunnen varen en naar lezers en hoe zij zichzelf kunnen sturen om zo, beide en hopelijk samen, tot nieuwe en betere inzichten te komen. Net als in het boek gaat het om theorieën over vlakverdelingen, uitlijningen, typografie, informatie ordenen, schikken en structureren, ofwel de essentie van grafisch ontwerpen. Want waarom zou je, in godsnaam, het internet (terug) in een boek stoppen? 
-						</p>
-					</section>
+			<article id="article-wrapper">
+				<section id="abstract" class="abstract">
 
-					<section id="hdstkdrie">
-						<h2>Inleiding</h2>
+					<div class="content">
+						<div class="short-abstract">
+							<h3>— ABSTRACT</h3>
+		 					<p>
+								Web-to-print is a practice where internet technologies and functions are used to make print. I stumbled upon this practice when I found the Library of the Printed Web (LotPW), a collection initiated by Paul Soullelis. LotPW holds several artist’ books that have been made by using the internet as primary tool. Primary tool meaning: creating, generating, designing and/or publishing of both the content as the physical book. I became intrigued by this seemingly paradoxical process. Where the internet is used to make print and itself also being printed. The way the works, in LotPW, use the internet shows a great spectrum of possibilities.
+							</p>
+						</div>
+	                    <div class="full-abstract">
+							<p>
+								Meanwhile I see a divergence between analogue and digital in design. Quite some graphic designers keep being afraid for working on or with the internet. Or are simply uninterested in the possibilities that this network has to offer. I think that shows the roots of graphic design: industrial mechanisms and craftsmanship. Leaving most designers work in methods coming from those roots.
+							</p>
+							<p>
+								This made me wonder what possible possibilities there could be, in or on the internet. Looking at the Web-to-print practices and take the internet as being more than merely a tool for displaying information, like the book, or, being more than a platform for communication. The internet, as a network of networks, is in a state of continuous change and development. Revealing its rhizome network topology.
+							</p>
+							<p>
+								Information, posts, protocols and logs are created, updated and removed simultaneously. Within this rhizome network —the internet— man and machine are on an equal level, both being able to create, alter, edit and sort information. While supporting more and more functionality.
+							</p>
+							<p>
+								In my thesis I search for what the internet could mean for graphic design in both practical as conceptual ways. I search for answers by asking a question that came to me when I discovered the Web-to-Print practices. Becoming my main research question: What is the purpose of using internet's native functionality as a primary tool to produce books?
+							</p>
+							<p>
+								Using the book as the essence of graphic design makes the approach of describing graphic design both practical and conceptual. Having processes, systems, studies and structures that have been laid out by centuries, the book becomes an artifact that is easily describable. Making it easier to talk about graphic design as a whole practice.
+							</p>
+							<p>
+								My thesis has come to develop a train of thought. Describing an approach of design in which graphic design should not use the internet only for conditional, dynamic, web or interactive design but instead, use the internet as a tool that is infinitely powerful in its abilities and functionalities. The divergence between analogue and digital is old and immature. The way we use our computers, now with local software, are no different than the way processes already work on the internet. We work with and in schemas —or chains— of functions, programs and processes. With the internet we not only can build our own functions, programs and processes but, we can actualy design the whole schema instead. These schemas, functions, programs and processes should not be seen from a perspective of industrial mechanisms, making them seem difficult or too technical. Instead, we, as designers of information and visual representation should be concerned with the following topics in order to use the internet to its fullest and to design well designed schemas: semiotics, semantics, collation, systematics, text mechanisms, code, automized processes and the workings of network structures. Scrutinizing our own field within the new boundaries set by technology and social developments.
+							</p>
+	                    </div>
+					</div>
+
+	        		<div class="abstract-fadeout"></div>
+	        		
+				</section>
+
+				<section id="inleiding" class="thesis-content">
+					<div class="content">
+						<h2>— INLEIDING: HET GEPRINTE NETWERK</h2>
 						<p>
-							De snelheid, de directheid, de veranderlijkheid, de grootsheid en de “gewichtloosheid” van het internet is ongeëvenaard. Dankzij het internet werkt de wereld voor een deel sneller en in sommige gevallen effectiever. Massaal zijn we de hele dag online, bezig met het bijhouden van de wereld. Zoals het boek een metafoor is voor de geschiedenis of de wereld  a , zo is het internet een metafoor voor de cosmos en ons brein. Niet alleen is het zelf een metafoor maar hebben wij ook metaforen voor het internet om uit te drukken hoe wij het begrijpen. Een zee waar wij op surfen, eindeloze kabels waar wij ons on-line op bevinden, een netwerk van netwerken, ofwel, internet-work. De impact van het internet is groot en in Nederland overal te zien. Nog steeds zijn we bezig met het onderzoeken en ondervinden. Wat is dit medium precies? Wat houdt dit netwerk in? Wat doet het met ons? Maar belangrijker: wat willen wij er mee doen? 
+							<span>Het boek is, naar mijn mening, niet alleen een oud medium van geprinte vellen papier die bij elkaar zijn gebonden.</span> In boeken zie ik de essentie van grafisch ontwerpen door het gebruik van materialen, typografie, lay-outs en rasters. Historisch gezien is het boek één van de meest krachtige metaforen voor <a data-note="1">het concipiëren van de kosmos, natuur, geschiedenis en het menselijk lichaam</a><sup>01</sup>. Het boek is een monoliet van kennis, een portaal waarmee een wereld wordt verkend en werelden worden gecreërd. Werelden die beschreven worden in grafische symbolen en zich vertonen door het contrast tussen inkt en papier. Een relatie tussen ambacht en technologie, waarbij grafisch ontwerp de relatie vormt.
+							<br>
+							<span>Desalniettemin wordt al meer dan 200 jaar lang de relevantie van het boek betwist.</span> Zodra er een nieuw format voor de weergave of opslag van informatie ontwikkeld is, is er altijd wel ergens iemand die roept dat het boek nu daadwerkelijk zal <a data-note="2">verdwijnen</a><sup>02</sup>. Terwijl vele dan wel mislukte pogingen worden gedaan<sup>02</sup> om het boek met zijn lineaire, monotone vorm te laten verdwijnen, is het Internet wel zeer gewaardeerd en succesvol. De capaciteit, en diversiteit van het Internet is weergaloos.
 						</p>
 						<p>
-							Sinds de commerciële lancering van het internet  c  bemoeidt het internet zich met het intelectuele, vermaak en media domein. Het is dan ook niet onlogisch dat de discussie over de relevantie van het boek  b  nog heftiger werd met de vraag ‘of het internet het boek zal laten doen verdwijnen’. Het internet maakt het boek langzaam en lomp. Zoals gezegdt wordt “Print is already outdated when it is printed”. Om nog maar te zwijgen over de deel-en-link-baarheid die het boek niet, of in zeer geringe mate, beschikt. Deze discussie zelf wil ik in deze tekst niet verder bespreken en de uitkomst laat ik ook over aan anderen. Wel wil bespreken dat het boek aanzienlijk minder word gekocht en gelezen. Zo lijken de meeste van ons, waaronder mijzelf, te gaan voor gemak en snelheid. Misschien gebeurdt het minder snel dan bij de Compact-Disc het geval was maar het is hetzelfde proces dat we zien bij het boek. Het proces waarbij uniforme media het verliest van flexibele media. Statisch versus vloeibaar, magnetisch tegenover digitaal. Minder vraag, minder geld, minder boeken. Zelfs —of misschien juist— iemand als mijzelf, een boekliefhebber, lees meer op het internet dan in boeken. Honderden bladwijzers met ooit gevonden schatten om ooit te lezen. Interessante pagina’s die elke dag nieuwe inhoud hebben, de pagina zo als je hem gevonden hebt vind je nooit meer. Opgeslagen afbeeldingen van inspirerende projecten —vaak zonder maker. En de mogelijkheid om terug te halen wat ik ooit ben tegen gekomen.
+
+							<span>Met de laatste ontwikkelingen, die er voor zorgen dat het Internet steeds meer capaciteit krijgt en toegankelijker wordt, ontstaat er een tussenfase.</span> Een impasse, waarbij de boekenboer, de printer, de schrijver, de ontwerper en de lezer bij elkaar komen om rond de tafel te zitten. Uit die —zogenaamde— bijeenkomsten komen verschillende oplossingen voort. Waarvan sommige een brug proberen te slaan <a data-note="3">tussen de analoge en digitale wereld</a><sup>03</sup>. Anderen maken compleet nieuwe apparaten die uitpuilen van de functies om het boek “tot dienst te staan”<sup>03</sup> —en dat vind ik fantastisch. Ik vind dit fantastisch omdat deze oplossingen veel zeggen over de opvattingen van de huidige maatschappij en over hoe mensen willen gaan lezen, of informatie tot zich willen nemen. Het zijn tussenoplossingen waarvan wij mogelijk over 5 of 10 jaar niets meer terugzien of weten. Dit vind ik goed omdat, naar mijn mening, het grootste deel van deze tussenoplossingen vreemde buitenbeentjes zijn. Maar nogmaals, dat is goed, we moeten niet vergeten dat het boek meer dan <a>500 jaar oud</a><sup>02</sup> is en een medium waar nog steeds mee wordt geëxperimenteerd 03 . Wat het Internet tot een grote concurrent lijkt te maken is zijn omvangrijkheid. Het Internet is niet een gesloten systeem maar eerder een gigantisch Zwitsers zakmes dat overal toegankelijk is en dat overal mee naar toe te nemen is.
 						</p>
 						<p>
-							Zo ben ik inmiddels een internet en digitaal-lees enthousiast geworden. Boeken zijn nog steeds wonderbaarlijke objecten maar het gemak en de snelheid van het digitaal-lezen op, of verbonden zijn met, het internet is voor mij ongeëvenaard. Vandaar mijn fascinatie over het boek ‘A Wikipedia Reader’ van David Horvitz  d . De publicatie bevat drieëntwintig hoofdstukken die zijn samengesteld van verschillende wikipedia-artikelen.
+							<span>Des te meer was ik geïntrigeerd toen eind 2014 <a data-note="4">een artikel</a><sup>04</sup> van <a>Alessandro Ludovico</a><sup>1963</sup> verscheen.</span> Hierin praat Ludovico over nieuwe ontwerp, productie en schrijf praktijken. Deze waren verzameld in een online bibliotheek genaamd: <a data-note"5">Library of the Printed Web</a><sup>05</sup> (LotPW). Deze bibliotheek bewaarde enkel boeken die het Internet —of specifieker, het web— als primair hulpmiddel gebruiken. Hier wordt het Internet niet als een informatiedrager of als communicatieplatform gebruikt. Het Internet wordt in de boeken binnen deze bibliotheek gebruikt en benaderd als hulpmiddel voor creatie. Een hulpmiddel voor een nieuwe werkmethode.
+							<br>
+							<span>Het klinkt paradoxaal dat het medium dat mogelijk het boek zou gaan vervangen gebruikt werd om zowel boeken te produceren alswel die boeken te vullen met inhoud afkomstig van het medium —het Internet.</span> Het eindproduct staat hier niet ter discussie maar het hulpmiddel wel. Want: <strong>Wat is het belang van de functionele eigenschappen van het Internet als primair hulpmiddel om boeken mee te produceren?</strong>
 						</p>
 						<p>
-							Mijn hypothese over de vraag wat het belang is om het internet te gebruiken als primair gereedschap om boeken te produceren is dat het ons een gevoel van grip geeft. Het internet voelt eindeloos en onuitputtelijk, een boek is compact en “af” wanneer deze word gekocht. Het boek fungeert als een archief van archieven, een accumulatie van accumulaties. Daarnaast is een boek gecureerd, ontworpen en meer trajecten door gegaan voordat deze werd uitgeprint. Zo komt, onder andere, het boek aan haar hoge autoritaire kracht. Het internet is een hypermedia netwerk waar (bijna) iedereen het voor het zeggen heeft. Deze twee uitersten werken op elkaar in zodat alles wat van het internet in boekvorm word gepubliceerd een zekere exclusiviteit en status krijgt. Een selfie op Instagram is niet hetzelfde als dezelfde selfie in een boek. Exclusiviteit op het internet is een mythe en dus is het al kunst om internet content exclusief te maken. Alles bij elkaar lijkt te bevestigen dat wij nog steeds denken in Het Boek en dat als archief voor het internet willen gebruiken. De boeken zijn een afdruk van een specifieke tijd en tijdsgeest waarin bepaalde applicaties worden gebruikt die hoogst waarschijnlijk volgend jaar oud zijn.
+
+							<span>Over enkele minuten begint u bij <a href="#hfdstkEEN">hoofdstuk 01</a> en zult nog meer minuten stoppen in het lezen over boeken, grafisch ontwerp, hulpmiddelen, systemen en netwerken.</span> Om kort toe te lichten welke onderwerpen er naar voren zullen komen en hoe de structuur van de tekst in elkaar zit is hieronder een korte samenvatting van deze scriptie en haar hoofdstukken. 
 						</p>
-					</section>				
-				</article>	
-			</div>
+						<p>
+							<span>Een belangrijk aspect van deze scriptie is het creëren van een tekst die niet alleen vanuit het perspectief van programmeren of computer technologieën kijkt maar, een breder perspectief schetst met conceptuele, historische, intellectuele én programmatische inslag.</span> Er zijn betrekkelijk veel hoofdstukken voor de lengte van de tekst, negen om precies te zijn. Het relatief hoge aantal hoofdstukken, met soms geringe lengte, geven de mogelijkheid om een nauwere verbinding tussen de hoofdstukken te creëren. Dit geldt ook voor de keuze om één werk als vertrekpunt en terugvalbasis te gebruiken. Dit werk is <a data-note="6">A Wikipedia Reader</a><sup>06</sup> van <a>David Horvitz</a><sup>1981</sup>. Elk hoofdstuk begint bij dit werk en komt meestal evengoed weer terug bij deze reader.
+							<br>
+							<span>Zo begint <a href="hfdstkEEN">hoofdstuk 01</a> met een korte beschrijving en analyse van het betreffende werk.</span> In de analyse wordt er gekeken naar de anatomie van de reader en hoe deze tot stand is gekomen. Wat maakt deze reader anders en hoe is dit behaald?
+							<br>
+							<span><a href="hfdstkTWEE">Hoofdstuk 02</a> onderzoekt de structuur van de reader en zijn oorsprong: <a>Wikipedia</a>.</span> Het behandelt de defintie van functionele eigenschappen van Wikipedia. Wat zijn de consequenties van de gebruikte structuur, functionele eigenschappen en hoe verhoud zich dit tot de inhoud van de reader?
+							<br>
+							<span><a href="hfdstkDRIE">Hoofdstuk 03</a> zoekt naar een stabiel fundament om het Internet te benaderen als netwerk dat zowel begrijpbaar als relevant is voor een ontwerper.</span> De definitie en de topologie van het Internet wordt vastgesteld. De bijhorende karakteristieken worden onderzocht en toegepast op de context van de reader. Door deze bevindingen ontstaat er een heldere splitsing tussen dat wat zich buiten het Internet afspeelt en dat wat zich er binnen afspeelt.
+							<br>
+							<span><a href="hfdstkVIER">Hoofdstuk 04</a> behandelt de systemen die aanwezig zijn in de reader en zegt daarmee iets over boeksystemen in zijn algemeenheid.</span> Hoe verhouden systemen en hun adaptief vermogen zich tegenover grafisch ontwerp? De werkmethode van de Horvitz als ontwerper worden hier onderzocht. 
+							<br>
+							<span><a href="hfdstkVIJF">Hoofdstuk 05</a> onderzoekt het vast stellen van eigen systemen binnen grafisch ontwerp en wat het verschil is tussen het daarbij wel of niet gebruiken van het Internet.</span> Het zet deze verschillen uiteen om de definities die hier gegeven worden verder te gebruiken in de volgende hoofdstukken.
+							<br>
+							<span><a href="hfdstkZES">Hoofdstuk 06</a> zoekt in de geschiedenis naar stromingen en voorbeelden die verbonden zijn met zowel het netwerk als de functionele eigenschappen van het Internet.</span> Om op deze manier een goed perspectief te creëren dat gegrond is in de geschiedenis. Op deze manier komen meerdere karaktistieken naar voren die horen bij het netwerk en het Internet.
+							<br>
+							<span><a href="hfdstkZEVEN">Hoofdstuk 07</a> onderzoekt de architectuur van de computer en de applicaties die zich hierop bevinden.</span> Hier wordt onderzocht wat de basis is van alle computer processen die aan de voet liggen van grafisch ontwerp. Hoe verhoudt de werking van de computer zich tot grafisch ontwerp?
+							<br>
+							<span><a href="hfdstkACHT">Hoofdstuk 08</a> onderzoekt de werking van het Internet ten opzichte van de werking van de computer die onderzocht is in <a href="hfdstkZEVEN">hoofdstuk 07</a>.</span> Hierin wordt gezocht naar bruikbare methoden en manieren om het Internet daadwerkelijk te gebruiken. Een speculatieve casus wordt opgesteld om de mogelijkheden op te sommen binnen een praktisch voorbeeld. Het wijdt daarna uit over voorbeelden die nog grotere mogelijkheden schetsen.
+							<br>
+							<span><a href="conclusie">Conclusie</a> hierin worden de conclusies, bevindingen en definities uit voorgaande hoofdstukken achter elkaar gezet om een logisch helder uitgebreid antwoord te geven op de gestelde onderzoeksvraag.</span>
+						</p>
+					</div>
+				</section>
+
+				<section id="hfdstkEEN" class="thesis-content">
+					<div class="content">
+						<h2>— HOOFDSTUK 01. EEN ANALYSE VAN EEN READER</h2>
+						<p>
+							<span><a>A Wikipedia Reader</a><sup>06</sup> is een op krantenpapier geprinte reader, ontworpen door David Horvitz.</span> Speciaal gemaakt voor de Contemporary Artists Books Conference tijdens de Printed Matter’s 2009 NY Art Book Fair. A Wikipedia Reader 06 valt onder de Web to Print (WtP) beweging. Deze beweging bestaat uit kunstenaars en ontwerpers die gevonden data en/of informatie van het web gebruiken om een tactiel, analoog product in geprinte vorm te produceren. De reader bevat 23 hoofdstukken die samengesteld zijn door 23 verschillende kunstenaars. In de hoofdstukken staan de onderwerpen los van elkaar. Het enige verbindende element is de oorsprong van de inhoud: <a data-note="7">De online encyclopedie Wikipedia</a><sup>07</sup>. Als je de publicatie leest is het alsof je door het hoofd van de kunstenaar heen wandelt. Er wordt niet gespecificeerd wat de artikelen in een hoofdstuk onderling met elkaar te maken hebben. Of, hoe het komt dat de kunstenaar deze specifieke volgorde aanhoudt. Het totale hoofdstuk schetst, door de gekozen artikelen, het karakter van de kunstenaar. Dit impliciete verhaal over de kunstenaar is de belangrijkste kwaliteit van deze publicatie. Je volgt een gedachtenpad dat van associatie naar associatie springt en waartussen de kunstenaar, als persoon, het enige verband is. Hiermee worden de denkwijze en associaties van de afzonderlijke kunstenaar op abstracte wijze geïllustreerd. David Horvitz zelf schrijft over zijn reader:
+							<br>
+							<blockquote>
+								“What follows is the documentation of 23 travels within Wikipedia (navigating from article to article via a connecting hyper-link, producing a string of connecting articles). The string of articles produced by each travel can be understood as a kind of mental-map: a wandering in thought, or a deeper continuous investigation.“
+							</blockquote>
+						</p>
+						<p>
+							<span>De reader lijkt eenvoudig en op het eerste gezicht zie je geen gebruik van ongewone elementen.</span> Het enige waar de reader uit bestaat is tekst, afbeeldingen, meerdere auteurs en papier. Echter, is de reader niet een ordinaire reader. De complexiteit zit hem niet in het ontwerp, de typografie of de kunstenaar maar in hoe er gekeken wordt en omgegaan met de tekst en de bron van die tekst —Wikipedia. <a>Ellen Lupton</a><sup>1963</sup> schreef over deze verandering in omgang met tekst in haar opstel <a data-note="8">Birth of the User</a><sup>08</sup>:
+							<br>
+							<blockquote>
+							“How texts are used becomes more important than what they mean”.
+							</blockquote>
+						</p>
+					</div>
+				</section>
+
+				<section id="hfdstkTWEE" class="thesis-content">
+					<div class="content">
+						<h2>— HOOFDSTUK 02. DE EIGENSCHAP VAN ASSOCIATIE</h2>
+						<p>
+							<span>De hyperlink is één van de functionele eigenschappen van Wikipedia.</span> Een functionele eigenschap is <a data-note="9">een doelmatig kenmerk van een zaak of hoedanigheid</a><sup>09</sup>. A Wikipedia Reader<sup>06</sup> gebruikt deze eigenschap van Wikipedia als structuur van de reader en denkpad van de kunstenaar.
+							<br>
+							<span>Hyperlinks verbinden de artikelen op Wikipedia onderling met elkaar.</span> Op deze manier onstaat er een encyclopedie waarbinnen de lezer kan navigeren. Daarnaast zorgen de hyperlinks voor het structureren van de informatie op basis van onderlinge relaties tussen onderwerpen. Op deze manier onstaan er letterlijke webben van door middel van hyperlinks verbonden artikelen. Zo creëert de hyperlink, als functionele eigenschap van Wikipedia, door de vermenigvuldiging van verbindingen die ontstaan in het web van artikelen, een hyper-structuur en hyper-ordening. Met ‘hyper-’ wordt bedoeld dat de artikelen niet alleen chronologisch- of alfabetisch- maar, binnen die twee rangschikkingen nogmaals op personen- of onderwerp te ordenen zijn. Het resultaat is een non-lineaire hyperstructuur waarin de lezer, of gebruiker, over oneindig veel mogelijkheden beschikt om informatie te verkrijgen.
+							<br>
+							<span>In de reader wordt dit non-lineaire- en daarmee associatieve karakter van Wikipedia benadrukt en in de context geplaatst van de kunstenaar, die gepresenteerd wordt als een collectie van onderwerpen.</span> De associatieve rangschikking binnen de reader is een afgelegde reis van de kunstenaar. Daarmee verandert de hele symbolische betekenis van de tekst. Op deze manier bewijst A Wikipedia Reader de irrelevantie van analoge rangschikking en daarmee die van hiërarchische categorisatie.
+						</p>
+					</div>
+				</section>
+
+				<section id="hfdstkDRIE" class="thesis-content">
+					<div class="content">
+						<h2>— HOOFDSTUK 03. DE TOPOLOGIE VAN HET NETWERK</h2>
+						<p>
+							<span>Een netwerk is een breed begrip.</span> <a>Manuel Castells</a><sup>1949</sup> geeft <a data-note"10">een heldere definitie van het netwerk</a><sup>10</sup>:
+							<br>
+							<blockquote>
+								“...a network is a set of interconnected nodes. A node is a point at which it intersects itself“
+							</blockquote>
+						</p>
+						<p>
+							<span>Zowel het geheel als de knooppunten ‘nodes’ of verbindingen kunnen werkelijk of virtueel zijn.</span> Er bestaan dus verschillende typen netwerken. Om het Internet als mogelijk hulpmiddel beter te kunnen analyseren, is het van belang dat er een heldere definitie geformuleerd wordt van het type netwerk van het Internet en zijn specifieke eigenschappen. De topologie van het netwerk verklaart veel van deze karakteristieken en eigenschappen.
+							<br>
+							<span>De knooppunten van het Internet zijn: servers waar informatie op staat, hypertekst documenten waarnaar verwezen wordt en computers die door middel van het Internet met elkaar verbonden zijn.</span> Het Internet is een netwerk van meerdere netwerken waaraan geen begin of einde zit. Deze karaktereigenschap van het Internet als netwerk wijst uit naar een concept van <a>Gilles Deleuze</a><sup>1925 - 1995</sup> en <a>Félix Guattari</a><sup>1930 - 1992</sup> . In hun boek <a data-note"11">Capitalism and Schizophrenia</a><sup>11</sup> stellen Deleuze en Guattari een nieuw filosofisch netwerk concept voor, de rizoom:
+							<br>
+							<blockquote>
+								“Unlike trees or their roots, the rhizome connects one point to any other point, and its traits are not necessarily linked to traits of the same nature”
+							</blockquote>
+						</p>
+						<p>
+
+							<span>Op het Internet zijn die connecties waar Deleuze en Guattari over schrijven de hyperlinks tussen verschillende hypertekstdocumenten of data.</span> Het type data heeft geen invloed op een mogelijke connectie, dit maakt elk denkbare connectie mogelijk. Een rizoom netwerk bestaat uit heterogene componenten. Een ander karaktereigenschap van een rizoom is zijn oneindigheid. In tegenstelling tot <a data-note="12">een netwerk met een boomstructuur</a><sup>12</sup>: die altijd begint met de wortel en ongeacht de grootte van de boom (het netwerk) altijd eindigt bij de laatste tak, die enkel in één richting verbonden is met zijn wortel. Het gegeven dat elke connectie mogelijk is en dat een rizoom oneindig is draagt bij aan de derde karaktereigenschap van het Internet: Een rizoom-achtig netwerk kent geen definitief stadium waarin het verzadigd of voltooid zal zijn. Een rizoom heeft enkel fasen van voorkomen.
+						</p>
+						<p>
+							<span>Het Internet, het World Wide Web (WWW) en Wikipedia zijn rizoom netwerken.</span> Er is geen definitief stadium waarin één van de drie zal rusten en/of klaar zal zijn. De artikelen die gebruikt zijn in <a>A Wikipedia Reader</a><sup>06</sup> bestaan in een constante en variabele informatiestroom (nieuwe pagina’s, citaten en artikelen worden continue gecontroleerd en aangevuld). Zo kan er op het moment waarop een gebeurtenis plaats vindt, al een pagina worden bijgewerkt met informatie over deze gebeurtenis.
+							<br>
+							<span>Op deze manier is <a>A Wikipedia Reader</a><sup>06</sup> een archief van het Internet.</span> De definitie van een archief luidt: <a data-note="13">Een bewaarplaats van historische gegevens</a><sup>13</sup>. De online artikelen zijn vastgelegd in printvorm, onttrokken aan het geheel, het netwerk. Deleuze en Guattari stellen dat een rizoom ondeelbaar is. Je kunt een onttrokken fragment wel onderzoeken, maar er zal tijdens dit onderzoek rekeningen gehouden moeten worden met het veranderlijke van het oneindige geheel, in dit geval Wikipedia, het WWW en het Internet. Net zoals een foto die bewegende onderwerpen vastlegt in een statisch beeld. Met <a>A Wikipedia Reader</a><sup>06</sup> kunnen wij de artikelen lezen in de staat waarin zij zich bevonden op het moment dat de kunstenaars de artikelen verzamelden —2009.
+							<br/>
+							<span><a>A Wikipedia Reader</a><sup>06</sup> is statisch, zoals een foto.</span> De artikelen op Wikipedia zelf zijn dynamisch. Er wordt hier een contrast zichtbaar tussen dynamisch en statisch, complex en eenvoudig.
+						</p>
+					</div>
+				</section>
+
+				<section id="hfdstkVIER" class="thesis-content">
+					<div class="content">
+						<h2>— HOOFDSTUK 04. BOEKSYSTEMEN EN NAVIGATIESYSTEMEN</h2>
+						<p>
+
+							<span>Om te begrijpen wat het effect is van de dynamische informatie in een statische reader, moeten de aanwezige systemen in de reader geanalyseerd worden.</span> Zowel het ontwerp als de inhoud moeten geanalyseerd worden om te zien welke keuzes er gemaakt zijn door de ontwerper en de kunstenaars die de artikelen hebben verzameld.
+						</p>
+						<p>
+							<span>Zoals in <a href="#hfdstkEEN">hoofdstuk 01</a> is vast gesteld, vertelt <a>A Wikipedia Reader</a><sup>06</sup> naast de letterlijk geschreven tekst een ander impliciet verhaal: Het verhaal van de kunstenaar, die gepresenteerd wordt als een collectie van onderwerpen.</span> De reader laat tevens niet het volledige Wikipedia artikel zien, maar een deel hiervan. Dit kan betekenen dat er, naast het kiezen van het onderwerp, een bewust selectie proces aanwezig is geweest bij het selecteren van een specifiek deel van de tekst.
+							<br>
+							<span>De manier waarop het impliciete verhaal naar voren treedt is door middel van een oud navigatiesysteem dat overal in boeken wordt toegepast: Het plaatsten van de onderwerpen bovenaan de pagina.</span> Deze staan geplaatst boven de tekstkolom waarin het betreffende onderwerp geïntroduceert zal worden. Op deze manier word ook de naam van de kunstenaar en het paginanummer vermeld. Zo staat bij Paul Branca op <a data-note"14">pagina 3</a> van de reader: Health Care, Illness, Pain, Nausea, Peppermint, rizoom, Asparagus<sup>14</sup>. <a>A Wikipedia Reader</a><sup>06</sup> gaat echter nog een stap verder dan het gebruikelijke navigatiesysteem. De opsomming van onderwerpen vertelt in feite het hele verhaal: Het denkpad van de kunstenaar. De mogelijkheid om de artikelen direct te lezen geeft extra diepgang maar is niet noodzakelijk voor het verhaal. De daadwerkelijke artikelen zijn eerder een bijzaak zoals voetnoten of kanttekeningen. Dit wordt versterkt door het gebruik van zeer smalle tekstkolommen in combinatie met het monospaced lettertype.
+							<br>
+							<span>Het ontwerp speelt in op de werkmethode van de kunstenaars die grote hoeveelheden tekst kopiëren van Wikipedia.</span> De reader fungeert als een canvas die de kunstenaars kunnen inkleuren met informatie. Een canvas met vooraf, door Horvitz, opgerichte condities: het navigatiesysteem met de onderwerpen, de tekstkolommen en de typografie. In vergelijking met elk ander boek zijn dit geen extraordinaire condities, maar de oorsprong, context en rangschikking van de informatie waarmee de reader gevult word zorgt voor een andere betekenis van deze condities. Het ontwerp laat zien dat het proces het belangrijkste aspect van de reader is. Een puur conceptueel ontwerp.
+						</p>
+					</div>
+				</section>
+
+				<section id="hfdstkVIJF" class="thesis-content">
+					<div class="content">
+						<h2>— HOOFDSTUK 05. STATISCH EN DYNAMISCH</h2>
+						<p>
+
+							<span>Met <a>A Wikipedia Reader</a><sup>06</sup> als statische reader die gevuld is met dynamische informatie vereisen de termen statisch en dynamisch verdere toelichting.</span>
+						</p>
+						<p>
+							<h3>/ 05.1 STATISCHE INFORMATIE</h3>
+							<br>
+							<span>Een fotocamera legt een dynamische omgeving vast in een statische foto.</span> De dynamische omgeving is in dit geval de fysieke wereld die net zoals het Internet kan worden gezien als een bewegend netwerk waarin de verbonden punten met en op elkaar reageren. Deleuze en Guattari hebben met hun theorie over het rizoom netwerk aangetoond dat ongeacht het eindresultaat, de informatie van dynamische oorsprong altijd moet worden afgewogen tegenover het geheel, in dit geval Wikipedia. Daarmee blijft de informatie uit een rizoom netwerk, ongeacht zijn huidige staat, dynamisch.
+							<br>
+							<span>Andersom kan deze theorie ook toegepast worden op statische informatie die in een dynamische omgeving terrecht komt.</span> Als voorbeeld kunnen we elke klassieke tekst pakken die te vinden is op het Internet. De teksten, en daarmee de informatie, zijn statisch —niet voort gekomen uit een rizoom netwerk. Desalniettemin zijn die teksten ondanks hun statische oorsprong onderhevig aan aanpassing en mutaties. De teksten blijven statisch in de dynamische omgeving, de aanpassingen en mutaties echter worden in een rizoom netwerk uitgevoerd en zijn daardoor wel dynamisch.
+							<br>
+							<span>Concluderend kan statische informatie alleen zeer specifieke informatie zijn die geen dynamische oorsprong heeft.</span> Dat wil zeggen dat het niet in een rizoom netwerk is ontstaan. Dit soort informatie is alleen lokaal gemaakt of gegenereerd.t Een duidelijk voorbeeld van statische informatie is een dagboek, de Bijbel of een longread van het NRC.
+						</p>
+						<p>
+							<h3>/ 05.2 STATISCH ONTWERP</h3>
+							<br>
+							<span>Statisch ontwerp werkt hetzelfde als statische informatie.</span> Dit betekent dat niet het eindresultaat maar de oorsprong bepaalt of het statisch of dynamisch is. De oorsprong van een ontwerp is de werkmethode die gebruikt wordt. Ontwerpen zijn ongeacht hun werkmethode altijd gebaseerd op systemen. Dat zien we al in eeuwen oude codices waar de standaarden van vandaag werden gecreëerd: de paginanummering, voetnoten, vermelding van hoofdstukken of bronnen. Deze systemen zijn het hart van ontwerp. Ze zijn adaptief en schikken zich naar de condities die zich presenteren op specifieke momenten en locaties in het boek. Dit staat los van een statische of dynamische staat. In statisch ontwerp bestaat de werkmethode uit losse opeenvolgende processen. Processen die door de tijd heen wel in vorm zijn veranderd maar nog altijd losse handelingen betreffen. Of nu letters worden gezet in een machine of letters geplaatst in Adobe InDesign, dat proces gebeurt enkel lokaal. Grafisch ontwerp heeft zijn wortels in de industriële wereld en werkt vaker wel dan niet nog steeds met die werkmethoden.
+							<br>
+							<span>In het boek <a data-note="15">A Collection of Bound Sheets and Fifty other Definitions</a><sup>15</sup> is goed te zien wat een statisch ontwerp inhoudt.</span> De oorsprong van vrijwel alle informatie in dit boek is dynamisch. Dit komt omdat de bron van de informatie het Internet is. Het ontwerp is net zo goed adaptief als elk ander boek met paginanummering en een lay-out. De werkmethode echter, is statisch en maakt het een statisch ontwerp. Het hele boek is afzonderlijk van een rizoom netwerk zoals het Internet ontworpen, waarmee het in principe dezelfde werkmethode aanhoudt als een boek dat met behulp van een bron anders dan het Internet is gemaakt.
+							<br>
+							<span>Kortom voor het benoemen van een ontwerp als statisch of dynamisch is de werkmethode bepalend en niet de inhoud of specifieke systemen van het ontwerp.</span>
+						</p>
+						<p>
+							<h3>/ 05.3 DYNAMISCHE INFORMATIE</h3>
+							<br>
+							<span>Dynamische informatie vindt zijn oorsprong in een rizoom netwerk: het Internet.</span> Een opvallende eigenschap van dynamische informatie is het direct overnemen van de functionele eigenschappen van zijn omgeving —zoals hyperlinks. Dat betekent concreet dat de informatie programmeerbaar is. De informatie kan functies en condities bij zich dragen die reageren op zekere evenementen. Een voorbeeld hiervan is <a data-note="16">Do Not Touch van Moniker</a><sup>16</sup>. Waarbij Internetgebruikers gevraagd worden om met hun cursor acties te ondernemen terwijl een muziekvideo afgespeeld wordt. De acties van de cursors worden opgeslagen en de volgende keer dat de video wordt afgespeeld is de cursor opgenomen in de video. In dit voorbeeld zijn de cursors de dynamische informatie.
+						</p>
+						<p>
+							<h3>/ 05.4 DYNAMISCH ONTWERP</h3>
+							<br>
+							<span>Dynamisch ontwerp onderscheidt zich van statisch ontwerp door de werkmethode en gebruikte hulpmiddelen om het ontwerp te maken.</span> In dynamisch ontwerp bestaat de werkmethode uit een opeenvolging van onderling verbonden processen die plaats vinden op een rizoom netwerk.
+							<br>
+							<span>Een duidelijk voorbeeld van dynamisch ontwerp is Richard Vijgen’s <a data-note="17">Project Gutenberg / Realtime Bookdesign</a><sup>17</sup>.</span> Een online database gevuld met klassieke —statische— teksten die klaar staan om door de lezer —of gebruiker— opgemaakt te worden met behulp van en gelimiteerd door de door Vijgen gecreëerde condities. Dynamisch ontwerp combineert de bestaande systemen en hun adaptieve kwaliteit van grafisch ontwerp met de functionele eigenschappen van het Internet. Om A Wikipedia Reader een dynamisch ontwerp te maken zou Horvitz de HyperText Markup Language (HTML) die als het ware vastzit aan het artikel moet gebruikt hebben om de titels boven de artikelen automatisch te plaatsen wanneer deze aanwezig is. Resulterend in het navigatiesysteem dat we terug zien in de reader. Wanneer dit alles ook op het Internet plaats vindt.
+						</p>
+					</div>
+				</section>
+
+				<section id="hfdstkZES" class="thesis-content">
+					<div class="content">
+						<h2>— HOOFDSTUK 06. DE CONTEXT VAN HET NETWERK </h2>
+						<p>
+							<span>Om beter te begrijpen wat het netwerk en dynamische informatie of dynamisch ontwerp kan inhouden en hoe het tot stand is gekomen moet het netwerk verder toegelicht worden.</span> Een duidelijk perspectief begint met de geschiedenis, in dit geval bij het modernisme. Een opvallende gelijkenis tussen het modernisme en WtP is het gebruik van het zelfbewustzijn en ironie met betrekking tot sociale tradities en trends. Een goed voorbeeld hiervan is de adaptatie van ‘American Psycho’: <a data-note="18">American Psycho</a><sup>18</sup> van <a>Jason Huff</a> en <a>Mimi Cabell</a>. In dit werk genereerden de kunstenaars met de advertenties die het Internet vormde op basis van hun e-mail conversatie een nieuwe American Psycho. In dit voorbeeld is te zien dat bij WtP sociale tradities en trends die vandaag de dag aanwezig zijn op het Internet, in dit geval e-mail en reclame, op een zelfbewuste en ironische manier worden gebruikt. WtP gebruikt net zoals het modernisme gebruik van reprise, opname, herschrijven, recapitulatie, revisie en parodie.
+							<br>
+							<span>Het modernisme heeft een cruciale rol gespeeld in het conceptualiseren en definiëren van zowel het netwerk als dynamische ontwerpen.</span> Zowel de stroming als de geest van die tijd hebben direct geleid tot de huidige situatie: iedereen om mij heen bezit een persoonlijke laptop en heeft zichzelf over het Internet verspreid. De conceptualisatie van het netwerk en het netwerk als hulpmiddel is in die tijd in gang gezet.
+						</p>
+						<p>
+							<h3>/ 06.1 MAIL ART EN HET NETWERK</h3>
+							<span>Eén van de meest duidelijke voorbeelden waar een netwerk zich in manifesteert is in mail art.</span> <a>Ray Johnson</a><sup>1927 - 1995</sup> is de oprichter van de <a data-note="19">New York Correspondance School</a><sup>19</sup>. Eén van de, zo niet dé eerste, correspondentie netwerken van mail art. In de werken van mail art zien we het gebruik van alledaagse voorwerpen om kunst te creëren die zich via de post verspreidde, om de gevestigde kunstgalerieën te vermijden. In deze stroming wordt voor het eerst het bewustzijn en het direct gebruik maken van het netwerk als toegevoegde laag op kunst gezien. Mail art beperkt zich dan ook niet enkel tot collage en/of assemblage kunst maar is een stroming die elke vorm van kunst betreft dat in een envelop past. Een grote kwaliteit van het correspondentie netwerk is zijn diversiteit binnen een relatief compact netwerk, namelijk het postnetwerk. Mail art zou niet kunnen bestaan zonder het netwerk. Binnen de stroming wordt een werk dan ook pas kunst genoemd wanneer deze is verzonden. Die twee, het werk en het netwerk, zijn verweven —al dan niet één geworden— met elkaar. Een ander belangrijk aspect van mail art is de participatie en onderlinge verbondenheid. Zonder de aanwezigheid van goedkeuringssystemen. Het geeft een breder perspectief aan wat <a>André Bréton</a><sup>1896 - 1966</sup> jaren daarvoor schreef:
+							<br>
+							<blockquote>
+								“One publishes to find comrades!”
+							</blockquote>
+						</p>
+						<p>
+
+							<span>Eensgezinde vinden door te publiceren, of in dit geval het verzenden, delen of uitbrengen van werk.</span> In <a>A Wikipedia Reader</a><sup>06</sup> zelf is geen directe participatie mogelijk van het publiek dat deze reader bezit of bekijkt. De inhoud echter komt ook voort uit een netwerk dat niet zou bestaan zonder participatie. Het succes van het Internet in het algemeen komt voort uit het feit dat iedereen, gelijkwaardig, kan participeren. In mail art zien we dit voor het eerst concreet tot stand komen. De filosofie achter mail art heeft het fundament gelegd voor, en wordt nog steeds voortgezet op het Internet. Mail art is één van de meest duidelijke voorbeelden van de conceptualisatie van het netwerk als hulpmiddel.
+						</p>
+						<p>
+							<h3>/ 06.2 HET POLITIEKE NETWERK</h3>
+							<span>In mail art werd het netwerk mede gebruikt om de goedkeuringssystemen te ontwijken en een compromiloos participatie netwerk te creëren.</span> Beide gefundeerd in een politieke overtuiging. Het gebruik van het netwerk is net zoals het publiceren van boeken een politieke daad. We zien bij fluxus —en eerdere conceptuele kunst— dat het netwerk wordt gebruikt om een internationaal dialoog te voeren. Printen en publiceren was een essentieel onderdeel om de ideeën en het werk van fluxus over de wereld te verspreiden en zo, zoals Bréton predikte, eensgezinden te vinden en samen sterker te staan. Daarnaast is dat terug te zien in subculturen die an sich een netwerk van eensgezinden vormen. Andere bekende voorbeelden van gevormde netwerken vanuit politieke overtuigingen zijn de <a data-note="20">Drop City kampen</a><sup>20</sup>, <a data-note="21">Whole Earth Catalog publicaties</a><sup>21</sup> en <a data-note"22">pop art</a><sup>22</sup>.
+							<br>
+							<span>Pop art is in het bijzonder interessant door hun gebruik van commerciële, massa culturele, populaire en alledaagse producten of productie hulpmiddelen.</span> Pop art weerspiegelt huidige situaties en beeldtaal als reactie op die situatie. Anders gezegd legt pop art aspecten en processen van de huidige situatie bloot met als doel het begrijpen en kunnen bekritiseren van die situatie. In WtP zien we dit ook gebeuren op het gebied van onze online digitale wereld. Pop Art gebruikt niet alleen de visuele aspecten van de huidige situaties maar, ook de productie en reproductie technieken zoals massaproductie gereedschap en makkelijk te kopiëren voorwerpen. Pop art werk goedkoop en snel met behulp van stencils en sjablonen. Dit zien we terug bij WtP waar de productie vanuit het netwerk komt. Een voorbeeld hiervan is Print on Demand (PoD). Een methode waarbij werken pas geprint worden wanneer deze worden besteld. Op deze manier maken ontwikkelingen in de printindustrie samen met documentmanagementsystemen micro-publiceren mogelijk.
+						</p>
+						<p>
+
+							<span>Door het gebruik van de vrije encyclopedie <a>Wikipedia</a><sup>07</sup> gaat <a>A Wikipedia Reader</a><sup>06</sup> nog een stap verder in het gebruik van het netwerk als een politieke daad.</span> De kunstenaars presenteren zichzelf aan de hand van artikelen die vallen onder de gemeenschappelijke goederen. De ontwerper en kunstenaars hebben de keuze gemaakt om hulpmiddelen te gebruiken waar iedereen toegang tot heeft en waarvan iedereen de mogelijkheid heeft om de informatie hierop te bewerken, kopiëren, hergebruiken en heruitgeven. Hierdoor is de kunstenaar lastig een auteur te noemen, hij heeft alleen de artikelen verzameld: Het denkpad bewandeld. Dit toont een belangrijke eigenschap van het Internet, waarin de stroom van informatie niet volgens de regels van autoritaire instituten hoeft te verlopen. Op deze manier is het gebruik van Internet als primair hulpmiddel een politieke keuze.
+						</p>
+						<p>
+							<h3>/ 06.3 JOHN CAGE EN HYPERTEKST</h3>
+							<br>
+							<span>In 1951 schreef <a>John Cage</a><sup>1912 - 1992</sup> <a data-note="23">Imaginary Landscape No. 4</a><sup>23</sup>.</span> Een muziekstuk met een voor zijn tijd nieuwe aanpak waarbij hij het boek <a data-note="24">I Ching</a><sup>24</sup>(Boek der Veranderingen) gebruikte als hulpmiddel. In zijn werk gebruikt Cage vaak willekeur als een essentieel onderdeel. Het boek <a>I Ching</a><sup>24</sup> gaf hem hierin nog vele nieuwe mogelijkheden.
+							<br>
+							<span>De <a>I Ching</a><sup>24</sup> is een klassieke Chinese tekst die tussen 1000 en 750 v.Chr. voor voorspellingen werd gebruikt.</span> Het boek beschrijft een oud systeem van kosmologie en filosofie om de orde in toevalligheden te identificeren. Voor John Cage werd het een middel om de toevalligheden en kansen, die uit het systeem kwamen, te gebruiken in muziek en om muziek mee te schrijven. De hexagrammen van het boek geven de mogelijkheid een tekst te vormen op basis van willekeur. Dit is in de pragmatische situatie een hypertekst. Een onderling verbonden reeks van teksten die gezamenlijk oneindig veel combinaties en navigatie mogelijkheden vormen.
+							<br>
+							<span>Wat opvalt in dit werk van John Cage is zijn programmatische aanpak.</span> Cage gebruikte de <a>I Ching</a><sup>24</sup> om schema mee te maken waarin hij op basis van de willekeur van het boek de gelaagdheid, tempo, duur, geluiden, en dynamiek verwerkt. Daarnaast zitten er twee muzikanten bij twee radio’s die zorgen voor een nog grotere willekeur door de onwetendheid van hetgeen dat op de radio te horen zal zijn. Dit schema aan variabelen zijn als ingrediënten. <a>I Ching</a><sup>24</sup>, willekeur en de vooraf opgezette regels maken het schema tot een systeem. Het werkt als een recept waarin de ingrediënten op verschillende tijden in de pan gegooid worden, om zo verschillende smaken te generen. John Cage ontwerpt dit recept.
+							<br>
+							<span>Hypertekst is met de <a>I Ching</a><sup>24</sup> duidelijk een oud begrip.</span> Hypertekst betekent dan ook in de semiotiek een tekst die ofwel zinspeelt op ofwel is afgeleid van ofwel betrekking heeft op een vroegere tekst, in semiotiek ookwel <a data-note="25">hypotekst</a><sup>25</sup> genoemd. Hypertekst heeft in de semiotiek vele vormen waaronder imitatie, parodie en pastiche (een amalgaam van fragmenten uit andere werken). Een ander voorbeeld van “analoge” hypertekst is bijvoorbeeld het boek Ulysses van James Joyce<sup>1882 -1941</sup> dat gebaseerd is op Homer’s Odyssey. <a>Walter Ong</a><sup>1900 - 1902</sup> duidde in <a data-note="26">Orality and Literacy: The Technologizing of the Word</a><sup>26</sup> aan dat de revolutie van het digitale tijdperk de voortzetting is van een traditie die vele eeuwen geleden is begonnen. Een traditie waarin de organisatie van symbolen, in het sociale leven woorden en afbeeldingen, apparaten voor de mobilisatie van ideeën zijn geworden. Daarnaast, als we naar <a>I Ching</a><sup>24</sup> kijken, benadrukt <a>Espen Aarseth</a><sup>1965</sup> in <a data-note="27">Cybertext, Perspectives on Ergodic Literature</a><sup>27</sup> het feit dat de definitie van hypertekst niet kan worden vastgesteld op de basis van de ondersteuning, maar eerder op basis van de onderlinge relatie tussen de tekst en gebruiker.
+						</p>
+					</div>
+				</section>
+
+				<section id="hfdstkZEVEN" class="thesis-content">
+					<div class="content">
+						<h2>— HOOFDSTUK 07. DE ARCHITECTUUR VAN HULPMIDDELEN </h2>
+						<p>
+							<span>Nog steeds bestaat grafisch ontwerp uit losse processen, net zoals in de 20e eeuw.</span> Arbitrair gezien een industriële werkmethode. Echter zijn deze processen nu terug te vinden in één machine, de computer. In de architectuur van de computer zien we dat grafisch ontwerp zich nog verder opdeelt in series van kleine processen en hulpmiddelen. Een computerprogramma (hierna applicatie genoemd) bestaat uit een verzameling modules. Een module is een gegroepeerde set verbonden functies die samen één doel hebben. De modules en hun functies komen in een applicatie samen tot één ruimte waar ze allemaal ingezet kunnen worden. Zelfs een simpel programma als een tekstverwerker gebruikt verschillende modules om de tekst weer te geven, grammatica checks te doen en de opmaak van die tekst toe te passen. Deze modules vormen nu de kern van grafische hulpmiddelen. Dit alles is verstopt achter de ontworpen Graphical User Interfaces (GUIs) met de intentie om mens en machine dichterbij elkaar te brengen en het gebruik van de computer meer intuïtief te laten lijken.
+							<br>
+							<span>De groeiende interesse en het belang van programmeertaal zowel in grafisch ontwerp als in de samenleving geeft aan dat het voor grafisch ontwerpers belangrijk is om zich te verdiepen in computerprogramma’s en programmeertaal.</span> We moeten onze industriële wortels los laten. Dit is belangrijk omdat de omgeving waarin ontwerpers zich nu bevinden niet bestaat uit metaal, schroeven en gietijzer, maar uit tekstuele karakters, variabelen en informatie. Zoals <a data-note="28">Jürg Lehni</a> schreef<sup>28</sup>:
+							<br>
+							<blockquote>
+								“Just like the metal fonts that were an ingredient for a typesetting-machine, the digital fonts are data for a host software that knows how to read it and lay it out.”
+							</blockquote>
+						</p>
+						<p>
+							<span>Informatie is essentieel voor grafisch ontwerp.</span> Het gaat hier niet om de soort informatie maar, om de manier waarop de informatie zich manifesteert. Informatie in de vorm van tekstuele, alfabetische karakters is doorzoekbaar, te vertalen. Daarnaast heeft informatie de mogelijkheid om te worden geformatteerd en hervormd voor alternatieve of toekomstige media. Deze flexibiliteit van informatie wordt een <a data-note="29">Rosetta steen fenomeen</a><sup>29</sup> genoemd. Informatie in de vorm van alfabetische karakters is een natuurlijke eigenschap van de computer en daarmee ook van het Internet.
+							<br>
+							<span>Door de flexibiliteit van digitale tekstkarakters kan de structuur van de tekst steeds weer worden veranderd of anders worden weergegeven.</span> Er bestaat een tweedeling tussen de rauwe informatie en haar weergave. De weergave hoeft niet gelijk te zijn aan de structuur van de rauwe informatie. Zo wordt de weergave van informatie een van de vele mogelijke representaties van die informatie. De navigatie binnen de informatie wordt een van de vele mogelijke navigaties. Door deze vermenigvuldiging en groeiende complexiteit van mogelijkheden is het belangrijk dat grafisch ontwerpers een diepere betekenis leren kennen van semiotiek, sortering en (digitale) tekstmechanismen. Niet alleen de ordening, opmaak en plaatsing van informatie is belangrijk maar, ook de diepere symbolische betekenis van de informatie zelf. <a>Ellen Lupton</a> brengt dit duidelijk naar voren in haar observatie<sup>07</sup> waarin zij beschrijft dat lange tijd iconen werden gezien als een meer universele vorm van communicatie dan tekst. Iconen staan centraal in de GUIs, een plek waar mens en machine samenkomen. Echter beschrijft zij ook dat tekst vaker een ruimere specificatie en duidelijkheid biedt dan een afbeelding of illustratie. Zo maken iconen de vertaling van content in meerdere talen niet makkelijker, integendeel, ze hebben uitleg in meerdere talen nodig. Nog steeds zien vele ontwerpers iconen als een universele taal. Nu programmeertaal voet aan de grond krijgt in het basis-, middelbaar- en voortgezet onderwijs, is tekst —bestaande uit alfabetische karakters— een grotere gemeenschappelijke taal binnen de digitale wereld dan iconen of afbeeldingen. Tekst is flexibel en bruikbaar om zelf applicaties te maken maar ook om applicaties te gebruiken zoals wanneer je een persoonlijke post plaatst op Facebook.
+							<br>
+							<span>Applicaties en hun modules bestaan uit een reeks tekstuele syntactische regels.</span> Hiermee is tekst in alle vormen waarin tekst zich manifesteert essentieel voor grafisch ontwerp. Met één tekst kan er een applicatie met duizenden modules geschreven worden en met duizenden teksten kan er één idee beschreven worden.
+							<br>
+							<span>De symbolische betekenis van het alfabet komt dichterbij de aanpak die <a>Isidore Isou</a><sup>1925 - 2007</sup> gebruikt in zijn <a data-note="30">hypergraphic novels</a><sup>30</sup>.</span> In deze hypergraphic novels wordt tekst —en andere symbolen— buiten het normale gebruik van tekst toegepast. Deze wordt toegepast als een illustratie die, door middel van meerdere lagen, een totaal verhaal vertelt. Op deze manier krijgt tekst, binnen de digitale wereld, een materiële functie waarmee ideeën over gedragen worden en functies worden uitgevoerd.
+						</p>
+						<p>
+							<span>Door de programmatische aard van de computer is grafisch ontwerp steeds meer in schema’s gaan werken gebruikmakend van verschillende modules en functies, zoals een applicatie zelf.</span> Een schema zoals dat van Cage’s <a>Imaginary Landscape No. 4</a><sup>23</sup> is een helder metafoor, doordat het de aanwezige processen als een serie opeenvolgende ingrediënten laat zien. Een diagram van de werkmethode en de hulpmiddelen. Het schema van <a>A Wikipedia Reader</a><sup>06</sup> zou er als volgt uit kunnen zien: een kunstenaar > Wikipedia > zijn denkpad > de artikelen > het formaat van de reader > de lay-out > positionering van de tekst > vast stellen van de opmaakstijlen > het papier > uitprinten > de vouwwijze > vouwen. Een serie van ingrediënten waarvan het grootste deel gedreven wordt door tekst, zowel functioneel als inhoudelijk.
+						</p>
+					</div>
+				</section>
+
+				<section id="hfdstkACHT" class="thesis-content">
+					<div class="content">
+						<h2>— HOOFDSTUK 08. MODULEN, SCHEMA’S IN HET NETWERK</h2>
+						<p>
+							<span>De modules en functies van applicaties zijn ook aanwezig op het Internet.</span> Het aanbod is net zoals het netwerk zelf continu aan het uitbreiden. In een applicatie komen modules en functies bij elkaar, zo ook op het Internet, waar alles met elkaar verbonden kan worden. Het schema wordt hiermee een cruciaal ontwerp middel. Een schema waarin zowel programmatische handelingen en toepassingen als ontwerp specifieke handelingen plaats vinden. In dit schema zijn mens en machine gelijkwaardig als maker en bestaat er geen onderscheid tussen automatische computaties en door de mens uitgevoerde taken. Hiermee wordt de antieke zoektocht naar transparante communicatie voortgezet 09 . Het is echter niet de technologie die dichter naar de mens toe beweegt, het zijn wij die dichter naar de technologie toe bewegen. De grens tussen machine en mens vervaagt. Als wij het schema zelf ontwerpen en programmeren vervaagt deze grens mogelijk minder dan wanneer wij op voorgeprogrammeerde knoppen blijven klikken.
+							<br>
+							<span>Hier ontstaat een grijs gebied waarin meerdere disciplines elkaar overlappen.</span> Veel ontwerpers houden zich dan ook —bewust— niet met programmeren bezig. Een houding die, gedeeld <a data-note="31">in een groot deel van de ontwerp educatie</a><sup>31</sup>, concept boven executie betoogd. Om de opinie over programmeertaal van de meerderheid van de grafische ontwerpers te benadrukken zegt <a>Olia Lialina</a><sup>1971</sup> in <a>Turing Complete User</a><sup>31</sup>:
+							<br>
+							<blockquote>
+							“The message from Adobe is clear. The less you think about source code, scripts, links and the web itself, the more creative you are as a web designer. What a lie.”
+							</blockquote>
+						</p>
+						<p>
+							<span>Ookal beschrijft <a>Lialina</a> de situatie van een web ontwerper geldt dit net zo goed voor grafisch ontwerpers ongeacht het medium waarin zij hun werk maken.</span> Zoals beschreven is in voorgaande hoofdstukken ligt vormt tekst de kern van grafisch ontwerp en bestaan de digitale hulpmiddelen die gebruikt worden uit tekst. Genoeg redenen om dit gebied serieus te nemen en serieus te gaan gebruiken. De mogelijkheden die zich hier voordoen zijn gigantisch en kunnen leiden naar nieuwe definities van oude media zoals het boek en grafisch ontwerp an sich.
+							<br>
+							<span>Het feit dat de ruimte, waarin deze mogelijkheden zich voor doen, gebruikt wordt door meerdere disciplines, bewijst des te meer de flexibiliteit van deze ruimte.</span> Een plek waar disciplines samen komen en waar huidige relaties —van disciplines— uit hun context worden gehaald. <a>Deleuze en Guattari</a> noemen dit proces <a>deterritorialisatie</a><sup>11</sup>. Echter bestaat deterritorialisatie altijd gelijktijdig met reterritorialisatie. In de context van deze tekst en de beschreven situatie betekent dit, dat grafisch ontwerp altijd al werkt met informatie, de culturele symbolen van informatie en het verwerken van informatie in het licht van een doel of concept.
+						</p>
+						<p>
+							<span>Een schema dat is samengesteld van verschillende modulen en/of functies op het Internet kan gebruik maken van veel verschillende bestaande applicaties, systemen of mechanismen die op het rizoom netwerk bestaan.</span> Om een helder voorbeeld te geven van de mogelijkheden op het Internet wordt er hieronder een casus uitgeschreven voor een dynamisch boek ontwerp.
+							<br>
+							<span>Dit boek heeft een tekst dat geschreven is door een auteur en wordt herzien door zijn redacteur.</span> De tekst is dynamisch doordat het geschreven wordt op een open platform waar de auteur in kan schrijven en zijn redacteur direct aanpassingen kan doorvoeren of commentaar kan plaatsen. Hoofdstukken worden, net zoals andere structurele systemen die nodig zijn in het boek — voetnoten, bronvermelding et cetera — met markeringen aangegeven.
+							<br>
+							<span>De ontwerper kan op zijn beurt, bijvoorbeeld via javascript, html en/of css, de nodige condities scheppen.</span> Hieronder vallen het formaat van het boek, de lay-out, de typografie en de kleur. Zo kan de tekst direct ingeladen worden via het collaboratieve schrijf platform. Dankzij de gemaakte markeringen wordt de juiste tekst op de juiste plek geplaatst in het ontwerp. Er kan nog een stap verder gemaakt worden door het boek direct te verbinden met een publicatie platform. Op deze manier staat het boek direct nadat er een aanpassing is doorgevoerd klaar voor productie. Uiteraard is dit een zeer toegepast voorbeeld maar de mogelijkheden ervan zijn eindeloos. De ontwerper heeft een eindeloze mogelijkheid in het scheppen van condities.
+							<br>
+							<span>Dit voorbeeld schetst de potentie van het gebruik van het Internet als hulpmiddel waardoor zijn verschillende modules en functies aan elkaar kunnen worden geschakeld tot een groot schema.</span>
+							<br>
+							<span>Het Internet draagt vele diensten en applicaties, zoals onderling verbonden hypertekstdocumenten en toepassingen zoals <a data-note="32">het WWW, e-mail, telefonie en peer-to-peer-netwerken</a><sup>32</sup>.</span> Allemaal met hun eigen specifieke mogelijkheden. Paul Soullesis beschrijft in Search, Compile, Publish. een aantal werkmethoden die voor komen in WtP. Hij verdeelt deze methoden in vier categorieën: <a>Grabbing, scraping, hunting en performing</a>. Deze categorieën verspreiden zich over het gehele Internet en maken gebruik van verschillende diensten en/of applicaties binnen het Internet. Om dus een breder spectrum te schetsen van het Internet als hulpmiddel gebruik ik zijn vier categorieën met een uitleg van de werkmethode.
+							<br>
+							<span><a data-note="33">Grabbing</a><sup>33</sup> is het uitvoeren van een zoekopdracht en het presenteren van de resultaten in een georganiseerde manier.</span> Grabbing wordt gedaan volgens een concept maar, nog belangrijker: Er worden tekst of beelden gebruikt die van iemand anders zijn. Vaak is de inhoud uit een enorme database gehaald waarbinnen enkel genavigeerd kan worden via een zoekmachine.
+							<br>
+							<span><a data-note="34">Scraping</a><sup>34</sup> is nauw verwant aan grabbing.</span> Het enige verschil is dat scraping vaak geautomatiseerd is en dat het bij scraping gaat om enorme grote hoeveelheden data die worden verwerkt, zoals bijvoorbeeld alle tweets van een jaar met het woord McNugget erin.
+							<br>
+							<span><a data-note="35">Hunting</a><sup>35</sup> wordt gekenmerkt door de zoektocht zelf.</span> Het vinden van de uitzondering op het Internet. Die uitzondering functioneert vervolgens als bewijs om een idee te ondersteunen.
+							<br>
+							<span>Performing concentreert zich op, zoals de naam al doet vermoeden, de actie van het doen.</span> Niet alleen gaat het om de actie van het omgaan met data maar ook om de relatie tussen de applicatie —of het systeem— die gebruikt wordt en het uiteindelijk geprinte werk. <a>A Wikipedia Reader</a><sup>06</sup> valt in deze categorie. Het gaat om de actie ‘de performance’ van het navigeren op <a>Wikipedia</a>. Deze navigatie wordt uiteindelijk als verhaalvorm gebruikt.
+						</p>
+					</div>
+				</section>
+
+				<section id="conclusie" class="thesis-content">
+					<div class="content">
+						<h2>— CONCLUSIE: DE SANERING VAN GRAFISCH ONTWERP</h2>
+						<p>
+							<span>Met het Internet als hulpmiddel wordt het gebruik van informatie of tekst belangrijker dan wat deze informatie of tekst betekend.</span>
+							<br>
+							<span>De vermenigvuldiging van verbindingen in de vorm van hyperlinks zorgen voor een hyper-structuur en hyper-ordening.</span> Deze hyper-eigenschappen van het netwerk geven nieuwe mogelijkheden voor informatieverwerking die analoge rangschikking en hiërarchische categorisatie irrelevant maken.
+							<br>
+							<span>Het Internet is een rizoom netwerk dat nooit verzadigd of klaar zal zijn.</span> Het Internet is continu in een veranderlijke staat waardoor het enkel mogelijk is om fragmenten uit dit rizoom netwerk te halen. Echter moeten deze fragmenten ten alle tijden worden afgewogen tegenover het grotere geheel: Het rizoom netwerk. De fragmenten zullen in dit licht altijd historisch zijn, referend naar een tijdelijke fase van voorkomen op het netwerk. Het boek dat gevuld is met informatie uit dit netwerk wordt zo een archief van historische gegevens. Het dynamische rizoom netwerk staat tegenover het statische lokale individu.
+						</p>
+						<p>
+
+							<span>Grafisch ontwerp maakt altijd al gebruik van adaptieve systemen die zich schikken naar condities zoals paginanummering of navigatiesystemen in boeken.</span> Hoe deze systemen gebruikt worden en welke prioriteit zij krijgen bepaalt de symbolische betekenis van de inhoud en de condities van de systemen. Dit is te zien in <a>A Wikipedia Reader</a><sup>06</sup> waarbij de navigatie het belangrijkste aspect van de reader is.
+						</p>
+						<p>
+
+							<span>Of informatie dynamisch of statisch is wordt bepaald door de oorsprong van de informatie.</span> Informatie is dynamisch als deze afkomstig is van een rizoom netwerk. Informatie is statisch als deze tot stand is gekomen afzonderlijk van een rizoom netwerk. Voor dynamisch of statisch ontwerp is er bijna dezelfde uitleg. Echter wordt met de afkomst de gehandteerde werkmethode en de gebruikte hulpmiddelen bedoeld.
+						</p>
+						<p>
+
+							<span>De conceptualisatie en het gebruik van het netwerk als hulpmiddel, met mail art als meest concrete voorbeeld, is in de tijd van het modernisme in gang gezet.</span> Mail art gebruikte het netwerk als cruciaal aspect van de beoefende kunst waarin participatie, verbondenheid en vrijheid van uiting drie resulterende elementen zijn.
+							<br>
+							<span>Zowel het netwerk als het publiceren hebben een politieke lading door hun betrokkenheid bij het uiten van ideeën en het zoeken van eensgezinden.</span> De vrije natuur van het Internet is hierdoor altijd een politieke keuze waarin het gebruik van gemeenschappelijke goederen en andere vrije applicaties zoals het Web onderdeel zijn van deze politieke overtuiging. Auteurschap is hiermee ook een gedeeld goed, waarbij iedereen geniet en profiteert van de door anderen gecreërde delen van het netwerk.
+						</p>
+						<p>
+
+							<span>John Cage en het boek <a>I Ching</a><sup>24</sup> bewijzen dat de digitale revolutie de voortzetting is van een traditie die eeuwen geleden is begonnen.</span> Hypertekst komt voor in <a>I Ching</a><sup>24</sup> en in de semiotiek. Dit wijst, met de voorgaande conclusies over tekst en symbolische betekenissen, naar de noodzaak om diepere kennis te verkrijgen over de symbolische waarde van tekst en tekstmechanismen. De definitie van hypertekst, en mogelijk meerdere digitale processen, kan niet worden vastgesteld op basis van de ondersteuning, maar op basis van de onderlinge relatie tussen de tekst en gebruiker.
+						</p>
+						<p>
+
+							<span>De architectuur van zowel de computer als de applicaties die grafisch ontwerp gebruikt is opgebouwd uit tekstuele syntactische regels.</span> Dit geeft de kracht en flexibiliteit aan van tekst binnen de digitale wereld. Er ontstaat een tweedeling tussen de rauwe vorm van informatie en de weergave van informatie. GUIs zorgen voor een indirecte en abstracte weergave van de computer en zijn functies. Tekst en informatie zijn, zowel als hulpmiddel als content, door de komst van de computer nog belangrijker geworden voor grafisch ontwerp. Door de aard van de computer is grafisch ontwerp steeds meer in schema’s gaan werken, met verschillende processen en elementen als ingrediënten in dat schema.
+							<br>
+							<span>Dit schema wordt een cruciaal hulpmiddel voor grafisch ontwerp wanneer het Internet als hulpmiddel gebruikt wordt.</span> Op dit schema zijn mens en machine gelijkwaardig als maker. Om als grafisch ontwerper de mogelijkheden te benutten van de computer en daarmee ook het Internet, is het gebruik van programmeren noodzakelijk. Om zowel eigen hulpmiddelen te maken als het volledig benutten van bestaande hulpmiddelen. Deze houding mist momenteel in een groot deel van de ontwerp educatie. Alleen op deze manier is het mogelijk het gehele schema te ontwerpen. Het gebruik van het Internet als hulpmiddel sluit niet het gebruik van analoge apparatuur en eind producten uit. Het gaat puur om de omgeving waarin gewerkt wordt. Ondanks een deel van grafisch ontwerp dat zich afzijdig houdt van programmeren en dus zeer waarschijnlijk ook van het Internet als hulpmiddel, zijn beiden de voortzetting van de ambacht dat grafisch ontwerp altijd geweest is. Het zijn juist de huidige culturele processen en symbolen die moeten worden toegepast om tot een nieuwe compromiloze definitie van grafisch ontwerp te komen.
+						</p>
+						<p>
+
+							<span>De mogelijkheden die zich voordoen op het Internet als het gebruikt wordt als hulpmiddel om boeken te produceren zijn enorm.</span> Sommige bieden niets anders dan hetzelfde van wat bekend is maar dan online op het netwerk. Echter die verbinding met het netwerk is per definitie een cruciale verandering door het feit dat er een verbinding is met alles wat er op het netwerk is. Zowel oude applicaties zoals e-mail en nieuwere applicaties zoals peer-to-peer netwerken kunnen gebruikt worden om compleet nieuwe werken te maken, die de huidige definities van zowel oude als nieuwe media en ontwerpen vervangen met compleet nieuw herziende definities. Het is de eindeloze mogelijkheid waar de nadruk op ligt. Zoals mogelijkheid de drijfsveer is achter WtP, zou mogelijkheid dat ook van grafisch ontwerp in het algemeen moeten zijn. Het is belangrijk om met het Internet leren om te gaan. Niet koppig blijven vasthouden maar, onze overtuigingen toepassen op de huidige ontwikkelingen en de mogelijkheden opzoeken. Wees als tekst, vertaalbaar, formatteerbaar en vervormbaar.
+						</p>
+						<p>
+
+							<span><strong>Het belang van de functionele eigenschappen van het Internet als primair hulpmiddel om boeken mee te produceren is</strong> die van nieuwe mogelijkheden en structuren om zowel oude als nieuwe media en ontwerpen een —noodzakelijke— nieuwe betekenis te geven.</span>
+						</p>
+					</div>
+				</section>
+
+				<section id="appendixA" class="appendix">
+					<div class="content">
+						<h4>— APPENDIX A: literatuurlijst, boeken</h4>
+						<ol>
+							<li>
+								Writing Space: Computers, Hypertext, and the Remediation of Print — Jay David Bolter, 2001, Lawrence Erlbaum Associates, Inc.
+								<br>
+								Het boek heb ik gekocht via iTunes.
+							</li>
+							<li>
+								Post-Digital Print: The Mutation of Publishing since 1894 — Alessandro Ludovico, 2012, Onomatopee 77.
+								<br>
+								Ik heb kennis genomen van dit boek door Adriaan Mellegers. De PDF heb ik gedownload via postdigitalprint.org.
+							</li>
+							<li>
+								A Wikipedia Reader — David Horvitz, 2009.
+								<br>
+								Ik heb kennis genomen van deze reader door het artikel ‘Search, Compile, Publish’ van Paul Soulellis op soulellis.com/2013/05/search-compile-publish. De PDF heb ik gedownload via asdfmakes.com/projects/a-wikipedia-reader/.
+							</li>
+							<li>
+								The network society: a cross-cultural perspective, Manuel Castells en Wallis Annenberg, 2004, Edward Elgar Publishing.
+								<br>
+								Ik heb kennis genomen van dit boek door het blog mediatheorymemphis.blogspot.nl. De PDF heb ik gedownload via annenberg.usc.edu/sites/default/files/2015/04/28/Informationalism%2C%20Networks%20and%20the%20Network%20Society.pdf.
+							</li>
+							<li>
+								American Psycho, Mimi Cabell en Jason Huff, 2010. PoD.
+								<br>
+								Ik heb kennis genomen van dit boek door het artikel ‘Search, Compile, Publish’ van Paul Soulellis op soulellis.com/2013/05/search-compile-publish. Het boek heb ik gekocht via www.lulu.com/shop/jason-huff-and-mimi-cabell/american-psycho/paperback/product-20650237.html.
+							</li>
+							<li>
+								Graphic Design in the Digital Era: The Rhetoric of Hypertext - Alejandro Tapia en vertaald door Helen Hodgkinson, 2003 gepubliceerd in: Design Issues Vol. 19, No. 1, pp. 5-24, MIT Press.
+								<br>
+								De PDF heb ik gedownload via www.jstor.org/stable/1512051.
+							</li>
+							<li>
+								Relearn Publication 08/2013 - Colm O’Neil en Eric Schrijver, 2014.
+								<br>
+								Ik heb deze reader gekregen van Eric Schrijver. De PDF heb ik gedownload via http://relearn.be/media/relearn-2013.pdf.
+							</li>
+							<li>
+								McNugget - Chris Alexander, 2013, PoD, Troll Thread.
+								<br>
+								Ik heb kennis genomen van dit boek door het artikel ‘Search, Compile, Publish’ van Paul Soulellis op soulellis.com/2013/05/search-compile-publish. Het boek heb ik gekocht via www.lulu.com/shop/chris-alexander/mcnugget/paperback/product-20691018.html.
+							</li>
+							<li>
+								The Gutenberg Galaxy — Marshall McLuhan, 1962, University of Toronto Press.
+								<br>
+								Ik heb kennis genomen van dit boek door Dirk Vis. De PDF heb ik gedownload via https://archive.org/details/pdfy-SAyhDVrUHD5uvvDE.
+							</li>
+							<li>
+								Generating Books: Paradoxical Print ~ Snapshots of Digital Literary Processes — J. R. Carpenter, 2011.
+								<br>
+								De PDF heb ik gedownload via www.elmcip.net/sites/default/files/files/attachments/criticalwriting/generatingbooks_jrcarpenter.pdf.
+							</li>
+							<li>
+								Pro Git — Scott Chacon en Ben Straub, 2009.
+								<br>
+								De PDF heb ik gedownload via progit2.s3.amazonaws.com/en/2016-02-19-6346b/progit-en.1037.pdf.
+							</li>
+							<li>
+								The Readies — Bob Brown, 1930 / 2014, Roving Eye Press.
+								<br>
+								Ik heb kennis genomen van dit boek door Post-Digital Print van Alessandro Ludovico. De PDF heb ik gedownload via monoskop.org/File:Brown_Bob_The_Readies.pdf.
+							</li>
+							<li>
+								Remediation: Understanding New Media — Jay David Bolter en Richard Grusin, 2000, MIT Press.
+								<br>
+								De PDF heb ik gedownload via monoskop.org/images/a/ae/Bolter_Jay_David_Grusin_Richard_Remediation_Understanding_New_Media_low_quality.pdf.
+							</li>
+							<li>
+								Writings — Vilém Flusser en vertaald door Erik Eisel, 2002, University of Minnesota Press.
+								<br>
+								Ik heb kennis genomen van dit boek door Maarten Cornel. De PDF heb ik gedownload via monoskop.org/images/a/a7/Flusser_Vilem_Writings.pdf.
+							</li>
+							<li>
+								Whole Earth Catalog: Access to Tools — Stewart Brand, Fall 1968.
+								<br>
+								De PDF heb ik gedownload via wec.thecomposingrooms.com/WEC%201968%20Fall.pdf.
+							</li>
+							<li>
+								From Print to Ebooks: a Hybrid Publishing Toolkit for the Arts — Marc de Bruijn, Liz Castro, Florian Cramer, Joost Kircz, Silvio Lorusso, Michael Murtaugh, Pia Pol, Miriam Rasch en Margreet Riphagen, 2014, Institute of Network Cultures, Amsterdam.
+								<br>
+								De ePub heb ik gedownload via networkcultures.org/blog/publication/from-print-to-ebooks-a-hybrid-publishing-toolkit-for-the-arts/.
+							</li>
+							<li>
+								Printed Web 3 — Paul Soulellis, 2015.
+								<br>
+								De PDF heb ik gedownload via newhive.com/soulellis/pw3
+							</li>
+							<li>
+								Cybertext: Perspectives on Ergodic Literature — Espen J. Aarseth, 1997, The Johns Hopkins University Press.
+								<br>
+								De PDF heb ik gedownload via www.autzones.com/din6000/textes/semaine09/Aarseth%281997%29.pdf
+							</li>
+							<li>
+								Orality and Literacy: The Technologizing of the Word — Walter J. Ong, 1982 / 2002, Methuen & Co. Ltd / Taylor & Francis e-Library.
+								<br>
+								De PDF heb ik gedownload via dss-edit.com/prof-anon/sound/library/Ong_orality_and_literacy.pdf
+							</li>
+						</ol>
+					</div>
+				</section>
+
+				<section id="appendixB" class="appendix">
+					<div class="content">
+						<h4>— APPENDIX B: literatuurlijst, artikelen</h4>
+						<ol>
+							<li>
+								Expanding Books and Post-Digital Print — Alessandro Ludovico, 2014.
+								<br>
+								Ik heb kennis genomen van dit artikel door het blog postdigitalprint.org. Online gelezen op de website blogs.cccb.org/lab/en/article_llibres-en-expansio-i-impressio-postdigital/.
+							</li>
+							<li>
+								Birth of the User — Ellen Lupton, een uittreksel uit Thinking with Type: A Critical Guide for Designers, Writers, Editors, and Students, 2004, Princeton Architectural Press. 
+								<br>
+								Dit artikel heb ik gevonden en gelezen op fightingwords.us/lupton-birth-of-the-user.
+							</li>
+							<li>
+								Network & Rhizome — Sirs Kevin McCoy en Robert Rowan, 2011. 
+								<br>
+								Dit artikel heb ik gevonden en gelezen op mediatheorymemphis.blogspot.nl/2011/04/network-rhizome.html
+							</li>
+							<li>
+								A History of Graphic Design - Guity Novin, 2010. 
+								<br>
+								Ik heb kennis genomen van dit blog door Marjan Brandsma. Ik heb dit blog gelezen op guity-novin.blogspot.nl
+							</li>
+							<li>
+								Typeface As Programme — Jürg Lehni, 2011. 
+								<br>
+								Dit artikel heb ik gevonden en gelezen op www.typotheque.com/articles/typeface_as_programme
+							</li>
+							<li>
+								Conditional Design: A manifesto for artists and designers — Luna Maurer, Edo Paulus, Jonathan Puckey en Roel Wouters. 
+								<br>
+								Dit manifesto heb ik gevonden en gelezen op conditionaldesign.org/manifesto/
+							</li>
+							<li>
+								What is Code? — Paul Ford, 2015. 
+								<br>
+								Dit artikel heb ik gevonden en gelezen op www.bloomberg.com/graphics/2015-paul-ford-what-is-code/.
+							</li>
+							<li>
+								Search, compile, publish. — Paul Soulellis, 2013. 
+								<br>
+								Dit artikel heb ik gevonden en gelezen op soulellis.com/2013/05/search-compile-publish/
+							</li>
+							<li>
+								The Continuous Monument: an Architectural Model for Total Urbanization, 2012. 
+								<br>
+								Dit artikel heb ik gelezen op arch122superstudio.blogspot.nl/2012/06/continuous-monument-architectural-model_15.html
+							</li>
+							<li>
+								Readerly & Writerly Texts — Roland Barthes. 
+								<br>
+								Dit artikel heb ik gelezen op www.arts.uwaterloo.ca/~raha/700_701_web/BarthesLO/readerly.html
+							</li>
+							<li>
+								Information Management: A Proposal — Tim Berners-Lee, 1989 / 1990, CERN. 
+								<br>
+								Dit artikel heb ik gelezen op www.w3.org/History/1989/proposal.html
+							</li>
+							<li>
+								The Semantic Web: An Introduction — Sean B. Palmer, 2001 / 2009. 
+								<br>
+								Dit artikel heb ik gelezen op infomesh.net/2001/swintro/
+							</li>
+						</ol>
+					</div>
+				</section>
+
+				<section id="appendixC" class="appendix">
+					<div class="content">
+						<h4>— APPENDIX C: literatuurlijst, wikipedia</h4>
+						<ol>
+							<ul>
+								<li>
+									en.wikipedia.org/wiki ~
+								</li>
+							</ul>
+							<li>
+								/Application_programming_interface#Web_APIs
+							</li>
+							<li>
+								/Appropriation_(art)
+							</li>
+							<li>
+								/Archigram
+							</li>
+							<li>
+								/Archivemena
+							</li>
+							<li>
+								/Archizoom_Associati
+							</li>
+							<li>
+								/Block_chain_(database)
+							</li>
+							<li>
+								/Client–server_model
+							</li>
+							<li>
+								/Communications_protocol
+							</li>
+							<li>
+								/Data_modele
+							</li>
+							<li>
+								/Deterritorializationl
+							</li>
+							<li>
+								/Digital_preservation
+							</li>
+							<li>
+								/Distributed_databaset
+							</li>
+							<li>
+								/Electronic_publishing
+							</li>
+							<li>
+								/Fanzine
+							</li>
+							<li>
+								/HTML
+							</li>
+							<li>
+								/Holism
+							</li>
+							<li>
+								/Hyperlinkphy)
+							</li>
+							<li>
+								/Hypertext_(semiotics)
+							</li>
+							<li>
+								/Internet
+							</li>
+							<li>
+								/Internet_protocol_suite
+							</li>
+							<li>
+								/JavaScript
+							</li>
+							<li>
+								/Link_awareness
+							</li>
+							<li>
+								/List_of_Internet_phenomena
+							</li>
+							<li>
+								/Mail_artocesses
+							</li>
+							<li>
+								/Open_design
+							</li>
+							<li>
+								/Outline_of_the_Internet
+							</li>
+							<li>
+								/Phenomenology_(philosophy)
+							</li>
+							<li>
+								/Publishing
+							</li>
+							<li>
+								/Resource_Description_Framework
+							</li>
+							<li>
+								/Roger_Chartier
+							</li>
+							<li>
+								/Samizdatnet
+							</li>
+							<li>
+								/Secondary_orality
+							</li>
+							<li>
+								/Semantic_Web
+							</li>
+							<li>
+								/Social_peer-to-peer_processesg_interface#Web_APIs
+							</li>
+							<li>
+								/Sociology_of_the_Internetramework
+							</li>
+							<li>
+								/Superarchitettura
+							</li>
+							<li>
+								/Systems_design
+							</li>
+							<li>
+								/Walter_J._Ong
+							</li>
+							<li>
+								/Web_navigation
+							</li>
+							<li>
+								/World_Wide_Web
+							</li>
+							<li>
+								/XML
+							</li>
+							<ul>
+								<li>
+									nl.wikipedia.org/wiki ~
+								</li>
+							</ul>
+							<li>
+								/Linus_Torvalds
+							</li>
+							<li>
+								/Liquid_design
+							</li>
+							<ul>
+								<li>
+									en.wikibooks.org/wiki ~
+								</li>
+							</ul>
+							<li>
+								/A-level_Computing/AQA/Computer_Components,_The_Stored_Program_Concept_and_the_Internet/Structure_of_the_Internet/Internet,_Intranet_and_World_Wide_Web
+							</li>
+						</ol>
+					</div>
+				</section>
+
+				<section id="appendixD" class="appendix">
+					<div class="content">
+						<h4>— APPENDIX D: literatuurlijst, video</h4>
+						<ol>
+							<li>
+								Internet Rising: documentary film, http://Internetrising.net — Andrew Kenneth Martin, Marina Eisen en Alex Eisen
+							</li>
+							<li>
+								Networks As Agents in the Clash Between Personal and Industrial Post Digital Print, https://vimeo.com/96574475 — Alessandro Ludovico
+							</li>
+						</ol>
+					</div>
+				</section>
+
+				<section id="appendixE" class="appendix">
+					<div class="content">
+						<h4>— APPENDIX E: literatuurlijst, projecten, werken</h4>
+						<ol>
+							<li>
+								Library of the Printed Web (blog), http://libraryoftheprintedweb.tumblr.com — Paul Soulellis
+							</li>
+							<li>
+								Rhizome (blog), http://rhizome.org/editorial/ — Mark Tribe
+							</li>
+							<li>
+								Post-Digital Publishing Archive, http://p-dpa.net — Silvio Lorusso.
+							</li>
+							<li>
+								I Ching Online, http://ichingonline.net
+							</li>
+							<li>
+								HTML2PRINT, http://osp.kitchen/tools/html2print/ — Open Source Publishing
+							</li>
+							<li>
+								The Archigram Archival Project, http://archigram.westminster.ac.uk
+							</li>
+							<li>
+								Library of Babel, https://libraryofbabel.info — Jonathan Basile
+							</li>
+							<li>
+								Reactive Books, http://www.maedastudio.com/1995/mdn2/index.php?category=all&next=1995/mdn3&prev=1995/mdn1&this=reactive_graphics — John Maeda
+							</li>
+							<li>
+								Neural, http://neural.it — Alessandro Ludovico en Ivan Iusco
+							</li>
+							<li>
+								Memory of the World, https://www.memoryoftheworld.org
+							</li>
+							<li>
+								Where You Are, http://where-you-are.com
+							</li>
+							<li>
+								Monoskop, http://monoskop.org/Monoskop
+							</li>
+							<li>
+								Epilogue, http://epilogue.press — Chris Lauritzen
+							</li>
+							<li>
+								Rosetta Code, rosettacode.org/wiki/Rosetta_Code
+							</li>
+							<li>
+								Project Gutenberg / Realtime Bookdesign, http://www.richardvijgen.nl/#projectgutenberg — Richard Vijgen
+							</li>
+						</ol>
+					</div>
+				</section>
+			</article>
 
 			<div class="sideContent">
+
 				<div data-content="1">
-					<img src="images/Duchamp_Fountaine.jpg" alt="boek">
 					<p>
-						Post-Digital Print: The Mutation of Publishing since 1894, Alessandro Ludovico, onomatopee 77, 2012. Ik ben bekend geworden met dit stuk door Adriaan Mellegers. Gedownload via: http://postdigitalprint.org.
+						01 Chartier, 1994, pp. 90–91. Gevonden in Bolter, J. David (2010). Writing Space: Computers, Hypertext, and the Remediation of Print. Oxford: Routledge. Gekocht van iTunes.
+					</p>
+				</div>
+				<div data-content="2">
+					<p>
+						02 Ludovico, A. (2012). Post-Digital Print: The Mutation of Publishing since 1894. London: Onomatopee 77. Ik heb kennis genomen van dit boek door Adriaan Mellegers, en heb het gedownload van: postdigitalprint.org.
+					</p>
+				</div>
+				<div data-content="3">
+					<p>
+						03 Lauritzen, C. (2014) Epilogue. Een ontwerpstudio en uitgeverij van hybride boeken die zowel analoge als digitale content bevatten, http://epilogue.press. Gevonden van www.kickstarter.com/projects/epiloguepress/ep1-flatland.
+					</p>
+				</div>
+				<div data-content="4">
+					<p>
+						04 Ludovico, A. (2014). Expanding Books and Post-Digital Print. Geraadpleegd op 16 december 2014, van http://blogs.cccb.org/lab/en/article_llibres-en-expansio-i-impressio-postdigital/. Gevonden van: http://postdigitalprint.org.
+					</p>
+				</div>
+				<div data-content="5">
+					<p>
+						05 Soulellis, P. (2013). Library of the Printed Web. Geraadpleegd op 16 december 2014, van http://libraryoftheprintedweb.tumblr.com. Ik heb kennis genomen van dit project van het artikel Expanding Books and Post-Digital Print van Alessandro Ludovico. Gevonden van: soulellis.com/2013/05/search-compile-publish.
+					</p>
+				</div>
+				<div data-content="6">
+					<img src="images/wikipediareader.png" alt="A Wikipedia Reader, door Paul Branca">
+					<p>
+						06 Horvitz, D. (2009). A Wikipedia Reader. In opdracht van de Art Libraries Society of New York voor de Contemporary Artists Books Conference op Printed Matter’s 2009 NY Art Book Fair. Geraadpleegd en gedownload op 10 mei 2015. Ik heb kennis genomen van dit project van soulellis.com/2013/05/search-compile-publish/. Gedownload van asdfmakes.com/projects/a-wikipedia-reader/.
+					</p>
+				</div>
+				<div data-content="7">
+					<p>
+						07 Wales, j. en Sanger, L. (2001). Wikipedia, the free encyclopedia. http://www.wikipedia.nl.
+					</p>
+				</div>
+				<div data-content="8">
+					<p>
+						08 Lupton, E. (2004). Birth of the User. Een uittreksel van Lupton, E. (2004). Thinking with Type: A Critical Guide for Designers, Writers, Editors, and Students. Princeton Architectural Press, 2004. Geraadpleegd en gedownload op 20 juni 2015, van fightingwords.us/lupton-birth-of-the-user.
+					</p>
+				</div>
+				<div data-content="9">
+					<p>
+						09 Woordenboek Van Dale, gezocht op: ‘eigenschap’ en ‘functioneel’. http://www.vandale.nl/
+					</p>
+				</div>
+				<div data-content="10">
+					<p>
+						10 Castells, M. (2004). The network society: a cross-cultural perspective,. Northampton: MA: Edward Elgar. Geraadpleegd op 20 oktober 2015, van http://annenberg.usc.edu/sites/default/files/2015/04/28/Informationalism%2C%20Networks%20and%20the%20Network%20Society.pdf. Gevonden van: http://mediatheorymemphis.blogspot.nl.
+					</p>
+				</div>
+				<div data-content="11">
+					<p>
+						11 Deleuze, G. en Guattari, F. (1977). Capitalisme et schizophrénie: L’anti-Œdipe. New York: Viking Penguin.
+					</p>
+				</div>
+				<div data-content="12">
+					<p>
+						12 Sirs McCoy, K en Rowan, R. (2011). Network & Rhizome. Geraadpleegd op 10 oktober 2015, van mediatheorymemphis.blogspot.nl/2011/04/network-rhizome.html.
+					</p>
+				</div>
+				<div data-content="13">
+					<p>
+						13 Woordenboek Van Dale, gezocht op: ‘archief’. http://www.vandale.nl/
+					</p>
+				</div>
+				<div data-content="14">
+					<img src="images/wikipediareadecutout.png" alt="A Wikipedia Reader, pagina 03 door Paul Branca">
+					<p>
+						14 Branca, P. (2009). Uitsnede van pagina 03 van Horvitz, D. (2009). A Wikipedia Reader.
+					</p>
+				</div>
+				<div data-content="15">
+					<img src="images/collectionbound.png" alt="A Collection of Bound Sheets and Fifty other Definitions, door Martijn de Heer">
+					<p>
+						15 de Heer, M. (2014). A Collection of Bound Sheets and Fifty other Definitions. Den Haag: eigen productie. Een opdracht van Adriaan Mellegers op de KABK.
+					</p>
+				</div>
+				<div data-content="16">
+					<img src="images/donottouch.png" alt="Do Not Touch, door Moniker">
+					<p>
+						16 Moniker. (2013). Do Not Touch. Geraadpleegd van http://donottouch.org.
+					</p>
+				</div>
+				<div data-content="17">
+					<img src="images/realtimebookdesign.png" alt="Project Gutenberg / Realtime Bookdesign, door Richard Vijgen">
+					<p>
+						17 Vijgen, R. (2005). Project Gutenberg / Realtime Bookdesign. Geraadpleegd op 12 december 2015, van http://www.richardvijgen.nl/#projectgutenberg. Afbeelding van http://www.richardvijgen.nl/cms/content/large/1324569944.jpg.
+					</p>
+				</div>
+				<div data-content="18">
+					<img src="images/americanpsycho.png" alt="American Psycho, door Mimi Cabell en Jason Huff">
+					<p>
+						18 Cabell, M en Huff, J. (2010). American Psycho. PoD. Geraadpleegd van www.lulu.com/shop/jason-huff-and-mimi-cabell/american-psycho/paperback/product-20650237.html. Afbeelding van http://soulellis.com/wp-content/uploads/2013/05/Huff1_670.jpg. Ik heb kennis genomen van dit boek via Soulellis, P. (2013). Search, Compile, Publish. Van http://soulellis.com/2013/05/search-compile-publish/.
+					</p>
+				</div>
+				<div data-content="19">
+					<img src="images/mailartinvite.png" alt="Uitnodiging voor de eerste mail art show, door Ray Johnson">
+					<p>
+						20 Johnson, R. (1970). Uitnodiging voor de eerste mail art show. Afbeelding van https://upload.wikimedia.org/wikipedia/commons/c/c0/RayJohnson_invite1970.jpg
+					</p>
+				</div>
+				<div data-content="20">
+					<img src="images/dropcity.png" alt="Drop City">
+					<p>
+						20 Bernofsky, G., Bernofsky, J., Kallweit, R. en Richert C. (1965). Drop City. Trinidad. Afbeelding van http://www.mkgallery.org/img/events/1191/f/dropcity.jpg
+					</p>
+				</div>
+				<div data-content="21">
+					<img src="images/wholeearth.png" alt="Whole Earth Catalog, door Stewart Brand">
+					<p>
+						21 Brand, S. (Fall 1968). Whole Earth Catalog, access to tools. Gedownload en afbeelding van http://wec.thecomposingrooms.com/WEC%201968%20Fall.pdf.
+					</p>
+				</div>
+				<div data-content="22">
+					<img src="images/popart.png" alt="Pop art">
+					<p>
+						22 Afbeelding: Hamilton, R. (1956). Just what is it that makes today's homes so different, so appealing? Afbeelding van https://aimeesweetyparadise.files.wordpress.com/2013/01/pop.jpg.
+					</p>
+				</div>
+				<div data-content="23">
+					<img src="images/cagelandscape.png" alt="Imaginary Landscape No. 4 (March No. 2), door John Cage">
+					<p>
+						23 Cage, J. (1951). Imaginary Landscape No. 4 (March No. 2). New York. Afbeelding: een partituur van Imaginary Landscape No. 4, gedownload van http://www.mindatplay.co.uk/floorplans/imaginarylandscape.jpg.
+					</p>
+				</div>
+				<div data-content="24">
+					<img src="images/iching.png" alt="Diagram met de hexagrammen uit I Ching">
+					<p>
+						24 Een diagram met de hexagrammen die worden gebruikt in I Ching. Afbeelding van https://upload.wikimedia.org/wikipedia/commons/f/f8/Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg.
+					</p>
+				</div>
+				<div data-content="25">
+					<p>
+						25 Hypertext (semiotics) op Wikipedia. Geraadpleegd van https://en.wikipedia.org/wiki/Hypertext_(semiotics).
+					</p>
+				</div>
+				<div data-content="26">
+					<p>
+						26 Ong, W. (2005). Orality and Literacy: The Technologizing of the Word. New York: Routledge. Gedownload van http://dss-edit.com/prof-anon/sound/library/Ong_orality_and_literacy.pdf.
+					</p>
+				</div>
+				<div data-content="27">
+					<p>
+						27 Aarseth, E. (1997). Cybertext, Perspectives on Ergodic Literature. Baltimore: The Johns Hopkins University Press. Gedownload van http://monoskop.org/File:Aarseth_Espen_J_Cybertext_Perspectives_on_Ergodic_Literature.pdf.
+					</p>
+				</div>
+				<div data-content="28">
+					<p>
+						28 Lehni, J. (2011). Typeface As Programme. Geraadpleegd van https://www.typotheque.com/articles/typeface_as_programme.
+					</p>
+				</div>
+				<div data-content="29">
+					<img src="images/rosetta.png" alt="De steen van Rosetta">
+					<p>
+						29 Ptolemaeus V Epiphanes. (196 v.Chr.). Steen van Rosetta. 
+					</p>
+				</div>
+				<div data-content="30">
+					<img src="images/hypergraphic.png" alt="Initiation à la haute volupté, door Isidore Isou">
+					<p>
+						30 Isou, I. (1960) Initiation à la haute volupté (Eén van de hypergraphic novels). Geraadpleegd van http://www.lespressesdureel.com/EN/ouvrage.php?id=2674&menu=. Afbeelding van http://ubupopland.com/Art_Design/isidore_isou_initiation_volupte_art_hypergraphic_2.jpg.
+					</p>
+				</div>
+				<div data-content="31">
+					<p>
+						31 Lialina, O. (2012). Turing Complete User. Geraadpleegd van http://contemporary-home-computing.org/turing-complete-user/.
+					</p>
+				</div>
+				<div data-content="32">
+					<p>
+						32 Berners-Lee, T. (1990). Information Management: A Proposal. Geraadpleegd van http://www.w3.org/History/1989/proposal.html
+					</p>
+				</div>
+				<div data-content="33">
+					<img src="images/saddepressed.png" alt="Sad, Depressed, People, door David Horvitz">
+					<p>
+						33 Horvitz, D. (2012). Sad, Depressed, People. Vancouver: New Documents. Afbeelding van http://soulellis.com/wp-content/uploads/2013/05/Horvitz5_670.jpg.
+					</p>
+				</div>
+				<div data-content="34">
+					<img src="images/mcnugget.png" alt="McNugget, door Chris Alexander">
+					<p>
+						34 Alexander, C. (2013). McNugget. PoD, Troll Thread. Afbeelding van http://36.media.tumblr.com/26bb04276f37acc91062bfe0a2c4a5ca/tumblr_mi0n2zGVMb1qj8gkmo1_500.jpg.
+					</p>
+				</div>
+				<div data-content="35">
+					<img src="images/nineeyes.png" alt="The Nine Eyes, of Google Street View, door Jon Rafman">
+					<p>
+						35 Rafman, J. (2011). The Nine Eyes, of Google Street View. Parijs: Jean Boîte Éditions. Afbeelding van http://www.jean-boite.fr/boite/the-nine-eyes-of-google-street-view/cover_jr.jpg.
 					</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="article-topnote"></div>
-		<div class="article-footnote"></div>
-
 		<nav id="chapterNav-wrapper">
 			<div id='rowNav'>
-				<a href="#hfdstktwee">
-				<div id="chapterNav" class="chapterOne">
-					<div class="progressWrapper">
-						<div id="scroll"></div>
+				<a href="#inleiding">
+					<div id="chapterNav" class="chapterZero">
+						<div class="progressWrapper">
+							<div id="scroll"></div>
+						</div>
+						<p class='pagetitle'>
+							I<br>N<br>L<br>E<br>I<br>D<br>I<br>N<br>G<br>:<br><br>H<br>E<br>T<br><br>G<br>E<br>P<br>R<br>I<br>N<br>T<br>E<br><br>N<br>E<br>T<br>W<br>E<br>R<br>K
+						</p>
 					</div>
-					<p class='pagetitle'>1<br><br>I<br>N<br>T<br>R<br>O<br>D<br>U<br>C<br>T<br>I<br>O<br>N</p>
-				</div>
 				</a>
-				<a href="#hdstkdrie">
-				<div id="chapterNav" class="chapterTwo">
-					<div class="progressWrapper">
-						<div id="scrolltwo"></div>
+				<a href="#hfdstkEEN">
+					<div id="chapterNav" class="chapterOne">
+						<div class="progressWrapper">
+							<div id="scrolltwo"></div>
+						</div>
+						<p class='pagetitle'>
+							1<br><br>E<br>E<br>N<br><br>A<br>N<br>A<br>L<br>Y<br>S<br>E<br><br>V<br>A<br>N<br><br>E<br>E<br>N<br><br>R<br>E<br>A<br>D<br>E<br><br>R
+						</p>
 					</div>
-					<p class='pagetitle'>2<br><br>A<br><br>W<br>I<br>K<br>I<br>P<br>E<br>D<br>I<br>A<br><br>R<br>E<br>A<br>D<br>E<br>R</p>
-				</div>
 				</a>
-				<div id="chapterNav" class="chapterThree"> <p class='pagetitle'>3<br><br>L<br>I<br>B<br>R<br>A<br>R<br>Y<br><br>O<br>F<br><br>T<br>H<br>E<br><br>P<br>R<br>I<br>N<br>T<br>E<br>D<br><br>W<br>E<br>B</p>
-				</div>
-				<div id="chapterNav" class="chapterFour"> <p class='pagetitle'>4<br><br>N<br>E<br>T<br>W<br>O<br>R<br>K<br><br>O<br>F<br><br>N<br>E<br>T<br>W<br>O<br>R<br>K<br>S</p>
-				</div>
+				<a href="#hfdstkTWEE">
+					<div id="chapterNav" class="chapterTwo">
+						<div class="progressWrapper">
+							<div id="scrolltwo"></div>
+						</div>
+						<p class='pagetitle'>
+							2<br><br>D<br>E<br><br>E<br>I<br>G<br>E<br>N<br>S<br>C<br>H<br>A<br>P<br><br>V<br>A<br>N<br><br>A<br>S<br>S<br>O<br>C<br>I<br>A<br>T<br>I<br>E
+						</p>
+					</div>
+				</a>
+				<a href="hfdstkDRIE">
+					<div id="chapterNav" class="chapterThree">
+						<div class="progressWrapper">
+							<div id="scrolltwo"></div>
+						</div>
+						<p class='pagetitle'>
+							3<br><br>D<br>E<br><br>T<br>O<br>P<br>O<br>L<br>O<br>G<br>I<br>E<br><br>V<br>A<br>N<br><br>H<br>E<br>T<br><br>N<br>E<br>T<br>W<br><br>E<br>R<br>K
+						</p>
+					</div>
+				</a>
+				<a href="hfdstkVIER">
+					<div id="chapterNav" class="chapter">
+						<div class="progressWrapper">
+							<div id="scrolltwo"></div>
+						</div>
+						<p class='pagetitle'>
+							4<br><br>B<br>O<br>E<br>K<br>S<br>Y<br>S<br>T<br>E<br>M<br>E<br>N<br><br>E<br>N<br><br>N<br>A<br>V<br>I<br>G<br>A<br>T<br>I<br>E<br><br>S<br>Y<br>S<br>T<br>E<br>M<br>E<br>N
+						</p>
+					</div>
+				</a>
+				<a href="hfdstkVIJF">
+					<div id="chapterNav" class="chapter">
+						<div class="progressWrapper">
+							<div id="scrolltwo"></div>
+						</div>
+						<p class='pagetitle'>
+							5<br><br>S<br>T<br>A<br>T<br>I<br>S<br>C<br>H<br><br>E<br>N<br><br>D<br>Y<br>N<br>A<br>M<br>I<br>S<br>C<br>H<br>
+						</p>
+					</div>
+				</a>
+				<a href="hfdstkZES">
+					<div id="chapterNav" class="chapter">
+						<div class="progressWrapper">
+							<div id="scrolltwo"></div>
+						</div>
+						<p class='pagetitle'>
+							6<br><br>D<br>E<br><br>C<br>O<br>N<br>T<br>E<br>X<br>T<br><br>V<br>A<br>N<br><br>H<br>E<br>T<br><br>N<br>E<br>T<br>W<br>E<br>R<br>K
+						</p>
+					</div>
+				</a>
+				<a href="hfdstkZEVEN">
+					<div id="chapterNav" class="chapter">
+						<div class="progressWrapper">
+							<div id="scrolltwo"></div>
+						</div>
+						<p class='pagetitle'>
+							7<br><br>D<br>E<br><br>A<br>R<br>C<br>H<br>I<br>T<br>E<br>C<br>T<br>U<br>U<br>R<br><br>V<br>A<br>N<br><br>H<br>U<br>L<br>P<br>M<br><br>I<br>D<br>D<br>E<br>L<br>E<br>N
+						</p>
+					</div>
+				</a>
+				<a href="hfdstkACHT">
+					<div id="chapterNav" class="chapter">
+						<div class="progressWrapper">
+							<div id="scrolltwo"></div>
+						</div>
+						<p class='pagetitle'>
+							8<br><br>M<br>O<br>D<br>U<br>L<br>E<br>N<br>,<br><br>S<br>C<br>H<br>E<br>M<br>A<br>’<br>S<br><br>I<br>N<br><br>H<br>E<br>T<br><br>N<br>E<br>T<br>W<br>E<br>R<br>K
+						</p>
+					</div>
+				</a>
+				<a href="conclusie">
+					<div id="chapterNav" class="chapter">
+						<div class="progressWrapper">
+							<div id="scrolltwo"></div>
+						</div>
+						<p class='pagetitle'>
+							C<br>O<br>N<br>C<br>L<br>U<br>S<br>I<br>E<br>:<br><br>D<br>E<br><br>S<br>A<br>N<br>E<br>R<br>I<br>N<br>G<br><br>V<br>A<br>N<br><br>G<br>R<br>A<br>F<br>I<br>S<br>C<br>H<br><br>O<br>N<br>T<br>W<br>E<br>R<br>P
+						</p>
+					</div>
+				</a>
 			</div>
 		</nav>
 
@@ -127,6 +1104,8 @@
 		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/animation.gsap.js"></script>
 		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/debug.addIndicators.js"></script>
 		<script>
+
+			// adjust width of navigation-bar according to length of text + show sidenotes on height of reference
 			$(document).ready(function(){
 				var text, charsLength=0, wordsCountTotal=0, wordsCount=0, newWidth=0;
 				$('article').each(function() {
@@ -147,63 +1126,42 @@
 
 				$( '[data-content="1"]' ).attr('id', 'data-content-1')
 			});
-
-			var footer = $('.article-footnote'),
-				upper = $('.article-topnote'),
-			    extra = 125; // In case you want to trigger it a bit sooner than exactly at the bottom.
-
-			footer.css({ opacity: '0', display: 'block' });
-			upper.css({ opacity: '1', display: 'block' });
-
-			$(window).scroll(function() {
-			   var scrolledLength = ( $(window).height() + extra ) + $(window).scrollTop(),
-			       documentHeight = $(document).height(),
-			       scroLLTop = $(window).scrollTop();
-			       
-			   if(scroLLTop >= extra && upper.hasClass('top')) {
-			   	upper
-			       		.removeClass('top')
-			       		.stop().animate({ top: '-100', opacity:'0'},100)
-			   }
-			   else if ( scroLLTop <= extra ) {           
-			        upper
-			           .addClass('top')
-			           .stop().animate({ top: '0', opacity: '1' }, 100);
-			   }
-
-			   if( scrolledLength >= documentHeight ) {
-			       footer
-			          .addClass('bottom')
-			          .stop().animate({ bottom: '0', opacity: '1' }, 100);
-			   }
-			   else if ( scrolledLength <= documentHeight && footer.hasClass('bottom') ) {           
-			        footer
-			           .removeClass('bottom')
-			           .stop().animate({ bottom: '-100', opacity: '0' }, 100);
-			   } 
-			});
 			
+			// toggle abstract 
+			$(".short-abstract").click(function () {
+	    		$shortabstract = $(this);
+	    		//getting the next element
+	    		
+	    		$fullabstract = $shortabstract.next();
+			    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+			    
+			    $fullabstract.slideToggle(1000, function () {
+			    });
+			});
+
 			// fit header
 			$("#fittext").fitText(0.7033);
 
+			// progress bar script
 			$(document).ready(function(){
-	        		// init controller
-			var controller = new ScrollMagic.Controller();
-			// build tween
-			var tween1 = TweenMax.to("#scroll", 1, {className: "+=scroll-progress"});
-			// build scene
-			// get the current triggerHook value
-			var scene1 = new ScrollMagic.Scene({triggerElement: "#hfdstktwee", duration: "175%"})
-							.triggerHook(0.35)
-							.setTween(tween1)
-							.addTo(controller);
-			var tween2 = TweenMax.to("#scrolltwo", 1, {className: "+=scroll-progress"});
-			// build scene
-			var scene2 = new ScrollMagic.Scene({triggerElement: "#hdstkdrie", duration: "175%"})
-							.triggerHook(0.35)
-							.setTween(tween2)
-							.addTo(controller);
+        		// init controller
+				var controller = new ScrollMagic.Controller();
+				// build tween
+				var tween1 = TweenMax.to("#scroll", 1, {className: "+=scroll-progress"});
+				// build scene
+				// get the current triggerHook value
+				var scene1 = new ScrollMagic.Scene({triggerElement: "#hfdstktwee", duration: "175%"})
+								.triggerHook(0.35)
+								.setTween(tween1)
+								.addTo(controller);
+				var tween2 = TweenMax.to("#scrolltwo", 1, {className: "+=scroll-progress"});
+				// build scene
+				var scene2 = new ScrollMagic.Scene({triggerElement: "#hdstkdrie", duration: "175%"})
+								.triggerHook(0.35)
+								.setTween(tween2)
+								.addTo(controller);
 			});
+
 		</script>
     </body>
 </html>
