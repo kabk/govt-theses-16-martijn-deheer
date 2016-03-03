@@ -264,16 +264,7 @@ img {
 	display: flex;
 	height: 16em;
 	position: relative;
-	border-right: 1px solid black;
-	z-index: 1;
-}
-
-.breaker {
-	width: 104.5%;
-	background-color: #000;
-	display: flex;
-	height: 16em;
-	position: relative;
+	border-right: 2px solid black;
 	z-index: 1;
 }
 
