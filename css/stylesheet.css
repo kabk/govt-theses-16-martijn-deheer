@@ -31,8 +31,9 @@ body {
 /* LAYOUT / COLUMNS */
 
 #heading {
-	width:66%;
+	width:69.5%;
 	padding-left: 2em;
+	margin-bottom:16em;
 }
 
 #heading ul {

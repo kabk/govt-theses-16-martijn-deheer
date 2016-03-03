@@ -1120,13 +1120,15 @@
 				// newWidth += (wordsCount/wordsCountTotal) * 100;
 				// $(".chapterOne").width(newWidth);
 
+
+				// put notes on the right height
 				var p = $( '[data-note="1"]' );
 				var offsetA =  p.offset();
 				$( '[data-content="1"]' ).offset({ top: offsetA.top });
 
 				$( '[data-content="1"]' ).attr('id', 'data-content-1')
 
-
+				// make the breakbars extend to the next navigation bar
 				var b1 = $( '.chapterOne' );
 				var b2 = $( '.chapterTwo' );
 				var b3 = $( '.chapterThree' );
@@ -1157,9 +1159,19 @@
 				$( '.breakerEIGHT' ).width(offset8);
 				$( '.breakerNINE' ).width(offset9);
 
-
+				//resize header div according to window height
+	            resizeDiv();
 			});
-			
+
+			window.onresize = function(event) {
+				resizeDiv();
+			}
+			function resizeDiv() {
+				vpw = $(window).width();
+				vph = $(window).height();
+				// headerHeight = $(".top-banner").height() + $("#full-header").height();
+				$('#heading').css({'height' : (vph) + 'px'});
+			}
 
 			// toggle abstract 
 			$(".abstract-fadeout").click( AbstractDrop ) ;
