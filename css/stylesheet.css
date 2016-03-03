@@ -55,7 +55,6 @@ body {
 }
 
 .abstract .short-abstract {
-    cursor: pointer;
 }
 
 .abstract .full-abstract {
@@ -64,6 +63,7 @@ body {
 }
 
 .abstract-fadeout {
+    cursor: pointer;
     position: relative; 
 	bottom: 14em;
 	height: 14em;
