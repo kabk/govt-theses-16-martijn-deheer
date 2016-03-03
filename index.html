@@ -1121,13 +1121,6 @@
 				// $(".chapterOne").width(newWidth);
 
 
-				// put notes on the right height
-				var p = $( '[data-note="1"]' );
-				var offsetA =  p.offset();
-				$( '[data-content="1"]' ).offset({ top: offsetA.top });
-
-				$( '[data-content="1"]' ).attr('id', 'data-content-1')
-
 				// make the breakbars extend to the next navigation bar
 				var b1 = $( '.chapterOne' );
 				var b2 = $( '.chapterTwo' );
@@ -1190,6 +1183,16 @@
 
 			// progress bar script
 			$(document).ready(function(){
+
+				// put notes on the right height
+				var p = $( '[data-note="1"]' );
+				var offsetA =  p.offset();
+				$( '[data-content="1"]' ).offset({ top: offsetA.top });
+
+				$( '[data-content="1"]' ).attr('id', 'data-content-1')
+
+
+
         		// init controller
 				var controller = new ScrollMagic.Controller();
 				// build tween
