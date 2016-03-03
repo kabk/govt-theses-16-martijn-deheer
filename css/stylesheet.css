@@ -293,7 +293,6 @@ img {
 	right: 0;
 	position: fixed;
 	background-color: #000;
-	border-left: 1px solid transparent;
 }
 
 #rowNav { }
