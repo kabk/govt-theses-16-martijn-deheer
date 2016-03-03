@@ -31,9 +31,9 @@ body {
 /* LAYOUT / COLUMNS */
 
 #heading {
-	width:69.5%;
-	padding-left: 2em;
+	width:67.5%;
 	margin-bottom:16em;
+	padding-left:2%;
 }
 
 #heading ul {
@@ -41,7 +41,10 @@ body {
 	margin:0;
 }
 
-#heading header p { }
+#heading header { 
+	position: absolute;
+	bottom: 0;
+}
 
 .abstract {
     background-color:#000;
