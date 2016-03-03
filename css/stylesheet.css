@@ -162,6 +162,7 @@ blockquote {
 	color: #00ff00;
 	font-size: 1.2em;
 	line-height: 150%;
+	margin-left:1.8em;
 	margin-top: 0;
 	margin-right:0;
 	margin-bottom:1.5em;
@@ -298,7 +299,7 @@ img {
 #rowNav { }
 
 #chapterNav {
-	width: 9.5%;
+	width: 9.45%;
 	float: left;
 	border-right: 1px solid transparent;
 	border-left: 1px solid transparent;
