@@ -1096,22 +1096,9 @@
 		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/animation.gsap.js"></script>
 		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/debug.addIndicators.js"></script>
 		<script>
-
-			// put notes on the right height
-			$(window).onresize = function(event){
-				noteHeight();
-			}
-
-			function noteHeight(){
-				var p = $( '[data-note="1"]' );
-				var offsetA =  p.offset();
-				$( '[data-content="1"]' ).offset({ top: offsetA.top });
-
-				$( '[data-content="1"]' ).attr('id', 'data-content-1')
-			}
-
 			// adjust width of navigation-bar according to length of text + show sidenotes on height of reference
 			$(document).ready(function(){
+				noteHeight();
 				// var text, charsLength=0, wordsCountTotal=0, wordsCount=0, newWidth=0;
 				// $('article').each(function() {
 				// 	text = $.trim($(this).text());
@@ -1160,6 +1147,20 @@
 				//resize header div according to window height
 				resizeDiv();
 			});
+
+			// put notes on the right height
+			$(window).onresize = function(event){
+				noteHeight();
+			}
+
+			function noteHeight(){
+				var p = $( '[data-note="1"]' );
+				var offsetA =  p.offset();
+				$( '[data-content="1"]' ).offset({ top: offsetA.top });
+
+				$( '[data-content="1"]' ).attr('id', 'data-content-1')
+			}
+
 
 			window.onresize = function(event) {
 				resizeDiv();
