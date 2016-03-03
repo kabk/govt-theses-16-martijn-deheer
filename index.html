@@ -45,7 +45,7 @@
 
 				<div class="content">
 					<div class="short-abstract">
-						<h3>— ABSTRACT</h3>
+						<h3>ABSTRACT</h3>
 	 					<p>
 							Web-to-print is a practice where internet technologies and functions are used to make print. I stumbled upon this practice when I found the Library of the Printed Web (LotPW), a collection initiated by Paul Soullelis. LotPW holds several artist’ books that have been made by using the internet as primary tool. Primary tool meaning: creating, generating, designing and/or publishing of both the content as the physical book. I became intrigued by this seemingly paradoxical process. Where the internet is used to make print and itself also being printed. The way the works, in LotPW, use the internet shows a great spectrum of possibilities.
 						</p>
@@ -1127,16 +1127,19 @@
 			});
 			
 			// toggle abstract 
-			$(".abstract-fadeout").click(function () {
-	    		$abstractfadeout= $(this);
+			$(".abstract-fadeout").click( AbstractDrop ) ;
+			$(".short-abstract").click( AbstractDrop ) ;
+			$(".full-abstract").click( AbstractDrop ) ;
+
+			function AbstractDrop() {
+	    		// var ClickSpot = $(this);
 	    		//getting the next element
-	    		
+		    		
 	    		$fullabstract = $(".full-abstract");
 			    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-			    
-			    $fullabstract.slideToggle(1000, function () {
-			    });
-			});
+				    
+			    $fullabstract.slideToggle(1000, function () {});
+			}
 
 			// fit header
 			$("#fittext").fitText(0.6);
