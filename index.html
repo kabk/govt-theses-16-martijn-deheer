@@ -143,7 +143,7 @@
 					</blockquote>
 				</div>
 			</section>
-			<div class="breaker"></div>
+			<div id="breaker" class="breakerTWO"></div>
 			<section id="hfdstkTWEE" class="thesis-content">
 				<div class="content">
 					<h2>=&nbsp;&nbsp;HOOFDSTUK 02. DE EIGENSCHAP VAN ASSOCIATIE</h2>
@@ -156,7 +156,7 @@
 					</p>
 				</div>
 			</section>
-			<div class="breaker"></div>
+			<div id="breaker" class="breakerTHREE"></div>
 			<section id="hfdstkDRIE" class="thesis-content">
 				<div class="content">
 					<h2>=&nbsp;&nbsp;HOOFDSTUK 03. DE TOPOLOGIE VAN HET NETWERK</h2>
@@ -191,7 +191,7 @@
 					</p>
 				</div>
 			</section>
-			<div class="breaker"></div>
+			<div id="breaker" class="breakerFOUR"></div>
 			<section id="hfdstkVIER" class="thesis-content">
 				<div class="content">
 					<h2>=&nbsp;&nbsp;HOOFDSTUK 04. BOEKSYSTEMEN EN NAVIGATIESYSTEMEN</h2>
@@ -208,7 +208,7 @@
 					</p>
 				</div>
 			</section>
-			<div class="breaker"></div>
+			<div id="breaker" class="breakerFIVE"></div>
 			<section id="hfdstkVIJF" class="thesis-content">
 				<div class="content">
 					<h2>=&nbsp;&nbsp;HOOFDSTUK 05. STATISCH EN DYNAMISCH</h2>
@@ -243,7 +243,7 @@
 					</p>
 				</div>
 			</section>
-			<div class="breaker"></div>
+			<div id="breaker" class="breakerSIX"></div>
 			<section id="hfdstkZES" class="thesis-content">
 				<div class="content">
 					<h2>=&nbsp;&nbsp;HOOFDSTUK 06. DE CONTEXT VAN HET NETWERK </h2>
@@ -286,7 +286,7 @@
 					</p>
 				</div>
 			</section>
-			<div class="breaker"></div>
+			<div id="breaker" class="breakerSEVEN"></div>
 			<section id="hfdstkZEVEN" class="thesis-content">
 				<div class="content">
 					<h2>=&nbsp;&nbsp;HOOFDSTUK 07. DE ARCHITECTUUR VAN HULPMIDDELEN </h2>
@@ -314,7 +314,7 @@
 					</p>
 				</div>
 			</section>
-			<div class="breaker"></div>
+			<div id="breaker" class="breakerEIGHT"></div>
 			<section id="hfdstkACHT" class="thesis-content">
 				<div class="content">
 					<h2>=&nbsp;&nbsp;HOOFDSTUK 08. MODULEN, SCHEMA’S IN HET NETWERK</h2>
@@ -354,7 +354,7 @@
 					</p>
 				</div>
 			</section>
-			<div class="breaker"></div>
+			<div id="breaker" class="breakerNINE"></div>
 			<section id="conclusie" class="thesis-content">
 				<div class="content">
 					<h2>=&nbsp;&nbsp;CONCLUSIE: DE SANERING VAN GRAFISCH ONTWERP</h2>
@@ -1035,7 +1035,7 @@
 					</div>
 				</a>
 				<a href="#hfdstkVIER">
-					<div id="chapterNav" class="chapter">
+					<div id="chapterNav" class="chapterFour">
 						<div class="progressWrapper">
 							<div id="scrolltwo"></div>
 						</div>
@@ -1045,7 +1045,7 @@
 					</div>
 				</a>
 				<a href="#hfdstkVIJF">
-					<div id="chapterNav" class="chapter">
+					<div id="chapterNav" class="chapterFive">
 						<div class="progressWrapper">
 							<div id="scrolltwo"></div>
 						</div>
@@ -1055,7 +1055,7 @@
 					</div>
 				</a>
 				<a href="#hfdstkZES">
-					<div id="chapterNav" class="chapter">
+					<div id="chapterNav" class="chapterSix">
 						<div class="progressWrapper">
 							<div id="scrolltwo"></div>
 						</div>
@@ -1065,7 +1065,7 @@
 					</div>
 				</a>
 				<a href="#hfdstkZEVEN">
-					<div id="chapterNav" class="chapter">
+					<div id="chapterNav" class="chapterSeven">
 						<div class="progressWrapper">
 							<div id="scrolltwo"></div>
 						</div>
@@ -1075,7 +1075,7 @@
 					</div>
 				</a>
 				<a href="#hfdstkACHT">
-					<div id="chapterNav" class="chapter">
+					<div id="chapterNav" class="chapterEight">
 						<div class="progressWrapper">
 							<div id="scrolltwo"></div>
 						</div>
@@ -1085,7 +1085,7 @@
 					</div>
 				</a>
 				<a href="#conclusie">
-					<div id="chapterNav" class="chapter">
+					<div id="chapterNav" class="chapterNine">
 						<div class="progressWrapper">
 							<div id="scrolltwo"></div>
 						</div>
@@ -1120,46 +1120,61 @@
 				// newWidth += (wordsCount/wordsCountTotal) * 100;
 				// $(".chapterOne").width(newWidth);
 
-				// var p = $( '[data-section="1"]' );
-				// var offsetA =  p.offset();
-				// $( '[data-content="1"]' ).offset({ top: offsetA.top });
+				var p = $( '[data-note="1"]' );
+				var offsetA =  p.offset();
+				$( '[data-content="1"]' ).offset({ top: offsetA.top });
 
-				// $( '[data-content="1"]' ).attr('id', 'data-content-1')
+				$( '[data-content="1"]' ).attr('id', 'data-content-1')
 
 
 				var b1 = $( '.chapterOne' );
 				var b2 = $( '.chapterTwo' );
-				var b3 = $( '.breakerTHREE' );
-				var b4 = $( '.breakerFOUR' );
-				var b5 = $( '.breakerFIVE' );
-				var b6 = $( '.breakerSIX' );
-				var b7 = $( '.breakerSEVEN' );
-				var b8 = $( '.breakerEIGHT' );
-				var b9 = $( '.breakerNINE' );
+				var b3 = $( '.chapterThree' );
+				var b4 = $( '.chapterFour' );
+				var b5 = $( '.chapterFive' );
+				var b6 = $( '.chapterSix' );
+				var b7 = $( '.chapterSeven' );
+				var b8 = $( '.chapterEight' );
+				var b9 = $( '.chapterNine' );
 
 				var offset1 =  b1.offset().left;
+				var offset2 =  b2.offset().left;
+				var offset3 =  b3.offset().left;
+				var offset4 =  b4.offset().left;
+				var offset5 =  b5.offset().left;
+				var offset6 =  b6.offset().left;
+				var offset7 =  b7.offset().left;
+				var offset8 =  b8.offset().left;
+				var offset9 =  b9.offset().left;
 
 				$( '.breakerONE' ).width(offset1);
+				$( '.breakerTWO' ).width(offset1);
+				$( '.breakerTHREE' ).width(offset1);
+				$( '.breakerFOUR' ).width(offset1);
+				$( '.breakerFIVE' ).width(offset1);
+				$( '.breakerSIX' ).width(offset1);
+				$( '.breakerSEVEN' ).width(offset1);
+				$( '.breakerEIGHT' ).width(offset1);
+				$( '.breakerNINE' ).width(offset1);
+
 
 			});
 			
+
 			// toggle abstract 
 			$(".abstract-fadeout").click( AbstractDrop ) ;
 			$(".short-abstract").click( AbstractDrop ) ;
 			$(".full-abstract").click( AbstractDrop ) ;
 
 			function AbstractDrop() {
-	    		// var ClickSpot = $(this);
-	    		//getting the next element
-		    		
 	    		$fullabstract = $(".full-abstract");
-			    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-				    
 			    $fullabstract.slideToggle(1000, function () {});
 			}
 
+
 			// fit header
-			$("#fittext").fitText(0.5);
+			$("#fittext").fitText(0.9);
+
 
 			// progress bar script
 			$(document).ready(function(){
