@@ -235,6 +235,13 @@ img {
 	max-height: 450px;
 }
 
+.breaker {
+	width:100%;
+	background-color:#000;
+	height:16em;
+	z-index:999;
+}
+
 .progressWrapper {
 	position:absolute;
 	width:inherit;
