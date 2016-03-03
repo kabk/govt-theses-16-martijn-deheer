@@ -138,10 +138,9 @@ section.thesis-content {
 
 .sideContent {
 	float: left;
-	left: 55%;
+	left: 71%;
 	position: relative;
-	width: 30%;
-	margin-left: 1em;
+	width: 25%;
 }
 
 .sideContent p {
@@ -254,6 +253,7 @@ img {
 	display: flex;
 	height: 16em;
 	position: relative;
+	border-right: 1px solid black;
 	z-index: 1;
 }
 
