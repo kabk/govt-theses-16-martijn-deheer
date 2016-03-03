@@ -151,13 +151,17 @@ section.thesis-content {
 	text-indent: -1.5em;
 }
 
+.titlespan {
+	padding-left:0.2em;
+}
+
 blockquote {
 	color: #00ff00;
 	font-size: 1.2em;
 	line-height: 150%;
 	margin-top: 0;
 	margin-right:0;
-	margin-bottom:0;
+	margin-bottom:1.5em;
 	padding:0;
 	border-bottom: 1px dotted #0f0;
 }
