@@ -35,11 +35,6 @@ body {
 	padding-left:2%;
 }
 
-#heading ul {
-	padding:0;
-	margin:0;
-}
-
 #heading header { 
 	width:67.5%;
 	position: absolute;
@@ -264,6 +259,31 @@ img {
 	height: 16em;
 	position: relative;
 	z-index: 1;
+}
+
+.appendix {
+	margin-top: 12em;
+	float: left;
+	width: 100%;
+}
+
+h4 {
+	margin: 0;
+	font-size: 1em;
+	padding-left: 2.5em;
+}
+
+li {
+	margin-bottom: 1em;
+}
+
+ul {
+	list-style-type: none;
+	padding-left:0;
+}
+
+ol ul li{
+	margin-bottom:0;
 }
 
 .progressWrapper {
