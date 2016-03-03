@@ -55,9 +55,11 @@ body {
 }
 
 .abstract .short-abstract {
+    cursor: pointer;
 }
 
 .abstract .full-abstract {
+    cursor: pointer;
     display: none;
     margin-bottom:7em;
 }
