@@ -59,8 +59,10 @@ body {
 
 .abstract-fadeout {
     cursor: pointer;
-    position: relative; 
-	bottom: 14em;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	bottom: 1.2em;
 	height: 14em;
     background: -webkit-linear-gradient(
         rgba(0, 0, 0, 0) 0%,
@@ -86,7 +88,9 @@ body {
 
 section#abstract.abstract {
 	padding-right: 2em;
-	padding-left:2em
+	padding-left:2em;
+	position: relative;
+	display: flex;
 }
 
 section#abstract.abstract .content {
@@ -102,7 +106,7 @@ article {
 }
 
 #article-wrapper {
-	width: 66%;
+	width: 69.5%;
 	margin-bottom:1.5%;
 }
 
@@ -120,14 +124,16 @@ section.thesis-content {
 }
 
 .content {
-	width: 50%;
+	width: 66%;
 	padding-left: 2em;
 }
 
 .sideContent {
-	float: right;
-	margin-left:2%;
-	width:20%;
+	float: left;
+	left: 55%;
+	position: relative;
+	width: 30%;
+	margin-left: 1em;
 }
 
 .sideContent p {
@@ -138,10 +144,6 @@ section.thesis-content {
 	color: #00ff00;
 	padding-left: 1.5em;
 	text-indent: -1.5em;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;
 }
 
 blockquote {
@@ -271,7 +273,7 @@ img {
 }
 
 #chapterNav-wrapper {
-	width: 34%;
+	width: 30.5%;
 	height: 100%;
 	top: 0;
 	right: 0;
@@ -293,7 +295,7 @@ img {
 	font-weight: bold;
 	color:#fff;
 	width:100%;
-	padding-top:4em;
+	padding-top:2em;
 	text-align: center;
 }
 
