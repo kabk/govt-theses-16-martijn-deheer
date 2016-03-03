@@ -1137,9 +1137,9 @@
 				var b8 = $( '.breakerEIGHT' );
 				var b9 = $( '.breakerNINE' );
 
-				var offset1 =  b1.offset();
+				var offset1 =  b1.offset().left;
 
-				$( '.breakerONE' ).offset({ width: offset1.left });
+				$( '.breakerONE' ).width(offset1);
 
 			});
 			
