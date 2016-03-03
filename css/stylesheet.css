@@ -112,7 +112,7 @@ body {
 	letter-spacing:0.5px;
 }
 
-section.thesis-content {
+.thesis-content {
 	float: left;
 	background-color: #fff;
 	color: #000;
@@ -137,6 +137,10 @@ section.thesis-content {
 	color: #00ff00;
 	padding-left: 1.5em;
 	text-indent: -1.5em;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 
 
