@@ -271,6 +271,12 @@ h4 {
 	margin: 0;
 	font-size: 1em;
 	padding-left: 2.5em;
+    cursor: pointer;
+}
+
+ol {
+    display: none;
+    cursor: pointer;
 }
 
 li {

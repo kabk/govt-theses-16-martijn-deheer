@@ -394,8 +394,8 @@
 
 			<section id="appendixA" class="appendix">
 				<div class="content">
-					<h4>APPENDIX A: literatuurlijst, boeken</h4>
-					<ol>
+					<h4 class="appendixAtitle">APPENDIX A: literatuurlijst, boeken</h4>
+					<ol class="appendixAol">
 						<li>
 							Writing Space: Computers, Hypertext, and the Remediation of Print — Jay David Bolter, 2001, Lawrence Erlbaum Associates, Inc.
 							<br>
@@ -497,8 +497,8 @@
 
 			<section id="appendixB" class="appendix">
 				<div class="content">
-					<h4>APPENDIX B: literatuurlijst, artikelen</h4>
-					<ol>
+					<h4 class="appendixAtitle">APPENDIX B: literatuurlijst, artikelen</h4>
+					<ol class="appendixAol">
 						<li>
 							Expanding Books and Post-Digital Print — Alessandro Ludovico, 2014.
 							<br>
@@ -565,8 +565,8 @@
 
 			<section id="appendixC" class="appendix">
 				<div class="content">
-					<h4>APPENDIX C: literatuurlijst, wikipedia</h4>
-					<ol>
+					<h4 class="appendixCtitle">APPENDIX C: literatuurlijst, wikipedia</h4>
+					<ol class="appendixCol">
 						<ul>
 							<li>
 								en.wikipedia.org/wiki ~
@@ -720,8 +720,8 @@
 
 			<section id="appendixD" class="appendix">
 				<div class="content">
-					<h4>APPENDIX D: literatuurlijst, video</h4>
-					<ol>
+					<h4 class="appendixDtitle">APPENDIX D: literatuurlijst, video</h4>
+					<ol clas="appendixDol">
 						<li>
 							Internet Rising: documentary film, http://Internetrising.net — Andrew Kenneth Martin, Marina Eisen en Alex Eisen
 						</li>
@@ -734,8 +734,8 @@
 
 			<section id="appendixE" class="appendix">
 				<div class="content">
-					<h4>APPENDIX E: literatuurlijst, projecten, werken</h4>
-					<ol>
+					<h4 class="appendixEtitle">APPENDIX E: literatuurlijst, projecten, werken</h4>
+					<ol class="appendixEol">
 						<li>
 							Library of the Printed Web (blog), http://libraryoftheprintedweb.tumblr.com — Paul Soulellis
 						</li>
@@ -1354,6 +1354,42 @@
 			function AbstractDrop() {
 	    		$fullabstract = $(".full-abstract");
 			    $fullabstract.slideToggle(1000, function () {});
+			}
+
+			// toggle appendices
+			$(".appendixAtitle").click( AppendixADrop ) ;
+			$("appendixAol").click( AppendixADrop ) ;
+			function AppendixADrop() {
+			$fullAappendix = $("ol>li");
+			$fullAappendix.slideToggle(1000, function () {});
+			}
+
+			$(".appendixBtitle").click( AppendixBDrop ) ;
+			$("appendixBol").click( AppendixBDrop ) ;
+			function AppendixBDrop() {
+			$fullBappendix = $("ol>li");
+			$fullBappendix.slideToggle(1000, function () {});
+			}
+
+			$(".appendixCtitle").click( AppendixCDrop ) ;
+			$("appendixCol").click( AppendixCDrop ) ;
+			function AppendixCDrop() {
+			$fullCappendix = $("ol>li");
+			$fullCappendix.slideToggle(1000, function () {});
+			}
+
+			$(".appendixDtitle").click( AppendixDDrop ) ;
+			$("appendixDol").click( AppendixDDrop ) ;
+			function AppendixDDrop() {
+			$fullDappendix = $("ol>li");
+			$fullDappendix.slideToggle(1000, function () {});
+			}
+
+			$(".appendixEtitle").click( AppendixEDrop ) ;
+			$("appendixEol").click( AppendixEDrop ) ;
+			function AppendixEDrop() {
+			$fullEappendix = $("ol>li");
+			$fullEappendix.slideToggle(1000, function () {});
 			}
 
 
