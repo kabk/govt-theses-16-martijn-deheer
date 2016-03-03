@@ -156,7 +156,7 @@ blockquote {
 	border-bottom: 1px dotted #0f0;
 }
 
-blockquote p {
+blockquote p.quoting {
 	margin:0;
 	padding:0;
 }
@@ -221,10 +221,6 @@ h3 {
 	font-size:1.2em;
 	margin:0;
 	font-weight:normal;
-}
-
-p {
-	margin:0;
 }
 
 span {
