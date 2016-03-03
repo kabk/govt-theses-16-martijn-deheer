@@ -265,6 +265,8 @@ img {
 	position:absolute;
 	width:inherit;
 	height:100%;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #000;
 }
 
 .scroll-progress {
@@ -287,6 +289,7 @@ img {
 	right: 0;
 	position: fixed;
 	background-color: #000;
+	border-left: 1px solid #fff;
 }
 
 #rowNav { }
@@ -294,8 +297,8 @@ img {
 #chapterNav {
 	width: 9.5%;
 	float: left;
-	border-right: 1px solid #fff;
-	border-left: 1px solid #000;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
 }
 
 .pagetitle {
