@@ -104,7 +104,7 @@ section#abstract.abstract .content {
 }
 
 article {
-	margin-bottom:16em;
+	margin-top:16em;
 	margin-bottom:8em;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -116,7 +116,7 @@ article {
 }
 
 #article-wrapper p {
-	margin-top: 3em;
+	margin-top: 0.5em;
 	margin-bottom: 1.5em;
 	letter-spacing:0.5px;
 }
@@ -162,7 +162,7 @@ blockquote {
 	border-bottom: 1px dotted #0f0;
 }
 
-blockquote p.quoting {
+#article-wrapper blockquote p.quoting {
 	margin:0;
 	padding:0;
 }
