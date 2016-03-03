@@ -60,12 +60,13 @@ body {
 
 .abstract .full-abstract {
     display: none;
+    margin-bottom:7em;
 }
 
 .abstract-fadeout {
     position: relative; 
-    bottom: 4em;
-    height: 4em;
+	bottom: 14em;
+	height: 14em;
     background: -webkit-linear-gradient(
         rgba(0, 0, 0, 0) 0%,
         rgba(0, 0, 0, 1) 100%
@@ -86,6 +87,16 @@ body {
         rgba(0, 0, 0, 0) 0%,
         rgba(0, 0, 0, 1) 100%
     );
+}
+
+section#abstract.abstract {
+	padding-right: 2em;
+	padding-left:2em
+}
+
+section#abstract.abstract .content {
+	width: 100%;
+	padding: 0;
 }
 
 #heading {

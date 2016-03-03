@@ -1127,11 +1127,11 @@
 			});
 			
 			// toggle abstract 
-			$(".short-abstract").click(function () {
-	    		$shortabstract = $(this);
+			$(".abstract-fadeout").click(function () {
+	    		$abstractfadeout= $(this);
 	    		//getting the next element
 	    		
-	    		$fullabstract = $shortabstract.next();
+	    		$fullabstract = $(".full-abstract");
 			    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
 			    
 			    $fullabstract.slideToggle(1000, function () {
