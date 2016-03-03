@@ -1098,8 +1098,6 @@
 		<script>
 			// adjust width of navigation-bar according to length of text + show sidenotes on height of reference
 			$(document).ready(function(){
-				noteHeight();
-				console.log( noteHeight.offset().top );
 				// var text, charsLength=0, wordsCountTotal=0, wordsCount=0, newWidth=0;
 				// $('article').each(function() {
 				// 	text = $.trim($(this).text());
@@ -1148,6 +1146,11 @@
 				//resize header div according to window height
 				resizeDiv();
 			});
+
+			document.addEventListener('DOMContentLoaded', function() {
+				noteHeight();
+			}, false);
+
 
 			// put notes on the right height
 			$(window).onresize = function(event){
