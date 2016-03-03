@@ -72,10 +72,10 @@
     );
 } 
 
-#container {
-	width:100%;
-	padding-left:2%;
-}
+// #container {
+// 	width:100%;
+// 	padding-left:2%;
+// }
 
 #heading {
 	width:70.33%;
@@ -83,10 +83,10 @@
 	margin-bottom:15%;
 }
 
-#container div {
-	float:left;
-/*	position:absolute;
-*/}
+// #container div {
+// 	float:left;
+// /*	position:absolute;
+// */}
 
 #article-wrapper {
 	width:36.93%;
