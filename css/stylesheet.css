@@ -21,7 +21,7 @@ body {
 	color:#fff;
 	font-family: 'ocr-pbi-canoniquepbicanonique', helvetica, sans-serif;
 	line-height: 150%;
-	font-size: 14px;
+	font-size: 15px;
 	margin:0;
 	padding:0;
 	text-align: left;
@@ -151,7 +151,7 @@ blockquote {
 	line-height: 150%;
 	margin: 0;
 	border-bottom: 1px dotted #0f0;
-	margin-bottom: 4em;
+	margin-bottom: 3em;
 }
 
 sup {
