@@ -32,7 +32,6 @@ body {
 
 #heading {
 	width:67.5%;
-	margin-bottom:16em;
 	padding-left:2%;
 }
 
@@ -103,7 +102,7 @@ section#abstract.abstract .content {
 }
 
 article {
-	margin-top:80px;
+	margin-bottom:16em;
 	margin-bottom:8em;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
