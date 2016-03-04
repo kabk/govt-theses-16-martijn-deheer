@@ -277,6 +277,10 @@ img {
 	z-index: 1;
 }
 
+.breakerTEN {
+	width:100%;
+}
+
 #conclusie {
 	margin-bottom: 12em;
 }
