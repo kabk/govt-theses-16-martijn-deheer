@@ -377,6 +377,12 @@ ol ul li{
 	}
 }
 
+@media only screen and (max-width:1024) {
+	#chapterNav {
+		width: 9.35%;
+	}
+}
+
 @media only screen and (max-width:800) {
 	body {
 		font-size: 11px;
@@ -392,13 +398,7 @@ ol ul li{
 	}
 }
 
-@media only screen and (width:1024) {
-	#chapterNav {
-		width: 9.35%;
-	}
-}
-
-@media only screen and (min-width:414) {
+@media only screen and (max-width:414) {
 	body {
 		font-size:20px;
 	}
