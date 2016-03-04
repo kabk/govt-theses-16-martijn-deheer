@@ -362,7 +362,21 @@ ol ul li{
 	text-align: center;
 }
 
+#print {
+	margin-top:11em;
+	margin-bottom:11em;
+}
 
+#print a {
+	background-color: #000;
+	color:#fff;
+	border:1px solid #fff;
+}
+
+#print a:hover {
+	background-color: #fff;
+	color:#0f0;
+}
 
 
 @media only screen and (min-width:1500) {
