@@ -378,18 +378,22 @@ ol ul li{
 }
 
 .printbut {
-	width: 7.57em;
+	// width: 7.57em;
 	width: intrinsic;
 }
 
 .pdfbut {
-	6.19em
+	// width:6.19em;
 	width: intrinsic;
 }
 
 .engbut {
-	width:8em;
+	// width:8em;
 	width: intrinsic;
+}
+
+.very-small {
+	font-size:0.4em;
 }
 
 @media only screen and (min-width:1500) {
