@@ -1395,9 +1395,8 @@
 			// fit header
 			$("#fittext").fitText(0.75, {minFontSize:'24px', maxFontSize:'180px'});
 
-
 			// progress bar script
-			$(document).ready(function(){
+			setTimeout(function(){
 				// appendixTop();
 
         		// init controller
@@ -1483,7 +1482,7 @@
 								.setTween(tween10)
 								.addIndicators()
 								.addTo(controller);
-			});
+			}, 3000);
 
 		</script>
     </body>
