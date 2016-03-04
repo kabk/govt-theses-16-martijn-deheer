@@ -1395,17 +1395,15 @@
 			// fit header
 			$("#fittext").fitText(0.75, {minFontSize:'24px', maxFontSize:'180px'});
 
-			var controller;
+
 			$(document).ready(function($) {
+				var controller;
 				// init controller
 				controller = new ScrollMagic({
 					globalSceneOptions: {
 						triggerHook: 0.45
 					}
 				});
-			});
-
-			$(document).ready(function($) {
 
 				var tween1 = TweenMax.to("#scroll", 1, 
 					{
