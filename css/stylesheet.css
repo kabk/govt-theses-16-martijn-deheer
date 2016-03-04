@@ -456,6 +456,12 @@ ol ul li{
 		color:#000;
 		page-break-after: always;
 	}
+	.short-abstract {
+		display:initial;
+	}
+	.full-abstract {
+		display:initial;
+	}
 	section.thesis-content {
 		page-break-after: always;
 	}
