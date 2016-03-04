@@ -127,15 +127,15 @@ section.thesis-content {
 }
 
 .content {
-	width: 66%;
+	width: 65%;
 	padding-left: 2em;
 }
 
 .sideContent {
 	float: left;
-	left: 71%;
+	left: 72%;
 	position: relative;
-	width: 25%;
+	width: 24%;
 }
 
 .sideContent p {
@@ -146,6 +146,14 @@ section.thesis-content {
 	color: #00ff00;
 	padding-left: 1.5em;
 	text-indent: -1.5em;
+}
+
+.footnotediv {
+	display: inherit;
+}
+
+.sideContent p:hover {
+	color: #000;
 }
 
 .titlespan {
@@ -277,14 +285,6 @@ img {
 	margin-top: 3em;
 	float: left;
 	width: 100%;
-}
-
-.footnotediv {
-	display: inherit;
-}
-
-.footnotediv:hover {
-	color: #000;
 }
 
 h4 {
