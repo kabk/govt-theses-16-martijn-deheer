@@ -360,6 +360,7 @@ ol ul li{
 #print {
 	margin-top:11em;
 	margin-bottom:22em;
+	display:inline-flex;
 }
 
 #print a {
@@ -367,8 +368,6 @@ ol ul li{
 	color:#fff;
 	border: 1px solid #fff;
 	display: block;
-	width: 7.57em;
-	width: intrinsic;
 	padding: 1em 2em 0em 2em;
 	margin-left: 2em;
 }
@@ -378,6 +377,20 @@ ol ul li{
 	color:#0f0;
 }
 
+.printbut {
+	width: 7.57em;
+	width: intrinsic;
+}
+
+.pdfbut {
+	6.19em
+	width: intrinsic;
+}
+
+.engbut {
+	width:8em;
+	width: intrinsic;
+}
 
 @media only screen and (min-width:1500) {
 	body {
