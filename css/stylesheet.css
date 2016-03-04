@@ -378,17 +378,14 @@ ol ul li{
 }
 
 .printbut {
-	// width: 7.57em;
 	width: intrinsic;
 }
 
 .pdfbut {
-	// width:6.19em;
 	width: intrinsic;
 }
 
 .engbut {
-	// width:8em;
 	width: intrinsic;
 }
 
@@ -449,12 +446,3 @@ ol ul li{
 		display:none;
 	}
 }
-
-
-
-// @media print {
-// 	h1, p {
-// 		margin: 200px;
-// 	}
-// }
-
