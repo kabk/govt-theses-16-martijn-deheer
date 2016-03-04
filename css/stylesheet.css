@@ -457,11 +457,14 @@ ol ul li{
 		page-break-after: always;
 		display:inline;
 	}
+	.abstract-fadeout{
+		display:none;
+	}
 	.short-abstract {
-		display:inline;
+		color:#000;
 	}
 	.full-abstract {
-		display:inline;
+		color:#000;
 	}
 	section.thesis-content {
 		page-break-after: always;
