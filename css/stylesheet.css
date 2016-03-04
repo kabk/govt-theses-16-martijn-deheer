@@ -457,10 +457,10 @@ ol ul li{
 		page-break-after: always;
 	}
 	.short-abstract {
-		display:initial;
+		display:inline;
 	}
 	.full-abstract {
-		display:initial;
+		display:inline;
 	}
 	section.thesis-content {
 		page-break-after: always;
