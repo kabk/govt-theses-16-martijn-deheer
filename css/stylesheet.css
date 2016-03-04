@@ -326,11 +326,7 @@ ol ul li{
 	background-color: #fff;
 }
 
-#scroll {
-    height: 100%;
-}
-
-#scrolltwo {
+#scroll, #scrolltwo, #scrollthree, #scrollfour, #scrollfive, #scrollsix, #scrollseven, #scrolleight, #scrollnine, #scrollten {
     height: 100%;
 }
 
