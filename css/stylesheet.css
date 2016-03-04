@@ -280,12 +280,16 @@ img {
 	width:100%;
 }
 
+#breaker.breakerTEN {
+	height: 24em;
+}
+
 #conclusie {
-	margin-bottom: 12em;
+	// margin-bottom: 12em;
 }
 
 #appendixA.appendix {
-	margin-top: 12em;
+	// margin-top: 12em;
 }
 
 .appendix {
