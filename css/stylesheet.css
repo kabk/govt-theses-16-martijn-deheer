@@ -102,7 +102,6 @@ section#abstract.abstract .content {
 }
 
 article {
-	margin-top:22em;
 	margin-bottom:8em;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -364,13 +363,17 @@ ol ul li{
 
 #print {
 	margin-top:11em;
-	margin-bottom:11em;
+	margin-bottom:22em;
 }
 
 #print a {
 	background-color: #000;
 	color:#fff;
-	border:1px solid #fff;
+	border: 1px solid #fff;
+	display: block;
+	width: intrinsic;
+	padding: 1em 2em 0em 2em;
+	margin-left: 2em;
 }
 
 #print a:hover {
