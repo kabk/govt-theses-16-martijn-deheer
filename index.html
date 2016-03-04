@@ -998,7 +998,7 @@
 				<a href="#hfdstkTWEE">
 					<div id="chapterNav" class="chapterTwo">
 						<div class="progressWrapper">
-							<div id="scrolltwo"></div>
+							<div id="scrollthree"></div>
 						</div>
 						<p class='pagetitle'>
 							2<br><br>D<br>E<br><br>E<br>I<br>G<br>E<br>N<br>S<br>C<br>H<br>A<br>P<br><br>V<br>A<br>N<br><br>A<br>S<br>S<br>O<br>C<br>I<br>A<br>T<br>I<br>E
@@ -1008,7 +1008,7 @@
 				<a href="#hfdstkDRIE">
 					<div id="chapterNav" class="chapterThree">
 						<div class="progressWrapper">
-							<div id="scrolltwo"></div>
+							<div id="scrollfour"></div>
 						</div>
 						<p class='pagetitle'>
 							3<br><br>D<br>E<br><br>T<br>O<br>P<br>O<br>L<br>O<br>G<br>I<br>E<br><br>V<br>A<br>N<br><br>H<br>E<br>T<br><br>N<br>E<br>T<br>W<br><br>E<br>R<br>K
@@ -1018,7 +1018,7 @@
 				<a href="#hfdstkVIER">
 					<div id="chapterNav" class="chapterFour">
 						<div class="progressWrapper">
-							<div id="scrolltwo"></div>
+							<div id="scrollfive"></div>
 						</div>
 						<p class='pagetitle'>
 							4<br><br>B<br>O<br>E<br>K<br>S<br>Y<br>S<br>T<br>E<br>M<br>E<br>N<br><br>E<br>N<br><br>N<br>A<br>V<br>I<br>G<br>A<br>T<br>I<br>E<br><br>S<br>Y<br>S<br>T<br>E<br>M<br>E<br>N
@@ -1028,7 +1028,7 @@
 				<a href="#hfdstkVIJF">
 					<div id="chapterNav" class="chapterFive">
 						<div class="progressWrapper">
-							<div id="scrolltwo"></div>
+							<div id="scrollsix"></div>
 						</div>
 						<p class='pagetitle'>
 							5<br><br>S<br>T<br>A<br>T<br>I<br>S<br>C<br>H<br><br>E<br>N<br><br>D<br>Y<br>N<br>A<br>M<br>I<br>S<br>C<br>H<br>
@@ -1038,7 +1038,7 @@
 				<a href="#hfdstkZES">
 					<div id="chapterNav" class="chapterSix">
 						<div class="progressWrapper">
-							<div id="scrolltwo"></div>
+							<div id="scrollseven"></div>
 						</div>
 						<p class='pagetitle'>
 							6<br><br>D<br>E<br><br>C<br>O<br>N<br>T<br>E<br>X<br>T<br><br>V<br>A<br>N<br><br>H<br>E<br>T<br><br>N<br>E<br>T<br>W<br>E<br>R<br>K
@@ -1048,7 +1048,7 @@
 				<a href="#hfdstkZEVEN">
 					<div id="chapterNav" class="chapterSeven">
 						<div class="progressWrapper">
-							<div id="scrolltwo"></div>
+							<div id="scrolleight"></div>
 						</div>
 						<p class='pagetitle'>
 							7<br><br>D<br>E<br><br>A<br>R<br>C<br>H<br>I<br>T<br>E<br>C<br>T<br>U<br>U<br>R<br><br>V<br>A<br>N<br><br>H<br>U<br>L<br>P<br>M<br><br>I<br>D<br>D<br>E<br>L<br>E<br>N
@@ -1058,7 +1058,7 @@
 				<a href="#hfdstkACHT">
 					<div id="chapterNav" class="chapterEight">
 						<div class="progressWrapper">
-							<div id="scrolltwo"></div>
+							<div id="scrollnine"></div>
 						</div>
 						<p class='pagetitle'>
 							8<br><br>M<br>O<br>D<br>U<br>L<br>E<br>N<br>,<br><br>S<br>C<br>H<br>E<br>M<br>A<br>’<br>S<br><br>I<br>N<br><br>H<br>E<br>T<br><br>N<br>E<br>T<br>W<br>E<br>R<br>K
@@ -1068,7 +1068,7 @@
 				<a href="#conclusie">
 					<div id="chapterNav" class="chapterNine">
 						<div class="progressWrapper">
-							<div id="scrolltwo"></div>
+							<div id="scrollten"></div>
 						</div>
 						<p class='pagetitle'>
 							0<br><br>C<br>O<br>N<br>C<br>L<br>U<br>S<br>I<br>E<br>:<br><br>D<br>E<br><br>S<br>A<br>N<br>E<br>R<br>I<br>N<br>G<br><br>V<br>A<br>N<br><br>G<br>R<br>A<br>F<br>I<br>S<br>C<br>H<br><br>O<br>N<br>T<br>W<br>E<br>R<br>P
@@ -1416,6 +1416,62 @@
 				var scene2 = new ScrollMagic.Scene({triggerElement: "#hfdstkEEN", duration: "175%"})
 								.triggerHook(0.35)
 								.setTween(tween2)
+								.addTo(controller);
+
+				var tween3 = TweenMax.to("#scrollthree", 1, {className: "+=scroll-progress"});
+				// build scene
+				var scene3 = new ScrollMagic.Scene({triggerElement: "#hfdstkTWEE", duration: "175%"})
+								.triggerHook(0.35)
+								.setTween(tween3)
+								.addTo(controller);
+
+				var tween4 = TweenMax.to("#scrollfour", 1, {className: "+=scroll-progress"});
+				// build scene
+				var scene4 = new ScrollMagic.Scene({triggerElement: "#hfdstkDRIE", duration: "175%"})
+								.triggerHook(0.35)
+								.setTween(tween4)
+								.addTo(controller);
+
+				var tween5 = TweenMax.to("#scrollfive", 1, {className: "+=scroll-progress"});
+				// build scene
+				var scene5 = new ScrollMagic.Scene({triggerElement: "#hfdstkVIER", duration: "175%"})
+								.triggerHook(0.35)
+								.setTween(tween5)
+								.addTo(controller);
+
+				var tween6 = TweenMax.to("#scrollsix", 1, {className: "+=scroll-progress"});
+				// build scene
+				var scene6 = new ScrollMagic.Scene({triggerElement: "#hfdstkVIJF", duration: "175%"})
+								.triggerHook(0.35)
+								.setTween(tween6)
+								.addTo(controller);
+
+				var tween7 = TweenMax.to("#scrollseven", 1, {className: "+=scroll-progress"});
+				// build scene
+				var scene7 = new ScrollMagic.Scene({triggerElement: "#hfdstkZES", duration: "175%"})
+								.triggerHook(0.35)
+								.setTween(tween7)
+								.addTo(controller);
+
+				var tween8 = TweenMax.to("#scrolleight", 1, {className: "+=scroll-progress"});
+				// build scene
+				var scene8 = new ScrollMagic.Scene({triggerElement: "#hfdstkZEVEN", duration: "175%"})
+								.triggerHook(0.35)
+								.setTween(tween8)
+								.addTo(controller);
+
+				var tween9 = TweenMax.to("#scrollnine", 1, {className: "+=scroll-progress"});
+				// build scene
+				var scene9 = new ScrollMagic.Scene({triggerElement: "#hfdstkACHT", duration: "175%"})
+								.triggerHook(0.35)
+								.setTween(tween9)
+								.addTo(controller);
+
+				var tween10 = TweenMax.to("#scrollten", 1, {className: "+=scroll-progress"});
+				// build scene
+				var scene10 = new ScrollMagic.Scene({triggerElement: "#conclusie", duration: "175%"})
+								.triggerHook(0.35)
+								.setTween(tween10)
 								.addTo(controller);
 			});
 
