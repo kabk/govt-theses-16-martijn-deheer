@@ -365,18 +365,61 @@ ol ul li{
 
 
 
-/*@media only screen and (max-width:600px) {
-	.article-wrapper {
-		width:65%;
-		margin-left:2.5%;
-		z-index:-1;
+@media only screen and (min-width:1500) {
+	body {
+		font-size:18px;
 	}
-}*/
+	#chapterNav {
+		width: 9.65%;
+	}
+	img {
+		max-height: 400px;
+	}
+}
 
-/* DIFFERENT MEDIA */
-// @media only screen and (min-width: 600px) {
+@media only screen and (max-width:800) {
+	body {
+		font-size: 11px;
+	}
+	#chapterNav {
+		width: 9.15%;
+	}
+	.pagetitle {
+		font-size: 0.8em;
+	}
+	img {
+		max-height: 150px;
+	}
+}
 
-// }
+@media only screen and (width:1024) {
+	#chapterNav {
+		width: 9.35%;
+	}
+}
+
+@media only screen and (min-width:414) {
+	body {
+		font-size:20px;
+	}
+	.content {
+		width:61%;
+	}
+	.sideContent {
+		left: 70%;
+	}
+	#heading {
+		width:95%;
+	}
+	#article-wrapper {
+		width:95%;
+	}
+	#chapterNav-wrapper {
+		display:none;
+	}
+}
+
+
 
 // @media print {
 // 	h1, p {
