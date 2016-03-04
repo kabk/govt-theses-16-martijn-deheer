@@ -277,29 +277,19 @@ img {
 	z-index: 1;
 }
 
-#appendixCol {
-	display:inline;
-}
-
 #appendixA.appendix {
 	margin-top: 12em;
 }
 
 .appendix {
 	margin-top: 3em;
-	position:relative;
+	font-size: 0.5em;
 }
 
 h4 {
 	margin: 0;
 	font-size: 1em;
 	padding-left: 2.5em;
-    cursor: pointer;
-}
-
-ol {
-    display: none;
-    cursor: pointer;
 }
 
 li {
