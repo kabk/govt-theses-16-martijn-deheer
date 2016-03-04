@@ -10,7 +10,7 @@
     font-style: normal;
 }
 
-body {
+body label{
     background: #000;
     color:#fff;
     font-family: 'ocr-pbi-canoniquepbicanonique', helvetica, sans-serif;
@@ -20,6 +20,8 @@ body {
     padding:0;
     text-align: left;
     font-weight:normal;
+    margin-left: 1.5em;
+    margin-right: 3px;
 }
 
 #viewport {
@@ -48,11 +50,6 @@ body {
     -webkit-align-items: center;
 }
 
-label {
-    margin-left: 1.5em;
-    margin-right: 3px;
-}
-
 input {
     border: 1px solid white;
     background-color: white;
@@ -71,15 +68,18 @@ input:hover {
 
 button {
     border: 1px solid white;
-    background-color: white;
-    font-size: 11px;
+    background-color: #000;
+    font-size: 1em;
     text-transform: uppercase;
+    font-family: 'ocr-pbi-canoniquepbicanonique', helvetica, sans-serif;
     margin-right: 1em;
-    height: 19px;
+    height: 90%;
+    color: #fff;
 }
 button:hover {
     cursor: pointer;
-    background-color: yellow;
+    background-color: #fff;
+    color: #0f0;
 }
 .separator {
     content: " ";
