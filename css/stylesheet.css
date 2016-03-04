@@ -277,6 +277,10 @@ img {
 	z-index: 1;
 }
 
+#appendixCol {
+	position:inherit;
+}
+
 #appendixA.appendix {
 	margin-top: 12em;
 }
