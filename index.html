@@ -1124,7 +1124,7 @@
 				var offset7 =  b7.offset().left;
 				var offset8 =  b8.offset().left;
 				var offset9 =  b9.offset().left;
-				var offset10 =  b10.offset().left + b10.width();
+				var offset10 =  b10.offset().left;
 
 				$( '.breakerONE' ).width(offset1);
 				$( '.breakerTWO' ).width(offset2);
@@ -1135,7 +1135,7 @@
 				$( '.breakerSEVEN' ).width(offset7);
 				$( '.breakerEIGHT' ).width(offset8);
 				$( '.breakerNINE' ).width(offset9);
-				$( '.breakerTEN' ).width(offset10);
+				$( '.breakerTEN' ).width(offset10) + b10.width();
 
 				//resize header div according to window height
 				resizeDiv();
