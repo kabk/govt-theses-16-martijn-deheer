@@ -277,6 +277,10 @@ img {
 	z-index: 1;
 }
 
+#conclusie {
+	margin-bottom: 12em;
+}
+
 #appendixA.appendix {
 	margin-top: 12em;
 }
@@ -284,6 +288,10 @@ img {
 .appendix {
 	margin-top: 3em;
 	font-size: 0.5em;
+}
+
+.appendix .content {
+	width:45%;
 }
 
 h4 {
