@@ -278,7 +278,7 @@ img {
 }
 
 #appendixCol {
-	position:inherit;
+	display:inline;
 }
 
 #appendixA.appendix {
@@ -287,8 +287,7 @@ img {
 
 .appendix {
 	margin-top: 3em;
-	float: left;
-	width: 100%;
+	position:relative;
 }
 
 h4 {
