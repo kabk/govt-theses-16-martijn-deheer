@@ -455,6 +455,7 @@ ol ul li{
 	#abstract {
 		color:#000;
 		page-break-after: always;
+		display:inline;
 	}
 	.short-abstract {
 		display:inline;
