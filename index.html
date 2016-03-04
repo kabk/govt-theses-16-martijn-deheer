@@ -1397,42 +1397,18 @@
 
 
 			$(document).ready(function($) {
-				var controller;
 				// init controller
-				controller = new ScrollMagic({
-					globalSceneOptions: {
-						triggerHook: 0.45
-					}
-				});
-
-				var tween1 = TweenMax.to("#scroll", 1, 
-					{
-						className: "+=scroll-progress"
-					}
-				);
-
-				var scene1 = new ScrollMagic.Scene(
-					{
-						triggerElement: "#inleiding", 
-						duration: "200%"
-					}
-				)
-								.setTween(tween1)
-								.addTo(controller);
-				scene1.addIndicators();
-			});
-
-
-
-			// progress bar script
-			setTimeout(function(){
-				// appendixTop();
-
-        		// init controller
+				var controller = new ScrollMagic.Controller();
+				
 				// build tween
+				var tween1 = TweenMax.to("#scroll", 1, {className: "+=scroll-progress"});
 				// build scene
 				// get the current triggerHook value
-				
+				var scene1 = new ScrollMagic.Scene({triggerElement: "#inleiding", duration: "200%"})
+								.triggerHook(0.45)
+								.setTween(tween1)
+								.addIndicators()
+								.addTo(controller);
 
 				var tween2 = TweenMax.to("#scrolltwo", 1, {className: "+=scroll-progress"});
 				// build scene
@@ -1505,7 +1481,7 @@
 								.setTween(tween10)
 								.addIndicators()
 								.addTo(controller);
-			}, 3000);
+			});
 
 		</script>
     </body>
