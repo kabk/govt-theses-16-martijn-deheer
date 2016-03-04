@@ -450,20 +450,27 @@ ol ul li{
 @media print {
 	body {
 		font-size:20px;
+		color:#000;
 	}
 	.content {
-		width:61%;
+		width:70%;
+		color:#000;
 	}
 	.sideContent {
-		left: 70%;
+		left: 75%;
+		color:#000;
 	}
 	#heading {
 		width:95%;
+		color:#000;
 	}
 	#article-wrapper {
 		width:95%;
 	}
 	#chapterNav-wrapper {
 		display:none;
+	}
+	#print {
+		display: none;
 	}
 }
