@@ -1332,7 +1332,7 @@
 				var appendixCol = $('#conclusie');
 				var offsetCon = appendixCol.offset();
 				var top = offsetCon.top;
-				var bottom = top + appendixCol.outerHeight();
+				var bottom = top + appendixCol.height();
 				$('#appendixCol').offset({top: bottom})
 			}
 
@@ -1399,7 +1399,7 @@
 			// progress bar script
 			$(document).ready(function(){
 				appendixTop();
-				
+
         		// init controller
 				var controller = new ScrollMagic.Controller();
 				// build tween
