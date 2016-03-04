@@ -1328,6 +1328,13 @@
 				// $( '[data-content="35"]' ).attr('id', 'data-content-35')
 			}
 
+			function appendixTop(){
+				var appendixCol = $('#conclusie');
+				var offsetCon = appendixCol.offset();
+				var top = offsetCon.top;
+				var bottom = top + appendixCol.outerHeight();
+				$('#appendixCol').offset({top: bottom})
+			}
 
 			window.onresize = function(event) {
 				resizeDiv();
@@ -1385,14 +1392,14 @@
 			$fullEappendix.slideToggle(1000, function () {});
 			}
 
-
 			// fit header
 			$("#fittext").fitText(0.75, {minFontSize:'24px', maxFontSize:'180px'});
 
 
 			// progress bar script
 			$(document).ready(function(){
-
+				appendixTop();
+				
         		// init controller
 				var controller = new ScrollMagic.Controller();
 				// build tween
