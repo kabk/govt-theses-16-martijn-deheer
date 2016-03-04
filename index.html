@@ -1328,13 +1328,13 @@
 				// $( '[data-content="35"]' ).attr('id', 'data-content-35')
 			}
 
-			function appendixTop(){
-				var appendixCol = $('#conclusie');
-				var offsetCon = appendixCol.offset();
-				var top = offsetCon.top;
-				var bottom = top + appendixCol.height();
-				$('#appendixCol').offset({top: bottom})
-			}
+			// function appendixTop(){
+			// 	var appendixCol = $('#conclusie');
+			// 	var offsetCon = appendixCol.offset();
+			// 	var top = offsetCon.top;
+			// 	var bottom = top + appendixCol.height();
+			// 	$('#appendixCol').offset({top: bottom})
+			// }
 
 			window.onresize = function(event) {
 				resizeDiv();
@@ -1398,7 +1398,7 @@
 
 			// progress bar script
 			$(document).ready(function(){
-				appendixTop();
+				// appendixTop();
 
         		// init controller
 				var controller = new ScrollMagic.Controller();
