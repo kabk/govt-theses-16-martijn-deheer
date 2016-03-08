@@ -1166,9 +1166,10 @@
 				$( '.breakerNINE' ).width(offset9);
 				$( '.breakerTEN' ).width(offset9 + b9.width());
 
-				var pageENDanchor = $('.breakerTEN').offset().top;
+				var endANCHOR = $('.breakerTEN');
+				var pageENDanchor = endANCHOR.offset().top;
 
-				$('body').height(pageENDanchor + pageENDanchor.height())
+				$('body').height(pageENDanchor + endANCHOR.height());
 
 				//resize header div according to window height
 				resizeDiv();
