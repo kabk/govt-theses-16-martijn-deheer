@@ -275,13 +275,9 @@ img {
 	z-index: 1;
 }
 
-.breakerTEN {
+#breaker.breakerTEN {
 	height: auto;
 	height: intrinsic;
-}
-
-#breaker.breakerTEN {
-	height: 24em;
 }
 
 .appendix {
