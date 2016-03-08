@@ -321,6 +321,12 @@ section#abstract.colofonsec .colofoncontent {
 	padding-right:2em;
 }
 
+.colofon a {
+	color: #fff;
+	border-bottom: 1px dotted #fff;
+	text-decoration: none;
+}
+
 #appendix-wrapper {
 	width:69.75%;
 	display: flex;
@@ -446,7 +452,7 @@ ol ul li{
 		width: 9.65%;
 	}
 	img {
-		max-height: 400px;
+		max-height: 375px;
 	}
 }
 
