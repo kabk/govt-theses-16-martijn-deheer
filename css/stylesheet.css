@@ -138,12 +138,12 @@ section.thesis-content {
 	margin-top:1em;
 	letter-spacing: 0.5px;
 	color: #00ff00;
-	padding-left: 2em;
 	text-indent: -2em;
 }
 
 .footnotediv {
-	left: 72%;
+	left: 70%;
+	padding-left: 2em;
 	width: 24%;
 }
 
