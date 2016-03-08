@@ -284,8 +284,8 @@ img {
 	position: absolute;
 	left: 0;
 	width: 100%;
-	top: 4em;
-	height: 10em;
+	top: 1em;
+	height: 8em;
     background: -webkit-linear-gradient(
         rgba(0, 0, 0, 1) 0%,
         rgba(0, 0, 0, 0) 100%
@@ -309,7 +309,7 @@ img {
 }
 
 section#abstract.colofonsec {
-	width: 65%;
+	width: 69.75%;
 }
 
 section#abstract.colofonsec .colofoncontent {
@@ -323,14 +323,15 @@ section#abstract.colofonsec .colofoncontent {
 
 #appendix-wrapper {
 	width:69.75%;
+	display: flex;
 }
 
 .appendix {
 	width: 20%;
 	font-size: 0.5em;
 	line-height: 1.2em;
+	margin-top: 18em;
 	margin-bottom: 32em;
-	margin-top: 32em;
 }
 
 .appendix .content {
