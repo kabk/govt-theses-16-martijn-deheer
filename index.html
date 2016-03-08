@@ -1166,6 +1166,10 @@
 				$( '.breakerNINE' ).width(offset9);
 				$( '.breakerTEN' ).width(offset9 + b9.width());
 
+				var pageENDanchor = $('.breakerTEN').offset().top;
+
+				$('body').height(pageENDanchor + pageENDanchor.height())
+
 				//resize header div according to window height
 				resizeDiv();
 			});
