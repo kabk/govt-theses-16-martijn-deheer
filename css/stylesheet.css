@@ -101,14 +101,13 @@ section#abstract.abstract .content {
 }
 
 article {
-	margin-bottom:8em;
+	margin-bottom:0;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 }
 
 #article-wrapper {
 	width: 69.75%;
-	margin-bottom:1.5%;
 }
 
 #article-wrapper p {
@@ -130,10 +129,7 @@ section.thesis-content {
 }
 
 .sideContent {
-	float: left;
-	left: 72%;
-	position: relative;
-	width: 24%;
+	height:0;
 }
 
 .sideContent p {
@@ -147,7 +143,8 @@ section.thesis-content {
 }
 
 .footnotediv {
-	display: inherit;
+	left: 72%;
+	width: 24%;
 }
 
 .sideContent p:hover {
@@ -327,6 +324,11 @@ section#abstract.colofonsec .colofoncontent {
 	text-decoration: none;
 }
 
+.starseperate {
+ 	height: 0.5em;
+	margin: 0;
+ }
+
 #appendix-wrapper {
 	width:69.75%;
 	display: flex;
@@ -336,7 +338,7 @@ section#abstract.colofonsec .colofoncontent {
 	width: 20%;
 	font-size: 0.5em;
 	line-height: 1.2em;
-	margin-top: 18em;
+	margin-top: 14em;
 	margin-bottom: 32em;
 }
 
