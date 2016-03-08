@@ -88,6 +88,34 @@ body {
     );
 }
 
+.colofon-fadeout {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 4em;
+	height: 10em;
+    background: -webkit-linear-gradient(
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+    ); 
+    background-image: -moz-linear-gradient(
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    background-image: -o-linear-gradient(
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    background-image: -ms-linear-gradient(
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
 section#abstract.abstract {
 	padding-right: 2em;
 	padding-left:2em;
