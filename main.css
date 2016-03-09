@@ -153,7 +153,7 @@
   text-align: left;
 }
 .header:after {
-  content: "BOEK/HYPERTEKST/PROTOCOL";
+  content: "BOEK/HYPERTEKST///";
 }
 /* __________________________________ MAIN SECTION __________________________________ */
 .body {
