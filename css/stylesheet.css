@@ -414,7 +414,7 @@ ol ul li{
 #print {
 	margin-top:4em;
 	margin-bottom:24em;
-	padding-left:3em;
+	padding-left:3.3em;
 	padding-right:2em;
 	display:inline-flex;
 	font-size:0.75em;
@@ -459,7 +459,7 @@ ol ul li{
 		display: flex;
 	}
 	#print {
-		padding-left: 3.75em;
+		padding-left: 3.85em;
 	}
 	img {
 		max-height: 350px;
