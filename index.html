@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="nl"><!-- Putting the language code here will help for example text to speech (and in the future, hypehenation)-->
-    <head>
-        <title>book/hypertext/protocol</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="description" content="In my thesis I search for what the internet could mean for graphic design in both practical as conceptual ways. I search for answers by asking a question that came to me when I discovered the Web-to-Print practices. Becoming my main research question: What is the purpose of using internet's native functionality to produce books?">
-        <meta property="og:title" content="book/hypertext/protocol" />
-        <meta property="og:image" content="http://kabk.github.io/govt-theses-16-martijn-deheer/images/previewIMG.jpg" />
-        <meta property="dc:creator" content="de Heer, Martijn"/>
-        <meta property="dc:created" content="2015-12-05T00:00:00Z" />
-        <meta property="dc:modified" content="2015-12-05T00:00:00Z" />
-        <!-- Link stylesheets!-->
-        <link rel="stylesheet" type="text/css" href="css/normalize.css" /> 
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-    </head>
+	<head>
+		<title>book/hypertext/protocol</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="In my thesis I search for what the internet could mean for graphic design in both practical as conceptual ways. I search for answers by asking a question that came to me when I discovered the Web-to-Print practices. Becoming my main research question: What is the purpose of using internet's native functionality to produce books?">
+		<meta property="og:title" content="book/hypertext/protocol" />
+		<meta property="og:image" content="http://kabk.github.io/govt-theses-16-martijn-deheer/images/previewIMG.jpg" />
+		<meta property="dc:creator" content="de Heer, Martijn"/>
+		<meta property="dc:created" content="2015-12-05T00:00:00Z" />
+		<meta property="dc:modified" content="2015-12-05T00:00:00Z" />
+		<!-- Link stylesheets!-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+	</head>
 
-    <body>
-    	<div id="progress-bar"> </div>
+	<body>
+		<div id="progress-bar"> </div>
 		<div id="heading">
 			<header> 
 				<h1 id="fittext">
@@ -33,8 +33,15 @@
 		<article id="article-wrapper">
 			<section id="print" class="printdiv">
 				<p>
-					<a class="printbut" href="print.html">PRINT THIS!</a> <span class="very-small">(working on it)</span> <a class="pdfbut" href="http://kabk.github.io/govt-theses-16-martijn-deheer/de Heer, Martijn - Boek Hypertekst Protocol.pdf">GIVE PDF!</a> <span class="very-small">(until html design is done)</span> <a class="engbut" href="">MAKE ENGLISH!</a> <span class="very-small">(expected in 05-16)</span>
+					<a class="printbut" href="print.html">PRINT THIS!</a> <span class="very-small">(working on it)</span> <a class="printbut" href="http://kabk.github.io/govt-theses-16-martijn-deheer/de Heer, Martijn - Boek Hypertekst Protocol.pdf">GIVE PDF!</a> <span class="very-small">(until html design is done)</span> <a class="engbut" href="">MAKE ENGLISH!</a> <span class="very-small">(expected in 05-16)</span>
 				</p>
+
+				<div class="popup">
+					<iframe src="">
+						<p>Your browser does not support iframes.</p>
+					</iframe>
+					<a href="#" class="close"><img src="http://www.iconsdb.com/icons/preview/white/x-mark-xxl.png"></a>
+				</div>
 			</section>
 
 			<section id="abstract" class="abstract">
@@ -45,10 +52,10 @@
 							Web-to-print is a practice where internet technologies and functions are used to make print. I stumbled upon this practice when I found the Library of the Printed Web (LotPW), a collection initiated by Paul Soullelis. LotPW holds several artist’ books that have been made by using the internet as primary tool. Primary tool meaning: creating, generating, designing and/or publishing of both the content as the physical book.
 						</p>
 					</div>
-                    <div class="full-abstract">
-                    	<p>
-                    		I became intrigued by this seemingly paradoxical process. Where the internet is used to make print and itself also being printed. The way the works, in LotPW, use the internet shows a great spectrum of possibilities.
-                    	</p>
+					<div class="full-abstract">
+						<p>
+							I became intrigued by this seemingly paradoxical process. Where the internet is used to make print and itself also being printed. The way the works, in LotPW, use the internet shows a great spectrum of possibilities.
+						</p>
 						<p>
 							Meanwhile I see a divergence between analogue and digital in design. Quite some graphic designers keep being afraid for working on or with the internet. Or are simply uninterested in the possibilities that this network has to offer. I think that shows the roots of graphic design: industrial mechanisms and craftsmanship. Leaving most designers work in methods coming from those roots.
 						</p>
@@ -1118,6 +1125,19 @@
 		<script>
 			// adjust width of navigation-bar according to length of text + show sidenotes on height of reference
 			$(document).ready(function(){
+
+				$(".popup").hide();
+
+				$(".printbut").click(function (e) {
+					e.preventDefault();
+					$("iframe").attr("src", $(this).attr('href'));
+					$(".popup").fadeIn('slow');
+				});
+
+				$(".close").click(function () {
+					$(this).parent().fadeOut("slow");
+				});
+
 				// var text, charsLength=0, wordsCountTotal=0, wordsCount=0, newWidth=0;
 				// $('article').each(function() {
 				// 	text = $.trim($(this).text());
@@ -1389,8 +1409,8 @@
 			$(".full-abstract").click( AbstractDrop ) ;
 
 			function AbstractDrop() {
-	    		$fullabstract = $(".full-abstract");
-			    $fullabstract.slideToggle(1000, function () {});
+				$fullabstract = $(".full-abstract");
+				$fullabstract.slideToggle(1000, function () {});
 			}
 
 			// // toggle appendices
@@ -1521,5 +1541,5 @@
 			});
 
 		</script>
-    </body>
+	</body>
 </html>
