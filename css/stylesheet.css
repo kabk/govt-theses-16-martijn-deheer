@@ -423,6 +423,10 @@ ol ul li{
 	text-decoration: none;
 }
 
+#print a:hover {
+	border-bottom:1px dotted #000;
+}
+
 .printbut {
 	width: intrinsic;
 }
