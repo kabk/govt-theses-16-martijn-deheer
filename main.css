@@ -159,8 +159,8 @@
 .body {
   height: 190mm;
   width: 210mm;
-  margin-bottom: 20mm;
-  padding-top: 20;
+  margin-bottom: 10mm;
+  padding-top: 10;
   padding-bottom: 0;
   position: absolute;
 }
@@ -255,7 +255,7 @@ p {
   }
   .spread #pages {
     width: 420mm;
-    height: 594;
+    height: 594mm;
   }
   .paper {
     /* centrer la page à l'écran */

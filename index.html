@@ -37,7 +37,7 @@
 				</p>
 
 				<div class="popup">
-					<iframe src="">
+					<iframe id="printframe" src="">
 						<p>Your browser does not support iframes.</p>
 					</iframe>
 					<a href="#" class="close"><p>C<br>L<br>O<br>S<br>E<br></p></a>
@@ -1130,7 +1130,7 @@
 
 				$(".printbut").click(function (e) {
 					e.preventDefault();
-					$("iframe").attr("src", $(this).attr('href'));
+					$("iframe#printframe").attr("src", $(this).attr('href'));
 					$(".popup").fadeIn('slow');
 				});
 
