@@ -414,7 +414,13 @@ ol ul li{
 #print {
 	margin-top:11em;
 	margin-bottom:22em;
+	padding-left:2em;
+	padding-right:2em;
 	display:inline-flex;
+}
+
+#print span {
+	margin-left:0;
 }
 
 #print a {
