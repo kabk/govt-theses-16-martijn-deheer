@@ -1,4 +1,4 @@
 // Local settings
-var nb_page = 24;
-var content = "index.html";
+var nb_page = 32;
+var content = "thesis.html";
 
