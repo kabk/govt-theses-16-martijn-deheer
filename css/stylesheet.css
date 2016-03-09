@@ -455,8 +455,11 @@ ol ul li{
 		width: 9.65%;
 	}
 	#appendix-wrapper {
-	width:68%;
-	display: flex;
+		width:68%;
+		display: flex;
+	}
+	#print {
+		padding-left: 3.75em;
 	}
 	img {
 		max-height: 350px;
