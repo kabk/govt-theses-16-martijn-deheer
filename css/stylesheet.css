@@ -439,17 +439,15 @@ ol ul li{
   position:fixed;
 	top:0;
 	left:0;
-	overflow-y:scroll;
-	overflow-x:hidden;
 	width:69.75%;
 	height:100%;
-	background-color:transparent;
+	background-color:#000;
+	z-index:99;
 }
 
 .popup iframe {
 	width:95%;
 	height:100%;
-	z-index:0;
 }
 
 .popup iframe p {
@@ -457,6 +455,7 @@ ol ul li{
 }
 
 a.close {
+	cursor: pointer;
 	position:absolute;
 	z-index:99;
 	right:0;
@@ -465,11 +464,6 @@ a.close {
 	height:100%;
 	background-color:#000;
 	color:#fff;
-}
-
-.close img {
-	height:100%;
-	width:100%;
 }
 
 @media only screen and (min-width:1500px) {
