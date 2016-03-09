@@ -21,9 +21,9 @@
 .body {
     height: @page-height - @header-height - @footer-height;
     width: @page-width;
-    margin-bottom: @page-margin-bottom;
-    padding-top: @page-margin-top + @header-height;
-    padding-bottom: @page-margin-bottom;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     position: absolute;
 }
 
@@ -35,6 +35,7 @@
 #my-story {
     -webkit-flow-into: myStory;
             flow-into: myStory;
+            width:66%;
 }
 /* __________________________________ FOOTER __________________________________ */
 .footer {
