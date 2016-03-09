@@ -460,6 +460,9 @@ ol ul li{
 	img {
 		max-height: 350px;
 	}
+	#breaker {
+		height:24em;
+	}
 }
 
 @media only screen and (max-width:1024px) and (min-width:801px) {
