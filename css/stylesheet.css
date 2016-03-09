@@ -42,6 +42,7 @@ body {
 
 #heading header p {
 	font-size: 0.75em;
+	padding-left: 1em;
 }
 
 .abstract {
@@ -417,17 +418,9 @@ ol ul li{
 }
 
 #print a {
-	background-color: #000;
-	color:#fff;
-	border: 1px solid #fff;
-	display: block;
-	padding: 1em 2em 0em 2em;
-	margin-left: 2em;
-}
-
-#print a:hover {
-	background-color: #fff;
-	color:#0f0;
+	color: #fff;
+	border-bottom: 1px dotted #fff;
+	text-decoration: none;
 }
 
 .printbut {
