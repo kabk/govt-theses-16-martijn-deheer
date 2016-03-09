@@ -6,11 +6,11 @@
 
 /* EXTRA SPACE AROUND THE PAGE: BLEED + CROP */
 // TODO: find a more appropriate name
-@crop: @crop-size + @bleed; 
+@crop:0; 
 
 /* GEOMETRY OF THE PAPER SHEET */
-@paper-width: @page-width + ( @crop * 2 );
-@paper-height: @page-height + ( @crop * 2 );
+@paper-width: @page-width;
+@paper-height: @page-height;
 
 /* SIZE OF SPREAD */
 @spread: @page-width * 2;
