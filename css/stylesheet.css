@@ -330,7 +330,7 @@ section#abstract.colofonsec .colofoncontent {
  }
 
 #appendix-wrapper {
-	width:69.75%;
+	width:65%;
 	display: flex;
 }
 
@@ -452,6 +452,10 @@ ol ul li{
 	}
 	#chapterNav {
 		width: 9.65%;
+	}
+	#appendix-wrapper {
+	width:69.75%;
+	display: flex;
 	}
 	img {
 		max-height: 350px;
