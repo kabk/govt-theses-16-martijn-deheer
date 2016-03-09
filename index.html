@@ -33,15 +33,15 @@
 		<article id="article-wrapper">
 			<section id="print" class="printdiv">
 				<p>
-					<a class="printbut" href="print.html">PRINT THIS!</a> <span class="very-small">(working on it)</span> <a class="printbut" href="http://kabk.github.io/govt-theses-16-martijn-deheer/de Heer, Martijn - Boek Hypertekst Protocol.pdf">GIVE PDF!</a> <span class="very-small">(until html design is done)</span> <a class="engbut" href="">MAKE ENGLISH!</a> <span class="very-small">(expected in 05-16)</span>
+					<a class="printbut" href="http://kabk.github.io/govt-theses-16-martijn-deheer/print.html" target="_blank">PRINT THIS!</a> <span class="very-small">(working on it)</span> <a class="printbut" href="http://kabk.github.io/govt-theses-16-martijn-deheer/de Heer, Martijn - Boek Hypertekst Protocol.pdf" target="_blank">GIVE PDF!</a> <span class="very-small">(until html design is done)</span> <a class="engbut" href="">MAKE ENGLISH!</a> <span class="very-small">(expected in 05-16)</span>
 				</p>
 
-				<div class="popup">
+<!-- 				<div class="popup">
 					<iframe id="printframe" src="">
 						<p>Your browser does not support iframes.</p>
 					</iframe>
 					<a href="#" class="close"><p>C<br>L<br>O<br>S<br>E<br></p></a>
-				</div>
+				</div> -->
 			</section>
 
 			<section id="abstract" class="abstract">
@@ -1126,17 +1126,17 @@
 			// adjust width of navigation-bar according to length of text + show sidenotes on height of reference
 			$(document).ready(function(){
 
-				$(".popup").hide();
+				// $(".popup").hide();
 
-				$(".printbut").click(function (e) {
-					e.preventDefault();
-					$("iframe#printframe").attr("src", $(this).attr('href'));
-					$(".popup").fadeIn('slow');
-				});
+				// $(".printbut").click(function (e) {
+				// 	e.preventDefault();
+				// 	$("iframe#printframe").attr("src", $(this).attr('href'));
+				// 	$(".popup").fadeIn('slow');
+				// });
 
-				$(".close").click(function () {
-					$(this).parent().fadeOut("slow");
-				});
+				// $(".close").click(function () {
+				// 	$(this).parent().fadeOut("slow");
+				// });
 
 				// var text, charsLength=0, wordsCountTotal=0, wordsCount=0, newWidth=0;
 				// $('article').each(function() {
