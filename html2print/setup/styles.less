@@ -1,48 +1,74 @@
 /* Here you can put your specific typography, layout styles. */
 
-#abstract {
-	color:#000;
-	page-break-after: always;
-	display:inline;
-	background-color:transparent;
-}
+
+/* WHAT NOT TO SHOW */
 .abstract-fadeout{
 	display:none;
 }
-h1 {
-  page-break-before: always;
-}
-.short-abstract {
-	color:#000;
-}
-.full-abstract {
-	display:inline;
-	color:#000;
-}
-section.thesis-content {
-	page-break-after: always;
-}
+
 #breaker {
 	display:none;
+	border:none;
 }
-.content {
-	width:70%;
-	color:#000;
-}
-.sideContent {
-	left: 75%;
-	color:#000;
-}
-#heading {
-	width:95%;
-	color:#000;
-}
-#article-wrapper {
-	width:95%;
-}
+
 #chapterNav-wrapper {
 	display:none;
 }
 #print {
 	display: none;
+}
+
+
+/* ABSTRACT */
+#abstract {
+	page-break-after: always;
+	background-color:transparent;
+}
+
+.full-abstract {
+	display:inline;
+}
+
+
+/* NORMALIZING LAYOUT */
+#heading {
+	width:100%;
+}
+
+#article-wrapper {
+	width:100%;
+}
+
+section.thesis-content {
+	background-color: transparent;
+	padding:0;
+	margin:0;
+}
+
+.content {
+	width:100%;
+	padding:0;
+}
+
+.sideContent {
+	left: 75%;
+}
+
+/* NORMALIZING COLOR */
+#abstract, .short-abstract, .full-abstract, #heading, .sideContent p, blockquote {
+	color:#000;
+}
+
+/* TYPOGRAPHY HANDLING, COLOR */
+h2 {
+	padding:0;
+	margin:0;
+}
+
+/* PAGEBREAKS */
+section.thesis-content {
+	page-break-after: always;
+}
+#breaker {
+	page-break-after: always;
 }
