@@ -9884,7 +9884,7 @@ return jQuery;
 
     function getScripts() {
         var scripts = [];
-        libPaths.forEach(function (lib) {
+        libPaths(function (lib) {
             scripts.push(
 
                 $('<script>').attr(
