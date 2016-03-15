@@ -2,11 +2,6 @@
 				noteHeight();
 			}, 3000);
 
-			// put notes on the right height
-			$(window).onresize = function(event){
-				noteHeight();
-			}
-
 			function noteHeight(){
 				var a = $( '[data-note="1"]' );
 				var offsetA =  a.offset();

@@ -1167,8 +1167,10 @@
 				resizeDiv();
 			});
 
-
-
+			// put notes on the right height
+			$(window).onresize = function(event){
+				noteHeight();
+			}
 
 			window.onresize = function(event) {
 				resizeDiv();
