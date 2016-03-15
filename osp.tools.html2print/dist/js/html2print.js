@@ -9837,8 +9837,7 @@ return jQuery;
     // things that will be hackily loaded into the iframe
     var dirName = 'osp.tools.html2print/';
     var dirPath = document.currentScript.src.split(dirName)[0] + dirName;
-    var libPaths = [    dirPath + 'lib/less/dist/less.min.js'
-                    ];
+    var libPaths = dirPath + 'lib/less/dist/less.min.js';
     var h2pStylePath = dirPath + 'dist/less/html2print.less';
 
     var config = null;
