@@ -13,11 +13,12 @@
 		<!-- Link stylesheets!-->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" /> 
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="css/print.css" class="h2p-include">
 	</head>
 
 	<body>
 		<div id="progress-bar"> </div>
-		<div id="heading">
+		<div id="heading" class="h2p-include">
 			<header> 
 				<h1 id="fittext">
 					BOEK/
@@ -30,10 +31,10 @@
 			</header>
 		</div>
 
-		<article id="article-wrapper">
+		<article id="article-wrapper" class="h2p-include">
 			<section id="print" class="printdiv">
 				<p>
-					<a class="printbut" href="http://kabk.github.io/govt-theses-16-martijn-deheer/print.html" target="_blank">PRINT THIS!</a> <span class="very-small">(working on it)</span> <a class="printbut" href="http://kabk.github.io/govt-theses-16-martijn-deheer/de Heer, Martijn - Boek Hypertekst Protocol.pdf" target="_blank">GIVE PDF!</a> <span class="very-small">(until html design is done)</span> <a class="engbut" href="">MAKE ENGLISH!</a> <span class="very-small">(expected in 05-16)</span>
+					<a class="printbut" href="http://kabk.github.io/govt-theses-16-martijn-deheer/h2p.html" target="_blank">PRINT THIS!</a> <span class="very-small">(working on it)</span> <a class="printbut" href="http://kabk.github.io/govt-theses-16-martijn-deheer/de Heer, Martijn - Boek Hypertekst Protocol.pdf" target="_blank">GIVE PDF!</a> <span class="very-small">(until html design is done)</span> <a class="engbut" href="">MAKE ENGLISH!</a> <span class="very-small">(expected in 05-16)</span>
 				</p>
 
 <!-- 				<div class="popup">
@@ -1124,6 +1125,7 @@
 		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/TweenMax.min.js"></script>
 		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/animation.gsap.js"></script>
 		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/debug.addIndicators.js"></script>
+		<script type="application/javascript" rel="script" src="js/print.js" class="h2p-include"></script>
 		<script>
 			// adjust width of navigation-bar according to length of text + show sidenotes on height of reference
 			$(document).ready(function(){
