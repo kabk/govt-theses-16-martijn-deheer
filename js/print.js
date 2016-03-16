@@ -1,7 +1,7 @@
 
 document.addEventListener('layoutReady', function(){
 
-	var div = $('#content');
+	var div = $('#article-wrapper');
 	var para = $('p');
 
 	$(para).each(function() {
