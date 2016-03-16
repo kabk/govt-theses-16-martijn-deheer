@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl"><!-- Putting the language code here will help for example text to speech (and in the future, hypehenation)-->
 	<head>
-		<title>book/hypertext/protocol</title>
+		<title>book/ hypertext/ protocol</title>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta name="description" content="In my thesis I search for what the internet could mean for graphic design in both practical as conceptual ways. I search for answers by asking a question that came to me when I discovered the Web-to-Print practices. Becoming my main research question: What is the purpose of using internet's native functionality to produce books?">
@@ -36,13 +36,6 @@
 				<p>
 					<a class="printbut" href="http://kabk.github.io/govt-theses-16-martijn-deheer/h2p.html" target="_blank">PRINT THIS!</a> <span class="very-small">(working on it)</span> <a class="printbut" href="http://kabk.github.io/govt-theses-16-martijn-deheer/de Heer, Martijn - Boek Hypertekst Protocol.pdf" target="_blank">GIVE PDF!</a> <span class="very-small">(until html design is done)</span> <a class="engbut" href="">MAKE ENGLISH!</a> <span class="very-small">(expected in 05-16)</span>
 				</p>
-
-<!-- 				<div class="popup">
-					<iframe id="printframe" src="">
-						<p>Your browser does not support iframes.</p>
-					</iframe>
-					<a href="#" class="close"><p>C<br>L<br>O<br>S<br>E<br></p></a>
-				</div> -->
 			</section>
 
 			<section id="abstract" class="abstract">
@@ -1120,7 +1113,8 @@
 		</nav>
 
 		<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/jquery.fittext.js"></script>
+		<script src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/jquery.fittext.js" class="h2p-include"></script>
+		<script src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/fittext.js" class="h2p-include"></script>
 		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/ScrollMagic.js"></script>
 		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/TweenMax.min.js"></script>
 		<script type="text/javascript" src="http://kabk.github.io/govt-theses-16-martijn-deheer/js/animation.gsap.js"></script>
@@ -1191,10 +1185,6 @@
 				$fullabstract = $(".full-abstract");
 				$fullabstract.slideToggle(1000, function () {});
 			}
-
-			// fit header
-			$("#fittext").fitText(0.75, {minFontSize:'24px', maxFontSize:'180px'});
-
 
 			$(document).ready(function($) {
 				// init controller
