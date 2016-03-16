@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-	var div = $('.content');
+	var div = $('.thesis-content');
 	div.html(div.html().replace(/ /g, '·'));
 });
 
