@@ -12,7 +12,7 @@ document.addEventListener('layoutReady', function(){
 
 	$('.content').children().each(function () {
 	    $(this).html(function (i, html) {
-	        return $(this).html().replace(/&#160;/g, '·');
+	        return $(this).html().replace('&#160;', '·');
 	    });
 	});
 

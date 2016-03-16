@@ -21,18 +21,6 @@ body{
 	font-weight:normal;
 }
 
-#heading {
-	page-break-after: always;
-}
-
-#heading p {
-	page-break-after: always;
-}
-
-#article-wrapper {
-	page-break-before: always;
-}
-
 #print {
 	display:none;
 }
