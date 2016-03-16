@@ -10,7 +10,7 @@ document.addEventListener('layoutReady', function(){
 	// 	textNode.text(textNode.text().replace("\xa0", "·"));
 	// });
 
-	$('.content').children().each(function () {
+	$('.content > p').children().each(function () {
 	    $(this).html(function (i, html) {
 	        return $(this).html().replace('&#160;', '·');
 	    });
