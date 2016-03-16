@@ -8,15 +8,12 @@
 
 
 
-// document.addEventListener('layoutReady', function(){
-
-
-//     $('p').each(function(index){
-//         var entropy = 0.1 * index;
-//         console.log($(this));
-//         $(this).css('letter-spacing', entropy+'mm');
-//     });
+document.addEventListener('layoutReady', function(){
 
 
 
-// });
+	// fit header
+	$("#fittext").fitText(0.75, {minFontSize:'24px'});
+
+
+});
