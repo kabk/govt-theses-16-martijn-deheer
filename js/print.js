@@ -8,8 +8,9 @@ document.addEventListener('layoutReady', function(){
 	// 	div.html(div.html().replace(/ /g, '·'));
 	// });
 
-	findAndReplaceDOMText();
 });
+
+findAndReplaceDOMText();
 
 findAndReplaceDOMText(document.body, {
 	preset: 'prose',
