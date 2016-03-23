@@ -12,7 +12,7 @@ document.addEventListener('layoutReady', function(){
 	  findAndReplaceDOMText();
 	}
 
-	findAndReplaceDOMText(document.getElementByTagName('p'), {
+	findAndReplaceDOMText(document.getElementsByTagName('p'), {
 		find: / /g,
 		replace: '+'
 	});
