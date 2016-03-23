@@ -8,10 +8,6 @@ document.addEventListener('layoutReady', function(){
 	// 	div.html(div.html().replace(/ /g, '·'));
 	// });
 
-	$("#spaceToggle").click(function handleClick(giveSpaces) {
-	  findAndReplaceDOMText();
-	});
-
 	findAndReplaceDOMText(document.getElementsByTagName('p'), {
 		find: / /g,
 		replace: '+'
