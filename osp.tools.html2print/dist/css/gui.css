@@ -43,7 +43,7 @@ input[type=number] {
 }
 input:hover {
   cursor: pointer;
-  background-color: yellow;
+  background-color: #0F0;
 }
 button {
   border: 1px solid white;
@@ -55,7 +55,7 @@ button {
 }
 button:hover {
   cursor: pointer;
-  background-color: yellow;
+  background-color: #0F0;
 }
 .separator {
   content: " ";
