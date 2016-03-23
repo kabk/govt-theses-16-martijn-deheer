@@ -8,4 +8,15 @@ document.addEventListener('layoutReady', function(){
 	// 	div.html(div.html().replace(/ /g, '·'));
 	// });
 
+	function handleClick(giveSpaces) {
+	  findAndReplaceDOMText();
+	}
+
+	findAndReplaceDOMText(document.getElementByTagName('p'), {
+		find: / /g,
+		replace: '+'
+	});
+
+
 });
+

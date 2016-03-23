@@ -104,8 +104,8 @@ body.noScroll {
             left: 0;
 
             div {
-                border-style: solid;
-                border-color: black;
+                border-style: none;
+                border-color: transparent;
                 border-width: 0;
                 width: @crop;
                 height: @crop;
@@ -162,6 +162,7 @@ body.noScroll {
         margin-bottom: @margin-bottom;
         display: inline-block;
         overflow: visible;
+        border: 1px dotted #000;
         .body {
             height: @body-height;
             width: @body-width;
@@ -352,19 +353,19 @@ p {
 .debug{
 
     .page{
-        outline: 1px solid darkmagenta;
+        outline: 1px solid #0f0;
         .body {
-            outline: 1px solid magenta;
+            outline: 1px dashed #0f0;
         }
     }
 
     .region-break {
-        border-top: 1px dashed blue;
+        border-top: 1px dashed #0f0;
         box-sizing: border-box;
     }
 
     img {
-        outline: 1px solid blue;
+        outline: 1px dashed #0f0;
     }
 
 }
@@ -397,13 +398,13 @@ p {
         //outline: 1px solid lightgray;
     }
     .normal .page {
-        outline: 1px dashed lightsalmon;
+        // outline: 1px dashed lightsalmon;
     }
     .preview .paper {
         background: none;
     }
     .preview .page {
-        outline: 1px solid lightgray;
+        // outline: 1px solid lightgray;
         background-color: white;
     }
     .preview .crops { visibility: hidden; }
