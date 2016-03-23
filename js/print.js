@@ -17,7 +17,7 @@ findAndReplaceDOMText(document.body, {
 	replace: function(portion, match) {
 		called = true;
 		var el = document.createElement('em');
-		el.style.backgroundColor = colors[match.index % colors.length];
+		el.style.backgroundColor = "red";
 		el.innerHTML = portion.text;
 		return el;
 	}
