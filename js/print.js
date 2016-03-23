@@ -11,7 +11,8 @@ document.addEventListener('layoutReady', function(){
 	findAndReplaceDOMText();
 });
 
-findAndReplaceDOMText(document.getElementsByTagName('p'), {
+findAndReplaceDOMText(document.body, {
+	preset: 'prose',
 	find: ' ',
 	replace: function(portion, match) {
 		called = true;
