@@ -2,10 +2,6 @@
 document.addEventListener('layoutReady', function(){
 
 
-
-
-});
-
 	findAndReplaceDOMText(document.body, {
 		preset: 'prose',
 		find: ' ',
@@ -17,3 +13,7 @@ document.addEventListener('layoutReady', function(){
 			return el;
 		}
 	});
+
+
+});
+
